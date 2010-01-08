@@ -1,0 +1,1168 @@
+% -*- coding: utf-8 -*-
+
+\begin{chapter}{Физические параметры океана}
+%\chapter{The Physical Setting}
+Земля~--- это сплюснутый элипсоид, элипсоид вращения с экваториальным
+радиусом равным 
+$$
+R_e=6\,378.1349\mbox{~км (West,1982)},
+$$ 
+который немного больше полярного радиуса, равного 
+$$
+ R_p=6\,356.7497\mbox{~км}.
+$$
+Эта разница образуется за счёт вращения Земли.
+%
+% Earth \index{earth!radii of}is an oblate ellipsoid, an ellipse rotated about 
+% its minor axis, with an equatorial radius of $R_e = 6,378.1349$ km 
+% (West, 1982) slightly greater than the polar radius of $R_p = 6,356.7497$ km.
+% The small equatorial bulge is due to earth's rotation.
+Расстояние на земле измеряется в различных
+единицах, наиболее распространёнными являются градусы широты и
+долготы, метры, мили и морские мили. Широта~--- это угол между
+вертикалью на местности и экваториальной плоскостью. Меридиан~--- это
+линия пересечения плоскости перпендикулярной экваториальной плоскости
+на земной поверхности и проходящая через ось вращения
+Земли. Долгота~--- это угол между нулевым меридианом и любым другим,
+где нулевым является меридиан проходящий через Королевскую Гринвичскую
+Обсерваторию в Англии. Таким образом долгота измеряется на восток и
+запад от Гринвича.
+%
+% Distances on earth are measured in many different units, the most common 
+% are degrees of latitude or longitude, meters, miles, and nautical miles.
+% \textit{Latitude}\index{latitude|textbf} is the angle between the local 
+% vertical and the equatorial plane. A meridian is the intersection at earth's 
+% surface of a plane  perpendicular to the equatorial plane and passing 
+% through earth's axis of rotation. \textit{Longitude}\index{longitude|textbf}
+% is the angle between the standard meridian and any other meridian, where 
+% the standard meridian is the one that passes through a point at the
+% Royal Observatory at Greenwich, England.  Thus longitude is measured 
+% east or west of Greenwich.
+
+За исключением экватора градус широты на земной поверхности по длинне
+отличается от градуса долготы. Широта измеряется вдоль окружности
+большого круга с радиусом R, где R~--- средний радиус Земли. Долгота
+измеряется вдоль кругов с радиусом Rcos(j), где j~--- широта. Таким
+образом 1 градус широты равен 111 км, а один градус долготы =
+111cos(j) км. При работе всегда нужно помнить что Земля не сфера и
+широта тоже немного изменяется с удалением от экватора, но значения
+приведённые здесь вполне достаточны для наших целей.
+%
+% A degree of latitude is not the same length as a degree of longitude except
+% at the equator. Latitude is measured along great circles with radius $R$,
+% where $R$ is the mean radius of earth. Longitude is measured along circles 
+% with radius $R \cos \varphi$, where $\varphi$ is latitude. Thus 
+% $1^{\circ}$ latitude $ = 111$ km, and $1^{\circ}$ longitude 
+% $= 111 \cos \varphi$ km.
+
+Так как расстояние в градусах долготы не постоянно, океанографы
+измеряют расстояние на картах используя градусы широты.
+%
+% Because distance in degrees of longitude is not constant, oceanographers 
+% measure distance on maps using degrees of latitude.
+
+И морские мили и метры исторически связаны с размерами Земли. В 1670
+году викарий церкви Святого Павла в Лионе Габриэль Моутон предложил
+десятичную систему измерений, основанную на одной минуте дуги большого
+круга Земли. Это привело в конечном счёте к созданию метрической
+системы, основанной на другой единице длинны – метре, который
+первоначально предполагался равным одной миллионной расстояния от
+экватора до полюса вдоль Парижского меридиана. Хотя от взаимосвязи
+морских миль и метров с размерами Земли вскоре отказались, ввиду её
+непрактичности, приближённые значения до сих пор используют. Например
+длинна окружности проходящей через полюс Земли приблизительно равна
+2pRe=40,075 км. Следовательно одна десятитысячная четверти этого круга
+(квадранта) равна 1,0019 м. Рассуждая подобным образом в случае с
+морской милей, получим что она должна быть равна 2pRe/(360*60) = 1.855
+км. Это очень близко к официальному определении МЕЖДУНАРОДНОЙ МОРСКОЙ
+МИЛИ: 1 мм = 1,852 км.
+%
+% Nautical miles and meters are connected historically to the size of earth. 
+% Gabriel Mouton proposed in 1670 a decimal system of measurement based on 
+% the length of an arc that is one minute of a great circle of earth.  
+% This eventually became the nautical mile. Mouton's decimal system 
+% eventually became the metric system based on a different unit of length,
+% the meter, which was originally intended to be one ten-millionth 
+% the distance from the Equator to the pole along the Paris meridian. 
+% Although the tie between nautical miles, meters, and earth's radius was 
+% soon abandoned because it was not practical, the approximations are very 
+% good. For example, earth's polar circumference is approximately 40,008 km. 
+% Therefore one ten-millionth of a quadrant is 1.0002 m. Similarly,
+% a nautical mile should be 1.8522 km, which is very close to the official 
+% definition of 
+% the\index{nautical mile|textbf}\index{international nautical mile|textbf} 
+% \textit{international nautical mile}: 1 nm $\equiv$ 1.8520 km.
+
+
+\begin{section}{Океаны и моря}
+% \section{Ocean and Seas}
+Согласно Международному Гидрографическому Стандарту на нашей планете
+только три океана.
+%
+% There is only one ocean. It is divided into three named parts by 
+% international agreement: the Atlantic, Pacific, and Indian 
+% ocean\index{ocean!defined} (International Hydrographic Bureau, 1953)%
+%\index{International Hydrographic Bureau}. Seas, which are part of the ocean, 
+% are defined in several ways. I consider two.
+
+
+\begin{description}
+\item[Атлантический Океан] (рис 3,1) простирается на север от
+Антарктики и включает всё Арктическое Море (СЛО), Европейское
+Средиземноморье и Американское Средиземноморье (Карибское
+море). Границей между Атлантическим и Индийским океанами является
+меридиан Мыса Игольный (20° E). Граница между Атлантическим и Тихим
+Океанами~--- линия между Мысом Горн и Северо Шетландскими
+островами. На севере Арктические моря являются частью Атлантического
+океана, а Беренгов пролив~--- границей между Атлантикой и Тихим
+Океаном.
+%
+% \textbf{The Atlantic Ocean} \index{ocean!Atlantic Ocean}extends
+% northward from Antarctica and includes all of the Arctic Sea, the
+% European Mediterranean, and the American Mediterranean more
+% commonly known as the Caribbean sea (figure 3.1). The boundary
+% between the Atlantic and Indian Ocean is the meridian of Cape
+% Agulhas (20\degrees E). The boundary between the Atlantic and
+% Pacific is the line forming the shortest distance from Cape
+% Horn to the South Shetland Islands. In the north, the Arctic Sea
+% is part of the Atlantic Ocean, and the Bering Strait is the
+% boundary between the Atlantic and Pacific.
+
+
+%% Рисунок 3.1 Атлантический Океан в равноплощадной проэкции. Глубины в
+%% метрах, взяты из ETOPO 30. Изобата 200 метров показывает границу
+%% континетального щельфа.
+
+\item[Тихий Oкеан] простирается на север от Антарктики до Беренгова
+пролива. Граница между Тихим и Индийским океаном лежит на линии идущей
+от Малайского Полуострова через Суматру, Яву, Тимор, до австралийского
+мыса Лондондерри, а от Тасмании до Антарктики на меридиане мыса Северо
+Восточный (147 ° E).
+%
+% \textbf{The Pacific Ocean} \index{ocean!Pacific Ocean}extends
+% northward from Antarctica to the Bering Strait (figure 3.2). The
+% boundary between the Pacific and Indian Ocean follows the line
+% from the Malay Peninsula through Sumatra, Java, Timor, Australia
+% at Cape Londonderry, and Tasmania. From Tasmania to Antarctica it
+% is the meridian of South East Cape on Tasmania 147\degrees E.
+
+
+%% Рисунок 3.2 Тихий Океан в равноплощадной проэкции. Глубины в метрах,
+%% взяты из ETOPO 30. Изобата 200 метров показывает границу
+%% континетального щельфа.
+
+\item[Индийский Океан] простирается от Антарктики до Евразийского
+континента, включая в себя Красное Море и Персидский Залив. Некоторые
+авторы используют название Южный Океан для вод вокруг Антарктиды.
+%
+% \textbf{The Indian Ocean} \index{ocean!Indian Ocean}extends from
+% Antarctica to the continent of Asia including the Red Sea and
+% Persian Gulf (figure 3.3). Some authors use the name Southern
+% Ocean to describe the ocean surrounding Antarctica.
+
+
+
+%% Рисунок 3.2 Индийский Океан в равноплощадной проэкции. Глубины в
+%% метрах, взяты из ETOPO 30. Изобата 200 метров показывает границу
+%% континетального щельфа.
+\end{description}
+
+Существует много типов морей. Мы упомянем о двух:
+\begin{itemize}
+\item 
+Средиземные Mоря большей частью окружены сушей. Согласно этому
+определению Арктическое и Карибское моря~--- средиземные, Арктическое
+Средиземное и Карибское Средиземное.
+%
+% \textbf{Mediterranean Seas} \index{seas!Mediterranean}are mostly
+% surrounded by land. By this definition, the Arctic and Caribbean
+% Seas are both Mediterranean Seas, the Arctic Mediterranean and the
+% Caribbean Mediterranean.
+
+\item
+Окраинные Mоря определяются только изрезанностью побережья.
+%
+% \textbf{Marginal Seas} \index{seas!marginal}are defined by only an
+% indentation in the coast. The Arabian Sea and South China Sea are
+% marginal seas.
+\end{itemize}
+\end{section}
+
+
+\begin{section}{Размеры океанов}
+% \section{Dimensions of the ocean}
+Океаны и моря покрывают 70,8\% земной поверхности, что составляет 361
+254 000 квадратных километров. Площади океанов значительно различаются
+(таблица 3,1) и Тихий из них самый большой.
+%
+% \index{ocean!dimensions of}The ocean and seas cover 70.8\% 
+% of the surface of earth, which amounts to 361,254,000 km$^2$. 
+% The areas of the named parts vary considerably (table 3.1).
+
+\begin{tabular}{lr}
+%% Таблица 3.1. Площадь Океанов (Dietrich, et al. (1980: стр3)
+Тихий Океан         & $181.34 \times 10^6 \mbox{Км}^2$ \\
+Индийский Океан     & $ 74.12 \times 10^6 \mbox{Км}^2$ \\
+Атлантический Океан & $106.57 \times 10^6 \mbox{Км}^2$ \\
+\end{tabular}
+%
+% \begin{table} [b!]\centering \small
+% \vspace{-3ex}
+% \begin{tabular*}{65mm}{@{}l @{\extracolsep{\fill}} r@{}}
+% \multicolumn{2}{@{}l@{}}{\bfseries Table 3.1 Surface Area of the ocean} $^{\dag }$ \\
+% \hline
+% \rule{0ex}{2.5ex}Pacific Ocean  & $181.34 \times 10^6 \hbox{ km}^2$        \\
+%                  Atlantic Ocean   & $ 106.57 \times 10^6 \hbox{ km}^2$        \\
+%                 Indian Ocean  & $74.12 \times 10^6 \hbox{ km}^2$        \\[0.5ex]
+% \hline
+% \multicolumn{2}{@{}l@{}}  {\rule{0ex}{2.5ex}$^{\dag }$ From Menard and Smith (1966)}
+% \end{tabular*} \\[0.5ex]
+% \vspace{-3ex}
+% \end{table}
+
+
+Горизонтальные размеры океанов изменяются от 1500~км~--- минимальной
+ширины Атлантики, до 13000~км~--- простирания Атлантики с севера на юг
+и ширины Тихого Океана.  При этом типичные глубины составляют 3--4~км.
+Таким образом горизонтальные размеры океанских бассейнов в 1000~раз
+больше чем вертикальные.  Масштабы Тихого океана можно представить
+себе с помощью обычного листа бумаги 8,5*11 дюймов (А4), при этом
+ширина океана в 10~000~км будет соответствовать 10~дюймам~--- ширине
+листа, а 3х километровая глубина 0,003~дюймам~--- типичной толщине
+листа бумаги.
+%
+% Oceanic dimensions range from around 1500 km for the minimum width of the
+% Atlantic to more than 13,000 km for the north-south extent of the Atlantic 
+% and the width of the Pacific. Typical depths are only 3--4 km. So horizontal
+% dimensions of ocean basins are 1,000 times greater than the vertical
+% dimension. A scale model of the Pacific, the size of an $8.5 \times 11$ in 
+% sheet of paper, would have dimensions similar to the paper: a width 
+% of 10,000 km scales to 10 in, and a depth of 3 km scales to 0.003 in, 
+% the typical thickness of a piece of paper.
+
+
+Из за того что океаны такие тонкие, графики их поперечного сечения для
+удобства использования должны иметь сильно преувеличенный вертикальный
+масштаб. Обычно у таких графиков вертикальный масштаб в 200 раз больше
+чем горизонтальный (Рис. 3,4). Это преувеличение искажает наши
+представления об океане. Края океанических бассейнов (континентальные
+склоны) не крутые обрывы как показано на рисунке 3.4 (41W 12 E). Они
+скорее являются пологими склонами, понижающимися на 1 метр по
+вертикали на каждые 20 метров по горизонтали.
+%
+% Because the ocean is so thin, cross-sectional plots of ocean basins must 
+% have a greatly exaggerated vertical scale to be useful. Typical plots have
+% a vertical scale that is 200 times the horizontal scale (figure 3.4). This 
+% exaggeration distorts our view of the ocean. The edges of the ocean basins, 
+% the continental slopes, are not steep cliffs as shown in the figure 
+% at 41\degrees W and 12\degrees E. Rather, they are gentle slopes dropping 
+% down 1 meter for every 20 meters in the horizontal.
+
+Малое отношение глубин океанических бассейнов к их ширине имеет свои
+последствия для динамики. Вертикальные скорости должны быть гораздо
+слабее чем горизонтальные. Даже при масштабах движения в несколько
+сотен километров вертикальные скорости должны составлять порядка 1\%
+от горизонтальных. Мы используем эту информацию позже для того чтобы
+упростить уравнение движения.
+%
+% The small ratio of depth to width of the ocean basins is very important 
+% for understanding ocean currents. Vertical velocities must be much smaller
+% than horizontal velocities. Even over distances of a few hundred kilometers,
+% the vertical velocity must be less than 1\% of the horizontal velocity.
+% I will use this information later to simplify the equations of motion.
+
+На первый взгляд относительно малые значения вертикальных скоростей
+должны мало влиять на динамику, но всё меняется когда мы начинаем
+принимать во внимание турбулентность. Трёхмерная турбулентность сильно
+отличается от двухмерной. В двухмерной турбулентности вихревые линии
+всегда должны быть вертикальны и здесь может быть только небольшое
+растяжение вихря. В трёхмерной же турбулентности растяжение вихря
+играет фундаментальную роль.
+%
+% The relatively small vertical velocities have great influence on
+% turbulence\index{turbulence}. Three dimensional turbulence is fundamentally
+% different than two-dimensional turbulence\index{turbulence!two dimensional}.
+% In two dimensions, vortex lines must always be vertical, and there can be
+% little vortex stretching. In three dimensions, vortex stretching plays
+% a fundamental role in turbulence.
+
+%% Рисунок 3.4 Профиль Северной Атлантики вдоль 25°S демонстрирующий
+%% континетальный шельф Южной Америки, подводную гору около 35°W,
+%% срединный Атлантический Хребет около 14°W, Хребет Вальвис около 6°E и
+%% узкий континетальный шельф Южной Африки. Верхний: Вертикальное
+%% увеличение масштаба 180:1. Нижний: Вертикальное увеличение масштаба
+%% 30:1. Если нарисовать график в действительной пропорции, то он будет
+%% тоньше чем линия обозначающая поверхность моря на нижнем графике
+%% рисунка.
+\end{section}
+
+\begin{section}{Элементы рельефа}
+% \section{Sea-Floor Features}
+Земная кора делится на два типа: регионы с тонкой, около 10 км
+корой~--- океаны, и регионы с толстой около 40 км корой~--- 
+континенты. Блоки земной коры плавают в более плотном материале мантии
+и средняя высота их поверхности относительно уровня моря имет два
+различных значения: континенты в среднем возвышаются на 840 м, а дно
+океанов погружено на 3 432 м (Рис 3,5)
+%
+% Earth's rocky surface is divided into two types: oceanic, with a thin
+% dense crust about 10 km thick, and continental, with a thick light crust 
+% about 40 km thick. The deep, lighter continental crust floats higher on 
+% the denser mantle than does the oceanic crust, and the mean height of
+% the crust relative to sea level has two distinct values: continents
+% have a mean elevation of 1100 m, the ocean has a mean depth of -3400 m 
+% (figure 3.5).
+
+%% Рисунок 3.5 Слева: Гистограмма превышений суши и глубины дна океана в
+%% процентном отношении к площади Земли. Видно явное различие между
+%% континентами и морским дном. Справа: Гипсографическая кривая. Кривые
+%% посчитаны по данным ETOPO 30.
+
+Объём воды в океанах превышает объём океанических бассейнов и часть
+воды распространяется (разливается) над опущенными частями
+континентов. Эти мелководные моря называются континентальными
+шельфами. Некоторые, такие как Северо Китайское море, больше 1000~км
+шириной. Большинство из них относительно мелководны, с типичными
+глубинами 50--100~м. Наиболее важными являются Восточно Китайское
+Море, Берингово Море, Северное Море, Большая Багамская Банка, Шельф
+Патагонии, Арафурское Море и залив Карпентария а также Сибирский
+Шельф. Мелководные моря помогают рассеиванию (дессипации) приливов,
+они часто являются зонами высокой продуктивности и входят в особую
+экономическую зону близлежащих стран.
+%
+% The volume of the water in the ocean exceeds the volume of the ocean basins, 
+% and some water spills over on to the low lying areas of the continents. These
+% shallow seas are the continental shelves. Some, such as the South China Sea,
+% are more than 1100 km wide. Most are relatively shallow, with typical depths 
+% of 50--100 m. A few of the more important shelves are: the East China Sea,
+% the Bering Sea, the North Sea, the Grand Banks, the Patagonian Shelf,
+% the Arafura Sea and Gulf of Carpentaria, and the Siberian Shelf. The shallow
+% seas help dissipate tides, they are often areas of high biological
+% productivity, and they are usually included in the exclusive economic zone
+% of adjacent countries.
+
+Земная кора разделена на большие плиты которые движутся относительно
+друг друга. Новая кора создаётся в срединно океанических хребтах, а
+старая исчезает в глубоководных желобах. Относительное движение
+литосферных плит создаёт большое количество элементов морского
+дна. Эти элементы, изображённые на рисунке 3,6, включают в себя
+срединно океанические хребты, глубоководные желоба, островные дуги,
+бассейны и подводные горы.
+%
+% The crust is broken into large plates that move relative to each other. New
+% crust is created at the mid-ocean ridges, and old crust is lost at trenches.
+% The relative motion of crust, due to plate tectonics, produces the
+% distinctive features of the sea floor sketched in figure 3.6, including
+% mid-ocean ridges, trenches, island arcs, and basins. 
+% \index{ocean!features of|(}The names of the sub-sea features have been
+% defined by the International Hydrographic
+% Organization\index{International Hydrographic Bureau} (1953), and
+% the following definitions are taken from Sverdrup, Johnson, 
+% and Fleming (1942), Shepard (1963), and Dietrich et al. (1980).
+
+%% Рисунок 3.6 Схематический профиль океана демонстрирующий основные
+%% элементы морского дна. Обратите внимание на то что уклоны сильно
+%% преувеличены.
+
+Названия элементов рельефа морского дна были оговорены Международной
+Гидрографической комиссией и следующие определения взяты из Dietrich
+et. al.(1980).
+
+\begin{description}
+\item[Бассейн] 
+Понижение морского дна более менее выравненной формы и различной
+протяжённости.
+%
+% \textit{Basins} \index{basins|textbf}are deep depressions of the sea floor
+% of more or less circular or oval form.
+
+\item[Каньон]
+Относительно узкое глубокое понижение с крутыми склонами, глубина
+которого постоянно увеличивается книзу.
+%
+% \textit{Canyons} \index{canyon|textbf}are relatively narrow, deep furrows 
+% with steep slopes, cutting across the continental shelf and slope, with
+% bottoms sloping continuously downward.
+
+\item[Континентальный Шельф]
+Зона смежная с континентом (или вокруг острова), простирающаяся от
+горизонта меженных вод (минимального наблюдённого или расчитанного
+уровня моря) до глубины которая обычно отмечена увеличением уклона в
+сторону больших глубин.
+%
+% \textit{Continental shelves} \index{continental shelves|textbf}are zones 
+% adjacent to a continent (or around an island) and extending from
+% the low-water line to the depth, usually about 120 m, where there is a marked
+% or rather steep descent toward great depths. (figure 3.7)
+ 
+\item[Континентальный Склон]
+Уклон в сторону моря от границы шельфа к большим глубинам.
+%
+% \textit{Continental slopes} \index{continental slopes|textbf}are
+% the declivities seaward from the shelf edge into greater depth.
+
+\item[Равнина]
+Плоская, слабо покатая или близкая к равнинному часть морского
+дна. (Например абиссальная равнина).
+%
+% \textit{Plains} \index{plains|textbf}are very flat surfaces found in many
+% deep ocean basins.
+
+\item[Хребет]
+Вытянутое узкое поднятие морского дна с крутыми склонами и
+неравномерной (нерегулярной) топографией.
+%
+% \textit{Ridges} \index{ridges|textbf}are long, narrow elevations of the sea
+% floor with steep sides and rough topography.
+
+\item[Подводная Гора]
+Изолированное или относительно изолированное поднятие, возвышающееся
+на 1000 метров и более над дном океана, ограниченное вершиной.
+%
+% \textit{Seamounts} \index{seamounts|textbf}are isolated or comparatively
+% isolated elevations rising 1000 m or more from the sea floor and with small
+% summit area (figure 3.8).
+
+\item[Разлом]
+Нижняя часть хребта, отделяющая океанические бассейны друг от друга
+или от близлежащего морского дна.
+%
+% \textit{Sills} \index{sills|textbf}are the low parts of the ridges separating
+% ocean basins from one another or from the adjacent sea floor.
+
+\item[Глубоководный Желоб]
+Протяжённое, узкое и глубокое понижение морского дна с относительно
+крутыми склонами.
+%
+% \textit{Trenches} \index{trenches|textbf}are long, narrow, and deep
+% depressions of the sea floor, with relatively
+% steep sides (figure 3.9).\index{ocean!features of|)}
+\end{description}
+
+Подводные элементы оказывают важное влияние на циркуляцию
+океанов. Хребты в районе разломов (рифтовых долин) разделяют глубинные
+воды океанов на отдельные бассейны. Вода находящаяся глубже разлома не
+может перемещаться из одного бассейна в другой. Десятки тысяч
+изолированных пиков~--- подводных гор, разбросаны по дну океана. Они
+преграждают путь течениям и вызывают турбулентность, которая приводит
+к вертикальному перемешиванию вод.
+%
+% Sub-sea features strongly influences the ocean circulation.
+% Ridges separate deep waters of the ocean into distinct basins.
+% Water deeper than the sill\index{sills} between two basins cannot move
+% from one to the other. Tens of thousands of seamounts are scattered
+% throughout the ocean basins. They interrupt ocean currents, and produce
+% turbulence\index{turbulence!in deep ocean} leading to vertical
+% mixing\index{mixing!vertical} in the ocean.
+
+%%Рисунок 3.7 Пример континентального шельфа, шельф у побережья Монтерея
+%%в Калифорнии, здесь можно видеть каньон Монтерей и другие. Каньоны
+%%часто встречаются на шельфе и обычно простираются через весь шельф и
+%%континентальный склон. Права на рисунок принадлежат Monterey Bay
+%%Aquarium Research Institute (MBARI).
+
+%%Рисунок 3.8 Пример подводной горы~--- гайот Вилд. Гайот~--- это
+%%морская гора с плоской вершиной, а плоская она из за волнового
+%%воздействия происходившего пока гора находилась над уровнем моря. Так
+%%как морская гора зависит от тектоники плит, то она понемногу
+%%погружается. Глубины были посчитаны на основе данных эхолокации вдоль
+%%маршрутов судна (тонкие прямые линии), дополненными данными
+%%гидролокатора бокового обзора. Глубина в сотнях метров.
+
+%%Рисунок 3.9 Пример глубоководного жёлоба~--- Алеутский Желоб;
+%%островная дуга, Алеутские Острова и континентальный шельф, Берингово
+%%море. Островная дуга состоит из вулканов образовавшихся когда
+%%океаническая кора погружаясь в желоб, плавилась, и поднималась к
+%%поверхности. Наверху Карта Алеутского региона на севере Тихого
+%%Океана. Внизу профиль через регион.
+\end{section}
+
+\begin{section}{Измерения глубин океана}
+% \section{Measuring the Depth of the Ocean}
+Глубина океана может быть измерена двумя способами 1) эхолокатором
+установленном на судне, или 2) спутниковыми альтиметрами.
+% The depth of the ocean is usually measured two ways: 1) using acoustic
+% echo-sounders on ships, or 2) using data from satellite altimeters.
+
+\begin{subsection}{Эхолокаторы.}
+Большинство карт океана созданы на основе измерений сделанных
+эхолокаторами. Этот прибор посылает звуковой импульс частотой
+10--30~кГц и принимает сигнал отражённый от морского дна. Временной
+интервал между посылом импульса и приходом эха, умноженный на скорость
+звука, даёт удвоенную глубину океана. Первое трансатлантическое
+эхолотирование было выполнено американским эсминцем «Стюарт» в 1922
+году. Первые систематические промеры были выполнены германским
+исследовательским судном «Метеор» во время его экспедиции в северную
+Атлантику 1925--1927 годов. Теперь океанографические и военные суда
+во время плавания практически непрерывно производят
+эхолотирование. Милионы миль вдольпутевых данных записанных на бумагу
+были оцифрованы для того чтобы создать базы данных на основе которых и
+делаются батиметрические карты. Распределение судовых маршрутов по
+поверхности океана неравномерно. В южном полушарии они пролегают
+довольно далеко друг от друга, даже возле Австралии, а в уже хорошо
+картированных районах, таких как Северная Атлантика, довольно близко.
+%
+% \paragraph{Echo Sounders} \index{echo sounders|(}Most maps of the ocean
+% are based on measurements made by echo sounders. The instrument transmits
+% a burst of 10--30 kHz sound\index{sound!used to measure depth} and listens
+% for the echo from the sea floor. The time interval between transmission
+% of the pulse and reception of the echo, when multiplied by the velocity
+% of sound, gives twice the depth of the ocean (figure 3.10).
+%
+% The first transatlantic echo soundings were made by the U.S. Navy
+% Destroyer \textit{Stewart} in 1922. This was quickly followed by
+% the first systematic survey of an ocean basin, made by the German
+% research and survey ship \textit{Meteor} during its expedition to
+% the south Atlantic from 1925 to 1927. Since then, oceanographic
+% and naval ships have operated echo sounders almost continuously
+% while at sea. Millions of miles of ship-track data recorded on
+% paper have been digitized to produce data bases used to make maps.
+% The tracks are not well distributed. Tracks tend to be far apart
+% in the southern hemisphere, even near Australia (figure 3.11) and
+% closer together in well mapped areas such as the North
+% Atlantic.\index{echo sounders|)}
+
+Измерения глубин эхолотированием широко используются, но у этого
+метода есть свои ошибки.
+\begin{enumerate}
+\item
+Скорость звука изменяется на $\pm 4\mbox{\%}$ в разных районах
+океана. Используя таблицы средних скоростей звука можно уменьшить
+ошибку измерений до $\pm 1\mbox{\%}$. Смотри параграф 3,6 для большей
+информации о звуке в океане.
+
+\item
+От малых глубин эхо может прийти не точно под корабль, а на его
+борт. Это может вызвать небольшие ошибки в холмистых районах.
+
+\item
+Местоположение корабля плохо определялось до появления в шестидесятых
+спутниковой навигации. Ошибки могли составлять десятки километров
+особенно в облачных регионах где невозможны астрономические
+наблюдения.
+ 
+\item
+Иногда скопления зоопланктона и косяки рыбы в неглубоких райнонах
+вызывали ошибки, приводившие к появлению на некоторых батиметрических
+картах ложных подводных гор. Эта ошибка устраняется путём повторного
+исследования спорных мест.
+
+\item
+Некоторые районы океана (размером до 500 километров) ни разу не были
+исследованы эхолокаторами. Это создаёт значительные пробелы в наших
+знаниях об океанских глубинах
+\end{enumerate}
+
+%% Рисунок 3.10 Слева: Эхолокаторы измеряют глубину океана посылая
+%% звуковой импульс и измеряя время затраченное им чтобы отразится от
+%% поверхности и вернутся обратно. Справа: Время записывается с помощью
+%% иглы оставляющей след на медленно движещемся рулоне бумаги. (From
+%% Dietrich, et al. 1980)
+
+
+%% Рисунок 3.11 Расположение данных эхолотирования использованных для
+%% картирования океана около Австралии. Заметте что имеются большие
+%%пространства где нет данных.
+
+% Echo sounders \index{echo sounders!errors in measurement}make the most 
+% accurate measurements of ocean depth.
+% Their accuracy\index{accuracy!echo sounders} is $\pm$1\%.
+\end{subsection}
+
+\begin{subsection}{Спутниковая Альтиметрия}
+
+Пробелы в наших знаниях о глубинах океана между маршрутами судов
+теперь заполнены данными спутниковой альтиметрии. Альтиметры измеряют
+(профилируют) форму морской поверхности, а форма морской поверхности
+очень похожа на форму морского дна. Чтобы понять почему это
+происходит, мы вначале должны обсудить то как гравитация влияет на
+уровень моря.
+%
+% \paragraph{Satellite Altimetry}
+% \index{satellite altimetry!use in measuring depth} Gaps in our knowledge
+% of ocean depths between ship tracks have now been filled
+% by satellite-altimeter data. Altimeters profile the shape of the sea surface,
+% and its shape is very similar to the shape of the sea floor
+% (Tapley and Kim, 2001; Cazenave and Royer, 2001; Sandwell and Smith, 2001).
+% To see this, we must first consider how gravity influences sea level.
+
+Взаимоотношение между уровнем моря и рельефом дна.
+% \textit{The Relationship Between Sea Level and the Ocean's Depth}
+Избыток мыссы на дне океана, например масса горы, увеличивает местную
+гравитацию, поскольку масса горы больше массы воды которую она
+замещает, ведь камень в три раза плотнее воды. Избыток массы
+увеличивает местную гравитацию, которая притягивает воду к подводной
+горе. Это изменяет форму морской поверхности (Рис 3,12).
+%
+% Excess mass at the sea floor, for example the mass of a seamount, increases
+% local gravity because the mass of the seamount is larger than the mass
+% of water it displaces. Rocks are more than three times denser than water.
+% The excess mass increases local gravity, which attracts water toward
+% the seamount. This changes the shape of the sea surface (figure 3.12).
+
+Давайте рассмотрим это более подробно. В первом приближении
+поверхность моря~--- частный случай уровенной поверхности называемой
+геоидом (смотри блок ниже). По определению уровенная поверхность везде
+перпендикулярна силе тяжести. В частности она должна быть
+перепендикулярна отвесной линии в данном конкретном месте (которая
+определяется путём подвешивания какой нибудь массы (грузика) на
+верёвке). Таким образом отвесная линия перпендикулярна локальной
+уровенной поверхности и используется (в особенности геодезистами и
+топографами) для того чтобы определить её положение.
+%
+% Let's make the concept more exact. To a very good approximation, 
+% the sea surface is a particular \textit{level surface}
+% \index{level surface|textbf}called the \textit{geoid} (see box).
+% By definition a level surface is a surface of constant gravitational
+% potential, and it is everywhere perpendicular to gravity. In particular,
+% it must be perpendicular to the local vertical determined by a plumb line,
+% which is ``a line or cord having at one end a metal weight for determining
+% vertical direction'' (Oxford English Dictionary).
+
+Избыток массы подводной горы притягивает грузик отвеса, заставляя
+линию отвеса немного отклонятся от центра масс Земли в сторону
+горы. Так как поверхность моря должна быть перепендикулярна силе
+тяжести, над подводной горой будет находиться небольшая вспученность
+как показано на рисунке. Если бы её не было, поверхность моря не была
+бы перпендикулярна силе тяжести. Обычные подводные горы вызывают
+вспученности высотой 1--20~м на расстоянии 100--200~км. Конечно это
+очень мало и засечь с корабля такие изменения невозможно, однако
+альтиметром это сделать довольно просто. Глубоководные желоба вызывают
+дефицит масс и создают понижения морской поверхности.
+%
+% The excess mass of the seamount attracts the plumb line's weight, causing
+% the plumb line to point a little toward the seamount instead of toward
+% earth's center of mass. Because the sea surface must be perpendicular
+% to gravity, it must have a slight bulge above a seamount as shown
+% in figure 3.12. If there were no bulge, the sea surface would not be
+% perpendicular to gravity. Typical seamounts produce a bulge that is 1--20 m
+% high over distances of 100--200 kilometers. This bulge is far too small
+% to be seen from a ship, but it is easily measured by satellite altimeters.
+% Oceanic trenches have a deficit of mass, and they produce a depression
+% of the sea surface.
+
+Взаимосвязь между формой морской поверхности и глубиной не очень
+строгая. Она зависит от расчленённости дна и возраста его
+элементов. Если подводная гора как бы колышится на поверхности дна,
+словно лёд на воде, то гравитационный сигнал будет слабее чем если бы
+она покоилась на дне, как лёд лежащий на столе. В результате
+взаимосвязь силы тяжести и рельефа дна изменяется от места к месту.
+%
+% The correspondence between the shape of the sea surface and the depth
+% of the water is not exact. It depends on the strength of the sea floor,
+% the age of the sea-floor feature, and the thickness of sediments.
+% If a seamount floats on the sea floor like ice on water, the gravitational
+% signal is much weaker than it would be if the seamount rested on the sea
+% floor like ice resting on a table top. As a result, the relationship
+% between gravity and sea-floor topography varies from region to region.
+
+Глубина измеряемая эхолотами используется для того чтобы определить
+эту взаимосвязь. Затем с помощью альтиметрии проводится интерполяция
+между измерениями эхолотов. Используя этот способ можно расчитать
+глубины океана с точностью до $\pm 100$~метров.
+%
+% Depths measured by acoustic echo sounders are used to determine the regional
+% relationships. Hence, altimetry is used to interpolate between acoustic echo
+% sounder measurements (Smith and Sandwell, 1994).
+
+
+\begin{subsubsection}{Системы спутниковой альтиметрии}
+Теперь посмотрим каким образом альтиметры измеряют форму земной
+поверхности. Системы спутниковой альтиметрии включают в себя радар для
+измерения высоты спутника над земной поверхностью и систему слежения
+для определения высоты спутника в геоцентрической системе
+координат. Система измеряет превышение уровня моря относительно центра
+масс Земли (Рис 3,13). Таким образом получается форма морской
+поверхности.
+%
+% \textit{Satellite-altimeter systems}
+% \index{satellite altimetry!systems|textbf}Now let's see how altimeters
+% measure the shape of the sea surface. Satellite altimeter systems include
+% a radar to measure the height of the satellite above the sea surface and
+% a tracking system to determine the height of the satellite in geocentric
+% coordinates. The system measures the height of the sea surface relative
+% to the center of mass of earth (figure 3.13). This gives the shape of the sea
+% surface.
+
+В космосе находится много альтиметрических спутников. Все они обладают
+достаточной точностью для того чтобы изучать морской геоид и влияние
+на него элементов подводного рельефа. Обычно она варьирует от
+нескольких метров для прибора спутника GEOSAT до $\pm 0,05$~м для прибора
+спутника TOPEX/POSEIDON. Наиболее используемые спутники это Seasat
+(1978), GEOSAT (1985–1988), ERS-1 (1991--1996), ERS-2(1995-), и
+TOPEX/POSEIDON (1992-). У спутников Seasat, ERS-1 и ERS-2, также есть
+инструменты для измерения ветра, волнения и других
+параметров. TOPEX/POSEIDON и GEOSAT~--- преимущественно
+альтиметрические спутники.
+%
+% Many altimetric satellites have flown in space. All observed the marine
+% geoid\index{geoid} and the influence of sea-floor features on
+% the geoid\index{geoid}. The altimeters that produced the most useful
+% data include Seasat (1978)\index{Seasat}, \textsc{geosat} (1985--1988),
+% \textsc{ers}--1\index{ERS satellites} (1991--1996),
+% \textsc{ers}--2 (1995-- ), Topex/Poseidon\index{Topex/Poseidon} (1992--2006),
+% Jason\index{Jason} (2002--), and Envisat (2002)\index{Envisat}.
+% Topex/Poseidon and Jason were specially designed to make extremely accurate
+% measurements of sea-surface height. They measure sea-surface height with
+% an accuracy
+% of $\pm 0.05$ m\index{Jason!accuracy of}\index{Topex/Poseidon!accuracy of}.
+
+\end{subsubsection}
+
+
+%% Рисунок 3.13 Спутниковый альтиметр измеряет высоту спутника над
+%% уровнем моря. При вычитании этого значения из высоты орбиты спутника
+%% получим уровень моря относительно центра Земли. Форма поверхности
+%% изменяется под воздействием вариаций силы тяжести, которые вызывают
+%% индуляции геоида, и под воздействием океанаских течений, которые
+%% приводят к образованию океанической топографии, отклонениям
+%% поверхности моря от геоида. Референц элипсоид~--- наиболее близкая
+%% сглаженная апроксимация геоида.
+
+\begin{subsubsection}{Спутниковые альтиметрические карты дна.}
+Seasat, Geosat, ERS-1 и ERS-2 были запущены на орбиту с целью
+картирования морского геоида. Их орбиты располагались таким образом
+что расстояние между маршрутами измерений на повоерхности составляло
+3--10~км, что достаточно для картирования геоида. Первые измерения
+сделанные спутником GEOSAT были засекречены американскими военными. Но
+к 1996 году геоид был картирован европейцами и американцы открыли
+данные GEOSATа. В результате сравнения данных со всех альтиметрических
+спутников были уменьшены ошибки связанные с приливами и течениями и
+создана карта геоида с пространственным разрешением 3км.
+\end{subsubsection}
+% 
+% \textit{Satellite Altimeter Maps of the Sea-floor Topography}
+% Seasat\index{Seasat}, \textsc{geosat}\index{Geosat}, \textsc{ers}--1,
+% and \textsc{ers}--2\index{ERS satellites} were
+% \index{satellite altimetry!maps of the sea-floor topography}operated
+% in orbits with ground tracks spaced 3--10 km apart, which was sufficient
+% to map the geoid\index{geoid}. By combining data from echo-sounders
+% with data from \textsc{geosat} and \textsc{ers}--1 altimeter systems,
+% Smith and Sandwell (1997) produced maps of the sea floor with horizontal
+% resolution of 5--10 km and a global average depth accuracy of $\pm 100$ m.
+
+\end{subsection}
+
+%% Box: caption{Геоид}
+Уровенная поверхность соответствующая невозмущённому уровню моря
+называется геоидом. В первом приближении геоид это элипсоид
+соответствующий поверхности однородной (не имеющей внутренних течений)
+жидкости на твёрдом вращающемся теле. Во втором приближении геоид
+отличается от элипсоида из за локальных неоднородностей силы
+тяжести. Эти отклонения называются индуляциями геоида. Максимальная их
+амплитуда ориентировочно равна~$\pm 60$~м. В третьем приближении геоид
+отличается от поверхности моря, поскольку океаны далеко не
+спокойны. Отклонения уровня моря от геоида называют
+топографией. Обозначают её так же как наземную топографию, например
+высотой нанесённой на топографическую карту.
+%
+% The \index{geoid|textbf}level surface\index{level surface} that corresponds
+% to the surface of an ocean at rest is a special surface, the \textit{geoid}.
+% To a first approximation, the geoid\index{geoid} is an ellipsoid that
+% corresponds to the surface of a rotating, homogeneous fluid in solid-body
+% rotation, which means that the fluid has no internal flow. To a second
+% approximation, the geoid differs from the ellipsoid because of local
+% variations in gravity. The deviations are called \textit{geoid undulations}.
+% \index{geoid!undulations|textbf}The maximum amplitude of the undulations is
+% roughly $\pm 60$ m. To a third approximation, the geoid deviates from the sea
+% surface because the ocean is not at rest. The deviation of sea level from
+% the geoid\index{geoid} is defined to be the \textit{topography}.
+% \index{topography|textbf}The definition is identical to the definition
+% for land topography, for example the heights given on a topographic map.
+
+Топография океана вызывается приливами и океанскими поверхностными
+течениями, в этой связи мы вернёмся к ней в главах 10 и
+18. Максимальная амплитуда топографии составляет приблизительно 
+$\pm 1$~м, таким образом она мало сравнима с индуляциями геоида.
+%
+% The ocean's topography is caused by tides, heat content of the water,
+% and ocean surface currents. I will return to their influence in chapters 10
+% and 17. The maximum amplitude of the topography is roughly $\pm 1$ m, so it
+% is small compared to the geoid\index{geoid} undulations.
+
+Индуляции геоида вызваны локальными вариациями силы тяжести,
+вследствии необычнного распределения массы на дне океана. У подводных
+гор наблюдается избыток масс благодаря их плотности и они образуют
+выпуклости на геоиде (смотри ниже). У глубоководных желобов
+наблюдается дефицит масс и они вызывают прогибы геоида. Таким образом
+геоид взаимосвязан с рельефом дна и карты морского геоида имеют
+заметное сходство с батиметрическими.
+%
+% Geoid  undulations are caused by local variations in gravity due to
+% the uneven distribution of mass at the sea floor. Seamounts have an excess
+% of mass because they are more dense than water. They produce an upward bulge
+% in the geoid (see below). Trenches have a deficiency of mass. They produce
+% a downward deflection of the geoid\index{geoid}. Thus the geoid\index{geoid}
+% is closely related to sea-floor topography. Maps of the oceanic
+% geoid\index{geoid} have a remarkable resemblance to the sea-floor topography.
+
+
+
+%%Рисунок 3.12 Подводная гора гораздо плотнее чем морская вода, поэтому
+%%она увеличивает локальную силу тяжести и заставляет отвесную линию
+%%(стрелочки) отклоняться в сторону горы. Так как поверхность океана в
+%%спокойном состоянии должна быть перпендикулярна силе тяжести,
+%%поверхность моря и геоид в этом месте должны иметь небольшую
+%%выпуклость как показано на рисунке. Эта выпуклость легко измеряется
+%%спутниковыми альтиметрами. Следовательно данные альтиметров могут
+%%использоваться для картирования морского дна. Следует понимать что
+%%выпуклость поверхности моря на рисунке сильно преувеличена, подводная
+%%гора высотой в 2 километра вызывает выпуклость высотой приблизительно
+%%10 метров.
+
+%% End of box
+\end{section}
+
+\begin{section}{Батиметрические карты и базы данных}
+% \section{Sea Floor Charts and Data Sets}
+Данные эхолотирования были оцифрованы, нанесены на карты, по ним
+построили изолинии и создали батиметрические карты. В дальнейшем их
+обработали для создания цифровых баз данных, которые теперь широко
+распространены на CD-ROM. Эти данные были дополнены данными
+альтиметрических спутников для того чтобы создать карты морского дна с
+пространственным разрешением 3км.
+%
+% \index{ocean!maps of}Almost all echo-sounder data have been digitized
+% and combined to make sea-floor charts. Data have been further processed
+% and edited to produce digital data sets which are widely distributed
+% in \textsc{cd-rom} format. These data have been supplemented with data
+% from altimetric satellites to produce maps of the sea floor with
+% horizontal resolution around 3 km.
+
+Британский Океанографический Центр Данных (The British Oceanographic
+Data Centre), опубликовал Электронный Атлас «Генеральная
+Батиметрическая Карта Океанов» (General Bathymetric Chart of the
+Oceans (GEBCO)) по поручению Межправительственной Океанографической
+Комиссии ЮНЕСКО (Intergovernmental Oceanographic Commission of UNESCO)
+и Международной Гидрографической Организации (International
+Hydrographic Organization). Атлас содержит в основном изобаты, линию
+берега и путевые линии взятые из пятого выпуска Генеральной
+Батиметрической Карты Океанов изданной в масштобе 1:10 000
+000. Исходные изолинии были нарисованы от руки основываясь на
+оцифрованных данных эхолотирования.
+%
+% The British Oceanographic Data Centre publishes the General Bathymetric
+% Chart of the ocean (\textsc{gebco})\index{bathymetric charts!GEBCO} Digital
+% Atlas on behalf of the Intergovernmental Oceanographic Commission
+% of \textsc{unesco} and the International Hydrographic
+% Organization\index{International Hydrographic Organization}.
+% The atlas consists primarily of the location of depth
+% contours, coastlines, and tracklines from the \textsc{gebco} 5th Edition
+% published at a scale of 1:10 million. The original contours were drawn
+% by hand based on digitized echo-sounder data plotted on base maps.
+
+Американский Национальный Центр Геофизических Данных выпустил CD-ROM
+Топографическая Основа (Terrain Base) содержащий значения (глубин)
+интерполированных на пятимильной сетке. Большинство материалов были
+изначально собраны U.S. Defense Mapping Agency, U.S. Navy
+Oceanographic Office, и U.S. National Ocean Service. Несмотря на то
+что значения на этой карте нанесены на пятимильную сетку, данные
+использованные при её изготовлении часто имеют гораздо большее
+пространственное разрешение, особенно в Южном Океане, где расстояния
+между маршрутами кораблей в некоторых регионах может достигать 500
+км. На этом же CD находятся сглаженные значения полученные на основе
+тех же данных, но интерполированные на 30 мильной сетке.
+
+% The U.S. National Geophysical Data Center\index{bathymetric charts!ETOPO-2}
+% publishes the \textsc{etopo-2 cd-rom} containing digital values of oceanic
+% depths from echo sounders and altimetry and land heights from surveys.
+% Data are interpolated to a 2-minute (2 nautical mile) grid. Ocean data
+% between 64\degrees N and 72\degrees S are from the work of Smith
+% and Sandwell (1997), who combined echo-sounder data with altimeter data
+% from \textsc{geosat} and \textsc{ers--1}. Seafloor data northward
+% of 64\degrees N are from the International Bathymetric Chart
+% of the Arctic Ocean.  Seafloor data southward of 72\degrees S are from
+% are from the US Naval Oceanographic Office's Digital Bathymetric Data Base
+% Variable Resolution. Land data are from the \textsc{globe} Project, 
+% that produced a digital elevation model with 0.5-minute (0.5 nautical mile)
+% grid spacing using data from many nations. 
+
+Американский Национальный Центр Геофизических Данных также выпустил
+батиметрический атлас океанов основанный на измерениях высоты
+поверхности моря сделанных спутником GEOSAT (смотри главу 10 где
+обсуждается спутниковая альтиметрия). Пространственное разрешение этой
+карты 3--4км а точность глубины $\pm 100$~м (Smith and Sandwell,
+1994). Эта карта более детальна чем ETOPO-5 так как спутниковые данные
+перекрывают регионы между маршрутами судов (рис 3,14). Данные со
+спутников ERS-1 и ERS-2 также использовались чтобы получить похожие
+карты, особенно в широтах недоступных для GEOSATа.
+
+%% Рисунок 3.14 Карта глубин океана с разрешением 3 км созданная по
+%% данным спутниковых альтиметрических наблюдений поверхности моря. (По
+%% Smith and Sandwell).
+
+%% ??? в последней редакции PDF ссылок на этот рисунок нет.
+%% кроме того, в новой редакции отсутствует разъяснение, что
+%% > ... Несмотря на то, что значения на этой карте нанесены на пятимильную 
+%% > сетку, данные использованные при её изготовлении часто имеют гораздо 
+%% > большее пространственное разрешение, особенно в Южном Океане, 
+%% > где расстояния между маршрутами кораблей в некоторых регионах может 
+%% > достигать 500 км.
+%% Без него становится непонятной оговорка в разделе 2.5 об осторожности с
+%% выбором массивов данных.
+
+% National governments publish coastal and harbor maps. In the USA, the
+% \textsc{noaa} National Ocean Service publishes nautical charts useful for
+% navigation of ships in harbors and offshore waters.
+\end{section}
+
+\begin{section}{Звук в океане}
+% \section{Sound in the Ocean}
+Звук обеспечивает единственный приемлемый способ передачи информации
+на большие расстояния в океане, и это единственный сигнал который
+можно использовать для того чтобы узнать что находится на нескольких
+десятках метров под дном океана. Звук используется для измерения
+параметров морского дна, глубины океана, температуры и течений.
+%
+% Sound\index{sound!in ocean} provides the only convenient means for 
+% transmitting information over great distances in the ocean.
+% Sound\index{sound!use of} is used to measure the properties of the sea 
+% floor, the depth of the ocean, temperature, and currents. Whales and other
+% ocean animals use sound to navigate, communicate over great distances,
+% and find food.
+
+
+%\paragraph{Sound Speed}
+Скорость звука в воде зависит от температуры, солёности и давления
+(Рис 3,10). Одна из формул для скорости звука, хорошо работающая до
+глубины 1000 м, имеет вид: 
+\begin{equation}
+C = 1449.2 + 4.6 T - 0.055 T^2 + 0.00029
+T^3 + (1.34 - 0.01 T) (S - 35) + 0.016 Z
+\end{equation}
+где C~--- скорость в м/с, T --- температура в градусах цельсия, S ---
+солёность в практических единицах солёности (practical salinity units)
+и Z --- глубина в метрах. Точность этой формулы примерно 0,1 м/с
+(Dushaw, et al. 1993). Существуют и другие формулы для скорости звука,
+например формула Вильсона Wilson (1960) котроую широко использовал
+военный флот США.
+%
+% The sound speed \index{sound!speed}in the ocean varies with
+% temperature, salinity, and pressure (MacKenzie, 1981; Munk
+% et al. 1995: 33):
+% \begin{align}
+%   C & = 1448.96 + 4.591\,t - 0.05304\,t^2 + 0.0002374\,t^3+ 0.0160\,Z \\
+%   &+ (1.340 - 0.01025\,t) (S - 35) + 1.675 \times 10^{-7}\,Z^2 - 7.139 \times
+% 10^{-13}\,t\,Z^3 \notag
+% \end{align}
+% where $C$ is speed in m/s, $t$ is temperature in Celsius, $S$ is salinity 
+% (see Chapter 6 for a definition of salinity), and $Z$ is depth in meters.
+% The equation has an accuracy\index{accuracy!equation!sound speed} of
+% about 0.1 m/s (Dushaw et al. 1993). Other sound-speed equations have been
+% widely used, especially an equation proposed by Wilson (1960) which has been
+% widely used by the U.S. Navy.
+
+В обычных условиях скорость звука мало меняется, от 1450 до
+1550~м/с. Исполльзуя формулу 3,1 мы можем расчитать скорость звука при
+небольших изменениях температуры глубины и солёности часто
+встречающихся в океане. В обычной океанской воде скорость звука
+изменяется на 40~м/с при увеличении температуры на 10 градусов
+цельсия, на 16~м/с при увеличении глубины на 1000~м и на 1,5~м/с при
+увеличении солёности на 1\%????. Таким образом основные причины
+изменения скорости звука это температура и глубина
+(давление). Изменения солёности слишком малы и не оказывают
+существенного влияния.
+%
+% For typical oceanic conditions, $C$ is usually between 1450 m/s and 1550 m/s 
+% (figure 3.15). Using (3.1), we can calculate the sensitivity of $C$ to 
+% changes of temperature, depth, and salinity typical of the ocean. 
+% The approximate values are: 40 m/s per 10\degrees C rise of temperature, 
+% 16 m/s per 1000 m increase in depth, and 1.5 m/s per 1 increase in salinity. 
+% Thus the primary causes of variability of sound 
+% speed\index{sound!speed!variation of} is temperature and depth (pressure).
+% Variations of salinity are too small to have much influence.
+
+Если изобразить на графике скорость звука как функцию глубины, то мы
+увидим что её минимум приходится примерно на 1000 метров. Глубина
+минимальной скорости звука существует почти во всех морях кроме очень
+высокоширотных. Эта глубина называется звуковым каналом. Он есть во
+всех океанах, а в высоких широтах выходит на поверхность.
+%
+% If we plot sound speed\index{sound!speed!as function of depth} as a function 
+% of depth, we find that the speed usually has a minimum at a depth around
+% 1000 m (figure 3.16). The depth of minimum speed is called the
+% \textit{sound channel}\index{sound!channel|textbf}. It occurs in
+% all ocean, and it usually reaches the surface at very high latitudes.
+
+Звуковой канал очень важен. Рефракция в нём позволяет звуку
+распространяться на огромные расстояния. Звуковые лучи которые
+начинают выходить из канала отражаются обратно к его центру. Лучи
+распространяющиеся вверх под небольшими углами к горизонтали
+отражаются книзу, а лучи распространяющиеся вниз под небольшими углами
+к горизонтали отклоняются кверху (рис 3,16). Глубина канала изменяется
+от 10 до 1200~м в зависимости от географического района.
+%
+% The sound channel\index{sound!channel} is important because sound in the
+% channel can travel very far, sometimes half way around the earth. Here is 
+% how the channel works: Sound\index{sound!rays} rays that begin to travel
+% out of the channel are refracted back toward the center of the channel.
+% Rays propagating upward at small angles to the horizontal are bent downward,
+% and rays propagating downward at small angles to the horizontal are bent
+% upward (figure 3.16). Typical depths of the chan\-nel vary from 10 m to
+% 1200 m depending on geographical area.
+
+%%Рисунок 3,15 Процессы создающие звуковой канал в океане. Слева
+%%Температура Т и солёность S измеренные во время рейса судна Hakuho
+%%Maru № KH-87–1, станция JT, 28 января 1987 на широте 33°52.90'N и
+%%долготе 141°55.80'E в северной части Тихого Океана. В центре:
+%%Изменение скорости звука в зависимости от изменений температуры
+%%солёности и глубины. Справа: Звуковой канал на глубине около 1 км,
+%%определяемяй как область минимальной скорости звука на графике
+%%зависимости скорости звука от глубины. (Данные из JPOTS Editorial
+%%Panel, 1991).
+
+\begin{paragraph}{Поглощение (абсорбция) звука}
+Поглащение звука на единицу глубины зависит от интенсивности звука~---$I$
+\begin{equation}
+dI = k I_o dx
+\end{equation}
+где $I_o$~--- интенсивность до поглощения а $k$~--- коэффициент
+поглощенгия зависящий от частоты звука. У этого уравнения есть
+решение:
+\begin{equation}
+I = I_o \exp(k x)
+\end{equation}
+Типичные значения~$k$ (в децибелах на километр) составляют: 0,08~дБ/км
+при 1000~Гц; и 50~дБ/км при 100~000~Гц. Децибелы считаются таким
+образом; $\mbox{дБ} = 10 \log(I / I_o)$. Где $I_o$~--- первоначальная мощьность
+звука, $I$~--- мощность звука после поглощения.
+%
+% Absorption of sound \index{sound!absorption of}per unit distance
+% depends on the intensity $I$ of the sound:
+% \begin{equation}
+% dI = -k I_0 \, dx
+% \end{equation}
+% where $I_0$ is the intensity before absorption and $k$ is an absorption
+% coefficient which depends on frequency of the sound. The equation has the
+% solution:
+% \begin{equation}
+% I = I_0 \exp(-kx)
+% \end{equation}
+% Typical values of $k$ (in decibels dB per kilometer) are: 0.08 dB/km
+% at 1000 Hz, and 50 dB/km at 100,000 Hz. Decibels are calculated from:
+% $dB = 10 \log(I/I_0)$, where $I_0$ is the original acoustic power,
+% $I$ is the acoustic power after absorption.
+
+Нарпимер на расстоячнии 1~км сигнал с частотой 1000~Гц ослабнет всего
+на 1,8\%:I = 0.982 Io. На том же расстоянии сигнал с частотой
+100~000~Гц уменьшится на I = 10-5 Io. Таким образом сигнал частотой
+30~000~Гц, обычно используемый при эхолотировании морского дна совсем
+немного ослабевает проходя от поверхности до дна и обратно.
+%
+% For example, at a range of 1 km a 1000 Hz signal is attenuated by only 
+% 1.8\%: $I = 0.982 I_0$. At a range of 1 km a 100,000 Hz signal is reduced
+% to $I = 10^{-5} I_0$. The 30,000 Hz signal used by typical echo sounders to
+% map the ocean's depths are little attenuated going from the surface to 
+% the bottom and back.
+
+Очень низкочастотные сигналы (менее 500~Гц) в звуковом канале, были
+зафиксированы на расстоянии мегаметров. В 1960 звук частотой 15~Гц от
+взрывов в звуковом канале у Австралийского города Перт был слышен в
+звуковом канале около Бермудских островов, он прошёл почти пол
+мира. Дальнейшие эксперименты показали что сигнал частотой 57~Гц
+посланный в звуковом канале около острова Херд (75°E, 53°S) может быть
+зафиксирован на Бермудах в Атлантике и в Калифорнии, находящейся в
+Тихом океане (Munk et al. 1994).
+%
+% Very low frequency sounds in the sound channel\index{sound!channel}, 
+% those with frequencies below 500 Hz have been detected at distances
+% of megameters. In 1960 15-Hz sounds from explosions set off in the sound
+% channel\index{sound!channel} off Perth Australia were heard in the sound
+% channel near Bermuda, nearly halfway around the world. Later experiment
+% showed that 57-Hz signals transmitted in the sound channel near Heard
+% Island (75\degrees E, 53\degrees S) could be heard at Bermuda in the Atlantic
+% and at Monterey, California in the Pacific (Munk et al. 1994).
+\end{paragraph}
+
+%% Рисунок 3.16 Звуковые лучи в океане для источника вблизи оси звукового
+%% канала. (Взято из Munk et al. 1995).
+
+% \paragraph{Use of Sound}
+% Because low frequency sound \index{sound!use of}can be heard at
+% great distances, the US Navy, in the 1950s, placed arrays of
+% microphones on the sea floor in deep and shallow water and
+% connected them to shore stations. The Sound Surveillance System
+% \textsc{sosus}, although designed to track submarines, has found
+% many other uses. It has been used to listen to and track whales up
+% to 1,700 km away, and to find the location of sub-sea volcanic
+% eruptions.
+%\end{paragraph}
+\end{section}
+
+\begin{section}{Основные Концепции}
+% \section{Important Concepts}
+\begin{enumerate}
+\item
+Если уменьшить ширину океана до 8 дюймов, его глубина будет
+соответствовать толщине листа бумаги. Поэтому поля скорости в океане
+близки к двухмерным. Вертикальные скорости гораздо меньше
+горизонтальных.
+%
+% \item If the ocean were scaled down to a width of 8 inches it  would have
+% depths about the same as the thickness of a piece of paper. As a result, the
+% velocity field in the ocean is nearly 2-dimensional. Vertical velocities 
+% are much smaller than horizontal velocities.
+
+
+\item
+Официально на планете только 3 океана.
+%
+% \vitem There are only three official ocean.
+
+\item
+Объём воды превышает вместительность океанических бассейнов, и океаны
+переливаются на континенты создавая континентальный шельф.
+%
+% \vitem The volume of ocean water exceeds the capacity of the ocean basins,
+% and the ocean overflows on to the continents creating continental shelves.
+
+\item
+Глубина океанов картируется с помощью эхолокаторов, которые измеряют
+время затрачиваемое звуком на то чтобы пройти от поверхности до дна и
+обратно. Глубины измеряемые эхолокаторами закреплёнными на судах
+используются для создания карт морского дна. Для некоторых регионов
+эти карты имеют маленькое пространственное разрешение, так как там
+редко появляются корабли и лежат они в стороне от основных
+транспортных марщрутов.
+%
+% \vitem The depths of the ocean are mapped by echo sounders which measure
+% the time required for a sound\index{sound!used to measure depth} pulse to
+% travel from the surface to the bottom and back. Depths measured by ship-based
+% echo sounders have been used to produce maps of the sea floor. The maps have
+% poor horizontal resolution in some regions because the regions were seldom
+% visited by ships and ship tracks are far apart.
+
+\item
+Глубина океана также измеряется спутниковыми альтиметрическими
+системами, которые профилируют форму поверхности моря. На поверхность
+моря оказывают влияния изменения силы тяжести, вызванные элементами
+подводного рельефа. У современных карт, основанных на спутниковых
+альтиметрических измерениях и данных эхолотирования, ошибка по глубине
+составляет $\pm 100$~м а пространственное разрешение $\pm 3$~км.
+%
+% \vitem The depths of the ocean are also measured by satellite altimeter
+% systems which profile the shape of the sea surface. The local shape of the
+% surface is influenced by changes in gravity due to sub-sea features. Recent
+% maps based on satellite altimeter measurements of the shape of the sea
+% surface combined with ship data have depth accuracy of $ \pm $100 m and
+% horizontal resolutions of $ \pm $3 km.
+
+\item
+Обычно скорость звука в океане составляет 1480 м/с. Скорость зависит в
+основном от температуры, меньше от давления и совсем мало от
+солёности. Изменение скорости звука как функции температуры и глубины
+создают горизонтальный звуковой канал в океане. Звук в канале может
+путешествовать на огромные расстояния; и сигнал частотой менее 500 Гц
+может обойти пол мира.
+%
+% \vitem Typical sound\index{sound!speed!typical} speed in the ocean is 
+% 1480 m/s. Speed depends primarily on temperature, less on pressure, and very
+% little on salinity. The variability of sound speed as a function of pressure
+% and temperature produces a horizontal sound channel in the ocean. Sound in
+% the channel can travel great distances. Low-frequency sounds below 500 Hz
+% can travel halfway around the world provided the path is not interrupted
+% by land.
+\end{enumerate}
+\end{section}
+
+\end{chapter}
