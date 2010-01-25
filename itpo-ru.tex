@@ -3,8 +3,25 @@
 \documentclass[twoside,a4paper]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
-\usepackage[unicode]{hyperref}
+\usepackage[unicode,colorlinks=true]{hyperref}
+\usepackage{amsmath}
 
+\newcommand{\remark}[1]{\footnote{#1~--- \textsl{Прим. перев.}}}
+
+\makeatletter
+\def\latlon@N{с.~ш.}
+\def\latlon@E{в.~д.}
+\def\latlon@W{з.~д.}
+\def\latlon@S{ю.~ш.}
+\newcommand{\latlon}[2]{$#1^\circ\mbox{~\csname latlon@#2\endcsname}$}
+\makeatother
+
+\newcommand{\km}{\mbox{~км}}
+\newcommand{\m}{\mbox{~м}}
+\newcommand{\mps}{\mbox{~м/c}}
+\newcommand{\Hz}{\mbox{~Гц}}
+\newcommand{\kHz}{\mbox{~кГц}}
+\newcommand{\dBpkm}{\mbox{~дБ/км}}
 \begin{document}
 
 \input chap01
