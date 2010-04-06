@@ -18,14 +18,30 @@
 
 \newcommand{\km}{\mbox{~км}}
 \newcommand{\m}{\mbox{~м}}
+\newcommand{\mum}{\mbox{~мкм}}
 \newcommand{\mps}{\mbox{~м/c}}
 \newcommand{\Hz}{\mbox{~Гц}}
 \newcommand{\kHz}{\mbox{~кГц}}
 \newcommand{\dBpkm}{\mbox{~дБ/км}}
 \newcommand{\minutes}{\mbox{~мин}}
+\newcommand{\kg}{\mbox{~кг}}
 \newcommand{\kgpcm}{\mbox{~кг/$\mbox{м}^3$}}
+\newcommand{\wpsqm}{\mbox{~Вт/$\mbox{м}^2$}}
+\newcommand{\Joules}{\mbox{~Дж}}
+\newcommand{\degCent}[1]{{#1}^\circ\mbox{C}}
+\newcommand{\Kelv}{\mbox{~K}}
+\newcommand{\sqm}{\mbox{~$\mbox{м}^2$}}
+\newcommand{\cubm}{\mbox{~$\mbox{м}^3$}}
+\newcommand{\mmperday}{\mbox{~мм/день}}
+\newcommand{\petawatt}{\mbox{~ПВт}}
+\newcommand{\Pa}{\mbox{~Па}}
 
 \newcommand{\degrees}[1]{{#1}^\circ}
+
+\newenvironment{enumparen}%
+{\renewcommand{\labelenumi}{\theenumi)}\begin{enumerate}}%
+{\end{enumerate}}
+ 
 \begin{document}
 
 \input preface
@@ -34,5 +50,6 @@
 \input chap02
 \input chap03
 \input chap04
+\input chap05
 
 \end{document}
