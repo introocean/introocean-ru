@@ -14,10 +14,13 @@
 \def\latlon@W{з.~д.}
 \def\latlon@S{ю.~ш.}
 \newcommand{\latlon}[2]{$#1^\circ\mbox{~\csname latlon@#2\endcsname}$}
+\newcommand{\latlonmin}[3]{$#1^\circ#2'\mbox{~\csname latlon@#3\endcsname}$}
 \makeatother
 
 \newcommand{\km}{\mbox{~км}}
 \newcommand{\m}{\mbox{~м}}
+\newcommand{\cm}{\mbox{~см}}
+\newcommand{\mm}{\mbox{~мм}}
 \newcommand{\mum}{\mbox{~мкм}}
 \newcommand{\mps}{\mbox{~м/c}}
 \newcommand{\Hz}{\mbox{~Гц}}
@@ -36,6 +39,9 @@
 \newcommand{\petawatt}{\mbox{~ПВт}}
 \newcommand{\Pa}{\mbox{~Па}}
 
+\newcommand{\ppt}{\mbox{‰}}
+\newcommand{\psu}{\mbox{~п.~е.~с.}}
+
 \newcommand{\degrees}[1]{{#1}^\circ}
 
 \newenvironment{enumparen}%
@@ -51,5 +57,6 @@
 \input chap03
 \input chap04
 \input chap05
+\input chap06
 
 \end{document}
