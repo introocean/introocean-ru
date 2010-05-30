@@ -67,10 +67,10 @@
 время его наступления смещается примерно на~$20\minutes$ в год. В
 1995~г.\ Земля находилась в перигелии 3~января. Ось вращения Земли
 наклонена к плоскости земной орбиты под углом~$\degrees{23.45}$
-(рис. 4.1). Положение Земли при этом таково, что солнечные лучи падают
-на земной экватор под прямым углом в дни весеннего и осеннего
-равноденствий, которыми приближенно считаются 21~марта и 21~сентября 
-соответственно%
+(рис.~\ref{fig:earthinspace}). Положение Земли при этом таково, 
+что солнечные лучи падают на земной экватор под прямым углом в 
+дни весеннего и осеннего равноденствий, которыми приближенно считаются 
+21~марта и 21~сентября соответственно%
 \remark{Точные даты наступления равноденствия меняются из года в год, 
 а также зависят от часового пояса.}.
 %% http://en.wikipedia.org/wiki/Equinox -- 20-21 марта и 22-23 сентября
@@ -89,11 +89,26 @@
 % vernal and autumnal equinoxes, which occur on or about 21 March
 % and 21 September each year.
 
-
-%%Рис. 4.1. Взаимное положение Земли и Солнца. Эллиптичность земной
-%%орбиты вокруг Солнца и наклон земной оси вращения по отношению к
-%%плоскости орбиты приводит к неравномерному распределению тепла между
-%%сезонами.
+\begin{figure}[t!]
+\makebox[121 mm][c]{\includegraphics{pics/earthinspace}}
+\caption{Взаимное положение Земли и Солнца. Эллиптичность земной
+орбиты и наклон земной оси вращения по отношению к плоскости орбиты приводит 
+к неравномерному распределению тепла и смене времен года. Ближе всего к Солнцу
+Земля подходит в положении перигелия.}
+\label{fig:earthinspace}
+\vspace{-4ex}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \makebox[121 mm] [c] {\includegraphics{earthinspace}}
+% \footnotesize
+% Figure 4.1 The earth in space. The \rule{0mm}{3ex}ellipticity of earth's 
+% orbit around the sun\index{sun} and the tilt of earth's axis of rotation 
+% relative to the plane of earth orbit leads to an unequal distribution 
+% of heating and to the seasons. Earth is closest to the sun at perihelion.
+% \label{fig:earthinspace}
+% \vspace{-4ex}
+% \end{figure}
 
 Широтные дуги~$\degrees{23.45}$ в северном и южном полушарии Земли
 %% возможно, следует использовать более традиционную меру: 23^o27'?
@@ -134,9 +149,10 @@
 
 \begin{section}{Атмосферная циркуляция}
 % \section{Atmospheric Wind Systems}
-На рис.~4.2 показано среднее годовое распределение приземного ветра и
-поля давления для 1989~г. На карте видны зона наиболее сильных
-западных ветров, характерных для широтного пояса~$\degrees{40}$--$\degrees{60}$,
+На рис.~\ref{fig:surfacewinds} показано среднее годовое распределение 
+приземного ветра и поля давления для 1989~г. На карте видны зона наиболее 
+сильных западных ветров, характерных для широтного 
+пояса~$\degrees{40}$--$\degrees{60}$,
 который называют поэтому <<ревущие сороковые>>, самые слабые ветры~--- в
 субтропическом поясе около $\degrees{30}$~широты, пассаты с восточной
 составляющей в тропической зоне, и более слабые восточные ветры вдоль
@@ -153,10 +169,30 @@
 % of solar heating and continental land masses and the circulation of winds
 % in a vertical plane in the atmosphere.
 
-%%Рис. 4.2. Карта среднего годового приземного атмосферного давления по
-%%данным 40-летнего Реанализа ECMWF (Kallberg et al., 2005).
+\begin{figure}[b!]
+\makebox[121 mm] [c] {\includegraphics{pics/surfacewind}}
+\caption{Среднее годовое распределение приземного ветра 
+согласно Trenberth et al. (1990) и поля давления для~1989~г. по данным
+Goddard Space Flight Center's Data Assimilation Office (Schubert et al. 1993).
+Скорость ветра в районе~\latlon{140}{W} в экваториальной зоне Тихого океана 
+составляет примерно~$8\mps$.}
+\label{fig:surfacewinds}
+\end{figure}
+%
+% \begin{figure}[b!]
+% \vspace{-2ex}
+% \makebox[121 mm] [c] {\includegraphics{surfacewind}}
+% \footnotesize
+% Figure 4.2 Map of mean annual \index{wind!global map}wind velocity 
+% \rule{0 pt}{3 ex} calculated from Trenberth et al. (1990) and sea-level 
+% pressure for 1989 from the \textsc{nasa} Goddard Space Flight Center's Data 
+% Assimilation Office (Schubert et al. 1993). The winds near
+% 140\degrees W in the equatorial Pacific are about 8 m/s.
+% \label{fig:surfacewinds} %\vspace{-3ex}
+% %\vspace{-3ex}
+% \end{figure}
 
-Простейшая схема распределения атмосферных ветров (рис.~4.3)
+Простейшая схема распределения атмосферных ветров (рис.~\ref{fig:atmosphere})
 показывает, что большое влияние оказывается экваториальной конвекцией
 и другими процессами в верхней атмосфере. Средняя скорость ветра над
 oкеанами~(Wentz et al., 1984)
@@ -172,22 +208,41 @@ U_{10} = 7.4\mps.
 %U_{10} = 7.4 \text{ m/s}
 %\end{equation}
 
-
-
-%%Рис. 4.3. Упрощенная схема атмосферной циркуляции, управляемой
-%%нагреванием тропиков и выхолаживанием высоких широт. Сверху:
-%%Меридиональные ячейки в атмосфере и влияние вращения Земли на
-%%направление ветра. Снизу: Вертикальный меридиональный разрез
-%%показывающий две основные ячейки меридиональной циркуляции (по данным
-%%The Open University (1989a))
+\begin{figure}[b!]
+\vspace{-2ex}
+\makebox [121mm][c]{\includegraphics{pics/atmosphereA}}
+\makebox [121mm][c]{\includegraphics{pics/atmosphereB}}
+\caption{Упрощенная схема атмосферной циркуляции, управляемой нагреванием 
+тропиков и выхолаживанием высоких широт. 
+\textbf{Вверху:} меридиональные ячейки в атмосфере и влияние вращения Земли на
+направление ветра. 
+\textbf{Внизу:} вертикальный меридиональный разрез, показывающий две основные 
+ячейки меридиональной циркуляции (The Open University (1989a: 14)).}
+\label{fig:atmosphere}
+\end{figure}
+%
+% \begin{figure}[b!]
+% \vspace{-2ex}
+% \makebox [121mm][c]{\includegraphics{atmosphereA}}
+% \makebox [121mm][c]{\includegraphics{atmosphereB}}
+% \footnotesize
+% Figure 4.3 Sketch of earth's atmospheric \rule{0mm}{3ex}circulation
+% driven by solar heating in the tropics and cooling at high latitudes.
+% \textbf{Upper:} The meridional cells in the atmosphere and the influence of
+% earth's rotation on the winds. \textbf{Bottom:} Cross-section through the
+% atmosphere showing the two major cells of meridional circulation. After 
+% The Open University (1989a: 14).
+% \label{fig:atmosphere}
+% %\vspace{-5ex}
+% \end{figure}
 
 Карты приземного ветра демонстрируют сезонную изменчивость. Наибольшие
 изменения наблюдаются в Индийском и западной части
-Тихого океана (рис.~4.4). Оба эти района находятся под влиянием азиатского
-муссона. Зимой в нижней атмосфере в районе интенсивного выхолаживания
-над Сибирью формируется область высокого давления, по ее периферии
-холодный воздух перемещается с северо-запада на юго-восток над Японией
-и далее, прогреваясь над теплым океанским течением Куросио. Летом
+Тихого океана (рис.~\ref{fig:seasonalwinds}). Оба эти района находятся под 
+влиянием азиатского муссона. Зимой в нижней атмосфере в районе интенсивного 
+выхолаживания над Сибирью формируется область высокого давления, 
+по ее периферии холодный воздух перемещается с северо-запада на юго-восток 
+над Японией и далее, прогреваясь над теплым океанским течением Куросио. Летом
 формирование термической депрессии в поле атмосферного давления над
 Тибетом способствует притоку теплого влажного воздуха с Индийского
 океана, с приходом которого начинается <<сезон дождей>> в Индии.
@@ -201,13 +256,28 @@ U_{10} = 7.4\mps.
 % In summer, the thermal low over Tibet draws warm, moist air from
 % the Indian Ocean leading to the rainy season over India.
 
-%%Рис. 4.2. Карта средней годовой скорости ветра на высоте 10 м в июне,
-%%июле и в августе, построенная по результатам 40-летнего Реанализа
-%%ECMWF (Kallberg et al., 2005).
-
-%%Рис. 4.2. Карта средней годовой скорости ветра на высоте 10 м в июне,
-%%июле и в августе, построенная по результатам 40-летнего Реанализа
-%%ECMWF (Kallberg et al., 2005).
+\begin{figure}[b!]
+\makebox[121 mm] [c] {\includegraphics{pics/seasonalwinds}}
+\caption{Среднее распределение приземных ветров в июле и январе, построенное 
+по комплекту данных Trenberth et al. (1990), который основан на данных 
+реанализа ЕЦСПП погодных данных за период 1980--1989~гг. 
+Скорость ветра в районе~\latlon{140}{W} в экваториальной зоне Тихого океана 
+составляет примерно~$8\mps$.}
+\label{fig:seasonalwinds}
+\end{figure}
+%
+% \begin{figure}[b!]
+% \vspace{-1ex}
+% %\centering
+% \makebox[121 mm] [c] {\includegraphics{seasonalwinds}}
+% \footnotesize
+% Figure 4.4 Mean, sea-surface \rule{0pt}{3ex}winds for July and January 
+% calculated from the Trenberth et al. (1990) data set, which is  based on 
+% the \textsc{ecmwf} reanalyses of weather data from 1980 to 1989. The winds
+% near 140\degrees W in the equatorial Pacific are about 8 m/s.
+% \label{fig:seasonalwinds}
+% %\vspace{-3ex}
+% % \end{figure}
 \end{section}  
 
 \begin{section}{Планетарный пограничный слой}\label{sec:BoundaryLayer}
@@ -448,7 +518,8 @@ turbulent drag of the wind on the sea и потоков тепла через е
 службы. Основным источником ошибок в сводках являются ошибки выборочного 
 обследования. Корабли распределены по поверхности океана неравномерно, 
 поскольку они стараются не заходить в высокие широты зимой, избегают ураганов
-летом и сравнительно редко посещают южное полушарие (рис.~4.5). В целом,
+летом и сравнительно редко посещают южное полушарие 
+(рис.~\ref{fig:shiplocations}). В целом,
 точность метода составляет примерно~10\%.
 %% ??? accuracy\index{accuracy!winds!Beaufort} is around 10\%.
 %% неужели так мало? или имелась в виду погрешность в 10%?
@@ -485,9 +556,27 @@ turbulent drag of the wind on the sea и потоков тепла через е
 % ships cross the southern hemisphere (figure 4.5). Overall, the
 % accuracy\index{accuracy!winds!Beaufort} is around 10\%.
 
-%% Figure 4.5 Location of surface observations made from volunteer
-%% observing ships and reported to national meteorological agencies. From
-%% NOAA, National Ocean Service.
+\begin{figure}[t!]
+\begin{centering}
+\includegraphics{pics/shiplocations}
+\end{centering}
+\caption{Местоположение приземных наблюдений, произведенных судами-участниками
+программы добровольных наблюдений, которые были представлены в национальные
+метеослужбы (по данным NOAA, National Ocean Service).}
+\label{fig:shiplocations}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \centering
+% \includegraphics{shiplocations}
+% \footnotesize
+% Figure 4.5 Location of surface observations \rule{0mm}{3ex}made from volunteer
+% observing ships and\\ reported to national meteorological agencies. From
+% \textsc{noaa}, National Ocean Service.
+% 
+% \label{fig:shiplocations}
+% \vspace{-4ex}
+% \end{figure}
 \end{paragraph}
 
 \begin{paragraph}{Скаттерометры.}
@@ -683,7 +772,8 @@ Cпециальный микроволновый радиометр SSM/I~--- е
 Как и в предыдущих случаях, основным источником ошибок служит ошибка 
 выборочного обследования. Лишь очень небольшое количество судов оборудовано 
 поверенным анемометром. Как правило, это торговые суда, участвующие 
-в программе Voluntary Observing Ship (рис. 4.5.). При заходе в порт такого 
+в программе Voluntary Observing Ship (рис.~\ref{fig:shiplocations}). 
+При заходе в порт такого 
 %% Voluntary Observing Ship Program, www.vos.noaa.gov/
 %% http://www.wmo.int/pages/themes/acronyms/wmo_acronyms_vwxyz_en.html#v
 %% СДН, "судно, добровольно проводящее наблюдения" --- ужасно
@@ -1046,7 +1136,7 @@ ERA-40 в максимальном разрешении доступны с вр
 Высокочувствительные инструменты используются для изменения флуктуаций ветра
 на высоте~$10$--$20\m$ над уровнем моря, откуда напрямую может быть 
 вычислено~$T$. В свою очередь, коэффициент~$C_D$ определяется по корреляции
-между~$T$ и~$U_{10}^2$ (рис.~4.6).
+между~$T$ и~$U_{10}^2$ (рис.~\ref{fig:dragcoefficient}).
 %
 % where $\rho_a = 1.3$ kg/m$^3$ is the density of air, $U_{10}$ is wind speed
 % at 10 meters, and $C_D$ is the
@@ -1055,6 +1145,30 @@ ERA-40 в максимальном разрешении доступны с вр
 % instruments measure wind fluctuations within 10--20 m of the sea surface,
 % from which $T$ is directly calculated. The correlation of $T$ with $U_{10}^2$
 % gives $C_D$ (figure 4.6).
+
+\begin{figure}[t!]
+\makebox[121mm][c]{\includegraphics{pics/dragcoefficient}}
+\caption{Коэффициент сопротивления как функция скорости ветра~$U_{10}$,
+измеренной на высоте~$10\m$ над уровнем моря. Точки на графике в виде кругов
+соответствуют измеренным данным Smith (1980), а в виде треугольников~--- 
+данным Powell, Vickery, and Reinhold (2003). 
+Сплошная линия построена согласно уравнениям~(\ref{eq:4.3}), предложенным
+в работе Yelland and Taylor (1996), штриховая~--- Jarosz (2007).}
+\label{fig:dragcoefficient}
+\end{figure}
+%
+% \begin{figure}[t!]
+% %\vspace{-1ex}
+% \makebox[121mm] [c] {\includegraphics{dragcoefficient}}
+% \footnotesize
+% Figure 4.6 The drag\rule{0mm}{3ex} coefficient as a function of wind 
+% speed $U_{10}$ ten meters above the sea. Circles: Measured values 
+% from Smith (1980). Triangles: Measured values from Powell, Vickery, 
+% and Reinhold (2003). The solid line is from eq (4.3) proposed by Yelland
+% and Taylor (1996). The dashed line is from Jarosz (2007).
+% \label{fig:dragcoefficient}
+% \vspace{-3ex}
+% \end{figure}
 
 Большое количество научных работ было посвящено определению 
 коэффициента~$C_D$ на основе тщательно измеренной турбулентности пограничного
@@ -1073,7 +1187,7 @@ coefficient relating wind stress to wind velocity on a global scale.
 % scale. Perhaps the best of the recently published values are those of
 % Yelland and Taylor (1996) and Yelland et al. (1998) who give:
 %
-\begin{subequations}
+\begin{subequations}\label{eq:4.3}
  \begin {align}
  1000 \, C_D = & \,0.29 + \frac{3.1}{U_{10}} + \frac{7.7}{U_{10}^2}
    & \left( 3 \le U_{10} \le 6 \text{ m/s}\right) \\
@@ -1082,7 +1196,7 @@ coefficient relating wind stress to wind velocity on a global scale.
  \end{align}
 \end{subequations}
 для пограничного слоя нейтральной стабильности. Остальные значения приведены
-в табл.~1 оригинальной публикации, а также на рис.~4.6.
+в табл.~1 оригинальной публикации, а также на рис.~\ref{fig:dragcoefficient}.
 %
 % for neutrally stable boundary layer. Other values are listed in their 
 % table 1 and in figure 4.6.

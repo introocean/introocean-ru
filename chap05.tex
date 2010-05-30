@@ -130,7 +130,7 @@ C_{p} \approx 4.0\times 10^{3}
  \mbox{~$\mbox{Дж} \cdot \mbox{кг}^{-1} \cdot \vphantom{1}^\circ \mbox{C}^{-1}$}.
 \end{equation}
 Так, для нагрева~$1\kg$ морской воды на~$\degCent{1}$ 
-потребуется $4\,000\Joules$~энергии.
+потребуется $4\,000\Joules$~энергии (рис.~\ref{fig:Cp}).
 %
 % where $Q$ is the resultant heat gain or loss. Units for heat 
 % fluxes\index{heat flux!units of} are watts/m$^2$. The product of flux times 
@@ -148,17 +148,27 @@ C_{p} \approx 4.0\times 10^{3}
 % Thus, 4,000 joules of energy are required to heat 1.0 kilogram of sea water by
 % 1.0$^{\circ}$C (figure 5.1).
 
-%% \begin{figure}[t!]
-%% \includegraphics{Cp}
-%% \footnotesize Figure 5.1 Specific heat of \rule{0pt}{3ex}sea water at
-%% atmospheric pressure
-%% $C_{p}$ in joules per gram per degree Celsius as a function of temperature in
-%% Celsius and salinity, calculated from the empirical formula given by Millero
-%% et al. (1973) using algorithms in Fofonoff and Millard (1983). The
-%% lower line is the freezing point of salt water.
-%% \label{fig:Cp}
-%% \vspace{-3ex}
-%% \end{figure}
+\begin{figure}[t!]
+\includegraphics{pics/Cp}
+\caption{Удельная теплоемкость~$C_{p}$ морской воды при атмосферном давлении
+в~$\text{Дж} \cdot \text{кг} / {}^\circ \text{C}$ как функция 
+температуры по шкале Цельсия и солености, вычисленная по эмпирической 
+формуле Millero et al. (1973), используя алгоритмы Fofonoff and Millard (1983). 
+Нижняя линия соответствует точке замерзания морской воды.}
+\label{fig:Cp}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \includegraphics{Cp}
+% \footnotesize Figure 5.1 Specific heat of \rule{0pt}{3ex}sea water at
+% atmospheric pressure
+% $C_{p}$ in joules per gram per degree Celsius as a function of temperature in
+% Celsius and salinity, calculated from the empirical formula given by Millero
+% et al. (1973) using algorithms in Fofonoff and Millard (1983). The
+% lower line is the freezing point of salt water.
+% \label{fig:Cp}
+% \vspace{-3ex}
+% \end{figure}
 
 \begin{paragraph}{Важность роли океана в тепловом балансе Земли.}
 % \paragraph{Importance of the Ocean in Earth's Heat Budget}
@@ -235,7 +245,8 @@ C_{p(\text{скал})} = 800
 мере удаления от океана и может превысить~$\degrees{40}$ в центре континентов,
 а в Сибири достигает даже~$\degrees{60}$. В то же время, колебания температуры
 воздуха над океаном и вдоль побережья не превышают~$\degCent{10}$, а 
-изменчивость температуры воды еще более низка (рис.~6.3, нижняя часть).
+изменчивость температуры воды еще более низка (рис.~\ref{fig:SSTvariability}, 
+внизу).
 %
 % The large storage of heat in the ocean compared with the land has important
 % consequences. The seasonal range of air temperatures on land increases with
@@ -303,7 +314,8 @@ C_{p(\text{скал})} = 800
          пропорционально~$\csc \varphi$, где~$\varphi$~--- угловая
          высота Солнца над горизонтом ;
    \item поглощения молекулами газов солнечного излучения в определенных 
-         диапазонах (рис.~5.2); при этом играет роль концентрация различных
+         диапазонах (рис.~\ref{fig:insolation}); при этом играет роль 
+         концентрация различных
          газов: $\text{H}_2\text{O}$, $\text{O}_3$, $\text{CO}_2$;
    \item поглощения и рассеивания солнечной радиации аэрозолями 
          как морского, так и вулканического происходжения;
@@ -336,33 +348,53 @@ C_{p(\text{скал})} = 800
 % Solar inclination and cloudiness dominate. Absorption by ozone, water
 % vapor, aerosols, and dust are much weaker.
 
-%% \begin{figure}[t!]
-%% \makebox [121 mm] [c] {\includegraphics{insolation}}
-%% \footnotesize
-%% Figure 5.2 Insolation\index{insolation!at top of atmosphere} \rule{0pt}{3ex}
-%% (spectral irradiance) of sunlight at top of the atmosphere and at the sea 
-%% surface on a clear day. The dashed line is the best-fitting curve of 
-%% blackbody radiation the size and distance of the sun. The number of standard 
-%% atmospheric masses is designated by $m$. Thus $m = 2$ is applicable for 
-%% sunlight when the sun\index{sun!height above horizon} is 30\degrees above the
-%% horizon. After Stewart (1985: 43).
-%% \label{fig:insolation}
-%% \vspace{-3ex}
-%% \end{figure}
+\begin{figure}[t!]
+\makebox [121 mm][c]{\includegraphics{pics/insolation}}
+\caption{Инсоляция (спектральная освещенность) солнечного света на верхней
+границе атмосферы и на поверхности моря при ясной погоде. Штриховая линия
+отображает сглаженную кривую излучения абсолютно черного тела, размер и
+расстояние до которого соответствуют Солнцу. Обозначив число масс атмосферы
+как~$m$, получаем, что $m = 2$ соответствует высоте Солнца над горизонтом
+около~$\degrees{30}$ (Stewart, 1985: 43).}
+\label{fig:insolation}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \makebox [121 mm] [c] {\includegraphics{insolation}}
+% \footnotesize
+% Figure 5.2 Insolation\index{insolation!at top of atmosphere} \rule{0pt}{3ex}
+% (spectral irradiance) of sunlight at top of the atmosphere and at the sea 
+% surface on a clear day. The dashed line is the best-fitting curve of 
+% blackbody radiation the size and distance of the sun. The number of standard 
+% atmospheric masses is designated by $m$. Thus $m = 2$ is applicable for 
+% sunlight when the sun\index{sun!height above horizon} is 30\degrees above the
+% horizon. After Stewart (1985: 43).
+% \label{fig:insolation}
+% \vspace{-3ex}
+% \end{figure}
 
-%% \begin{figure}[t!]
-%% \includegraphics{QswDown}
-%% \footnotesize
-%% Figure 5.3 Monthly average of \rule{0pt}{3ex}downward flux of sunlight through 
-%% a cloud-free sky and into the ocean in W/m$^2$ during 1989 calculated 
-%% by the Satellite Data Analysis Center at the \textsc{nasa} Langley Research 
-%% Center (Darnell et al. 1992) using data from the International Satellite 
-%% Cloud Climatology Project.
-%% \label{fig:QswDown}
-%% \vspace{-3ex}
-%% \end{figure}
+\begin{figure}[t!]
+\includegraphics{pics/QswDown}
+\caption{Среднемесячные величины потока солнечной радиации через безоблачную
+атмосферу в океан в течение~1989~г., вычисленные в Центре анализа спутниковых 
+данных (Исследовательский центр НАСА, Лэнгли) на основе данных Международного 
+проекта по спутниковой климатологии (Darnell et al. 1992).}
+\label{fig:QswDown}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \includegraphics{QswDown}
+% \footnotesize
+% Figure 5.3 Monthly average of \rule{0pt}{3ex}downward flux of sunlight through 
+% a cloud-free sky and into the ocean in W/m$^2$ during 1989 calculated 
+% by the Satellite Data Analysis Center at the \textsc{nasa} Langley Research 
+% Center (Darnell et al. 1992) using data from the International Satellite 
+% Cloud Climatology Project.
+% \label{fig:QswDown}
+% \vspace{-3ex}
+% \end{figure}
 
-Величина среднегодовой инсоляции (рис.~5.3) находится в диапазоне
+Величина среднегодовой инсоляции (рис.~\ref{fig:QswDown}) находится в диапазоне
 %
 % The average annual value for insolation\index{insolation!annual average} 
 % (figure 5.3) is in the range:
@@ -380,8 +412,8 @@ C_{p(\text{скал})} = 800
 около~$10\mum$. Волны такой длины активно поглощаются облаками и, в некоторой
 степени, водяными парами. График атмосферной проницаемости как функции длины
 волны в атмосфере без загрязнений, но с различной концентрацией водяных паров,
-представлен на рис.~5.4. Он показывает, что в некоторых диапазонах длин
-волн, называемых окнами, атмосфера практически прозрачна.
+представлен на рис.~\ref{fig:transmittance}. Он показывает, что в некоторых 
+диапазонах длин волн, называемых окнами, атмосфера практически прозрачна.
 %
 % \index{infrared flux!factors influencing}The sea surface radiates as 
 % a blackbody having the same temperature as the water, which is roughly 290 K. 
@@ -393,19 +425,30 @@ C_{p(\text{скал})} = 800
 % shows the atmosphere is nearly transparent in some wavelength bands called 
 % windows.
 
-%% \begin{figure}[t!]
-%% \makebox [121 mm] [c] {\includegraphics{transmittance}}
-%% \footnotesize
-%% Figure 5.4 Atmospheric 
-%% \rule{0pt}{3ex}transmittance\index{atmospheric transmittance} for a 
-%% vertical path to space from sea level for six model atmospheres with very 
-%% clear, 23 \textit{km}, visibility, including the influence of molecular 
-%% and aerosol scattering. Notice how water vapor modulates the transparency 
-%% of the 10-14 $\mu$m atmospheric window, hence it modulates $Q_{LW}$, which 
-%% is a maximum at these wavelengths. After Selby and McClatchey (1975).
-%% \label{fig:transmittance}
-%% \vspace{-3ex}
-%% \end{figure}
+\begin{figure}[t!]
+\makebox [121 mm][c]{\includegraphics{pics/transmittance}}
+\caption{Проницаемость атмосферы в вертикальном направлении от границы с 
+космическим пространством до морской поверхности для шести моделей атмосферы
+с очень хорошей ($23\km$) видимостью, учитывающих молекулярное и аэрозольное
+рассеивание.  Отметим влияние водяного пара на проницаемость атмосферы 
+в окне~$10$--$14\mum$, что, в свою очередь, определяет поток~$Q_{LW}$, 
+достигающий максимума в этом диапазоне Selby and McClatchey (1975).}
+\label{fig:transmittance}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \makebox [121 mm] [c] {\includegraphics{transmittance}}
+% \footnotesize
+% Figure 5.4 Atmospheric 
+% \rule{0pt}{3ex}transmittance\index{atmospheric transmittance} for a 
+% vertical path to space from sea level for six model atmospheres with very 
+% clear, 23 \textit{km}, visibility, including the influence of molecular 
+% and aerosol scattering. Notice how water vapor modulates the transparency 
+% of the 10-14 $\mu$m atmospheric window, hence it modulates $Q_{LW}$, which 
+% is a maximum at these wavelengths. After Selby and McClatchey (1975).
+% \label{fig:transmittance}
+% \vspace{-3ex}
+% \end{figure}
 
 Проницаемость атмосферы в диапазоне~$8$--$13\mum$ в безоблачный день
 определяется, в основном, концентрацией водяных паров. Поглощение в других
@@ -1000,11 +1043,11 @@ at different locations on ships and from gauges on nearby docks
 промежуток времени может быть достаточно точно определено по объединенным
 данным о микроволновом излучении, результатам наблюдений высоты верхней 
 границы облачного покрова в инфракрасном диапазоне и по показаниям 
-дождемеров~(рис.~5.5). Также количество осадков может быть рассчитано на
-основе реанализа погодных данных при помощи численных моделей атмосферной
-циркуляции (Schubert, Rood, and Pfaendtner, 1993), либо путем объединения
-судовых и спутниковых наблюдений с результатами численных моделей прогноза
-погоды (Xie and Arkin, 1997).
+дождемеров~(рис.~\ref{fig:precip}). Также количество осадков может быть 
+рассчитано на основе реанализа погодных данных при помощи численных моделей 
+атмосферной циркуляции (Schubert, Rood, and Pfaendtner, 1993), 
+либо путем объединения судовых и спутниковых наблюдений с результатами 
+численных моделей прогноза погоды (Xie and Arkin, 1997).
 %
 % The most accurate measurements of rain rate in the tropics ($\pm
 % 35$\degrees) are calculated from microwave radiometers and radar
@@ -1037,6 +1080,19 @@ at different locations on ships and from gauges on nearby docks
 % miss storms, and data must be averaged over areas up to 5\degrees\ on
 % a side to obtain useful values of rainfall.
 
+\begin{figure}[t!]
+\includegraphics{pics/precip} 
+\caption{Количество осадков (м/год), вычисленное на основе данных,
+собранных в ходе Глобального проекта по климатологии осадков 
+(Центр космических полетов Годдарда, НАСА)
+на основе показаний дождемеров, а также данных, полученных
+с инфракрасных радиометров, установленных на геосинхронных метеоспутниках,
+и SSM/I. Шаг изолиний~--- $0.5\mpyr$, количество осадков в закрашенных областях
+превышает~$2\mpyr$ в более светлых и~$3\mpyr$ в более темных зонах, 
+соответственно.}
+\label{fig:precip}
+\end{figure}
+%
 %\begin{figure}[t!]
 %\includegraphics{precip} 
 %\footnotesize Figure 5.5 Rainfall\index{rainfall!map}
@@ -1313,7 +1369,8 @@ at different locations on ships and from gauges on nearby docks
 по всей его поверхности, имеет погрешность~$\pm 30\wpsqm$. Величина 
 погрешности меняется в зависимости от времени года и региона, поэтому
 глобальные карты потоков требуют коррекции наподобие той, которая была 
-предложена в работе DaSilva, Young, and Levitus (1995) и показана на рис.~5.7.
+предложена в работе DaSilva, Young, and Levitus (1995) и показана 
+на рис.~\ref{fig:zonalaveheat}.
 %
 % Josey et al (1999) compared averaged fluxes calculated from
 % \textsc{icoads} with fluxes calculated from observations made by
@@ -1630,7 +1687,7 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 дает суммарный входящий в океан поток тепла~$3.7\wpsqm$. Согласно реанализу
 НЦПОС, наблюдается суммарный исходящий из океана поток 
 тепла~$5.8\wpsqm$ (Taylor, 2000: 206). По данным ИКОАДС, входящий в океан
-поток тепла должен составлять~$16\wpsqm$ (рис.~5.7).
+поток тепла должен составлять~$16\wpsqm$ (рис.~\ref{fig:zonalaveheat}).
 %
 % \vitem The atmospheric models do not require that the net heat
 % flux\index{heat flux} averaged over time and earth's surface be
@@ -1676,11 +1733,11 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 Многие исследовательские группы воспользовались данными судовых наблюдений
 и показаниями буев, чтобы при помощи численных моделей погоды получить 
 глобальные осредненные значения каждого слагаемого теплового баланса Земли.
-Эти значения показывают вклад каждого из слагаемых (рис.~5.6). Отметим, что
-на верхней границе атмосферы величина инсоляции уравновешивает исходящую
-инфракрасную радиацию. В то же время, на поверхности Земли поток скрытого
-тепла и суммарная инфракрасная радиация сопоставимы с инсоляцией, а поток
-явного тепла невелик.
+Эти значения показывают вклад каждого из слагаемых (рис.~\ref{fig:heatbudget}). 
+Отметим, что на верхней границе атмосферы величина инсоляции уравновешивает 
+исходящую инфракрасную радиацию. В то же время, на поверхности Земли 
+поток скрытого тепла и суммарная инфракрасная радиация сопоставимы 
+с инсоляцией, а поток явного тепла невелик.
 %
 % \index{heat budget!geographical distribution of
 % terms}Various groups have used ship and satellite data in numerical
@@ -1693,15 +1750,23 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 % insolation\index{insolation!at surface}, and sensible heat
 % flux\index{sensible heat flux!global average} is small.
 
-%% \begin{figure}[t!]
-%% %\vspace{-2ex}
-%% \makebox [121 mm] [c] {\includegraphics{heatbudget}} \centering
-%% \footnotesize Figure 5.6 The mean \rule{0mm}{4ex}annual radiation and
-%% heat balance of the earth. \\After Houghton et al. (1996: 58), which
-%% used data from Kiehl and Trenberth (1996).
-%% \label{fig:heatbudget}
-%% \vspace{-2ex}
-%% \end{figure}
+\begin{figure}[t!]
+\makebox [121 mm][c]{\includegraphics{pics/heatbudget}}
+\caption{Среднегодовой радиационный и тепловой баланс Земли согласно
+работе Houghton et al. (1996: 58), которая, в свою очередь, основана на
+данных из работы Kiehl and Trenberth (1996).}
+\label{fig:heatbudget}
+\end{figure}
+%
+% \begin{figure}[t!]
+% %\vspace{-2ex}
+% \makebox [121 mm] [c] {\includegraphics{heatbudget}} \centering
+% \footnotesize Figure 5.6 The mean \rule{0mm}{4ex}annual radiation and
+% heat balance of the earth. \\After Houghton et al. (1996: 58), which
+% used data from Kiehl and Trenberth (1996).
+% \label{fig:heatbudget}
+% \vspace{-2ex}
+% \end{figure}
 
 Отметим, что лишь 20\%~инсоляции, достигающей Земли, поглощается напрямую
 атмосферой, в то время, как 49\%~поглощаются океаном и сушей. Что же
@@ -1730,23 +1795,39 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 % atmosphere by as much as 125 W/m$^2$ averaged over a year (See figure
 % 14.1).
 
-%% \begin{figure}[b!]
-%% \vspace{-2ex} \makebox [121 mm] [c] {\includegraphics{zonalaveheat}}
-%% \footnotesize Figure 5.7 \textbf{Upper:} Zonal averages
-%% \rule{0mm}{4ex}of heat transfer to the ocean by
-%% insolation\index{insolation!zonal average} $Q_{SW}$, and loss by
-%% infrared radiation $Q_{LW}$, sensible heat flux\index{sensible heat
-%% flux!zonal average} $Q_S$, and latent heat flux $Q_L$, calculated by
-%% DaSilva, Young, and Levitus (1995) using the \textsc{icoads} data set.
-%% \textbf{Lower:} Net heat flux through the sea surface calculated from
-%% the data above (solid line) and net heat flux\index{heat flux!zonal
-%% average} constrained to give heat and other transports that match
-%% independent calculations of these transports. The area under the lower
-%% curves ought to be zero, but it is 16 W/m$^2$ for the unconstrained
-%% case and -3 W/m$^2$ for the constrained case.
-%% \label{fig:zonalaveheat}
-%% %\vspace{-3ex}
-%% \end{figure}
+\begin{figure}[b!]
+\makebox [121 mm][c]{\includegraphics{pics/zonalaveheat}}
+\caption{\textbf{Вверху:} зональные средние притока тепла в океан
+через инсоляцию~$Q_{SW}$ и его оттока посредством инфракрасного излучения
+с поверхности~$Q_{LW}$, потока явного тепла~$Q_S$ и потока скрытого 
+тепла~$Q_L$, вычисленные на основе комплекта данных ИКОАДС
+DaSilva, Young, and Levitus (1995).
+\textbf{Внизу:} суммарный поток тепла через поверхность океана, вычисленный
+по упомянутым выше данным (сплошная линия) и суммарный поток тепла, 
+constrained to give heat and other transports that match
+independent calculations of these transports. Площадь под нижними кривыми
+должна быть нулевой, но она составляет~$16\wpsqm$ при отсутствии ограничений
+и~$-3\wpsqm$ с их учетом.}
+\label{fig:zonalaveheat}
+\end{figure}
+%
+% \begin{figure}[b!]
+% \vspace{-2ex} \makebox [121 mm] [c] {\includegraphics{zonalaveheat}}
+% \footnotesize Figure 5.7 \textbf{Upper:} Zonal averages
+% \rule{0mm}{4ex}of heat transfer to the ocean by
+% insolation\index{insolation!zonal average} $Q_{SW}$, and loss by
+% infrared radiation $Q_{LW}$, sensible heat flux\index{sensible heat
+% flux!zonal average} $Q_S$, and latent heat flux $Q_L$, calculated by
+% DaSilva, Young, and Levitus (1995) using the \textsc{icoads} data set.
+% \textbf{Lower:} Net heat flux through the sea surface calculated from
+% the data above (solid line) and net heat flux\index{heat flux!zonal
+% average} constrained to give heat and other transports that match
+% independent calculations of these transports. The area under the lower
+% curves ought to be zero, but it is 16 W/m$^2$ for the unconstrained
+% case and -3 W/m$^2$ for the constrained case.
+% \label{fig:zonalaveheat}
+% %\vspace{-3ex}
+% \end{figure}
 
 На первый взгляд, может показаться странным, что осадки нагревают атмосферу.
 В конце-концов, мы все сталкивались с тем, как летние грозы охлаждают воздух
@@ -1766,13 +1847,13 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 % large heat engines converting the energy of latent heat into kinetic
 % energy of winds.
 
-Зональные средние значения слагаемых теплового баланса океана (рис.~5.7)
+Зональные средние значения слагаемых теплового баланса океана (рис.~\ref{fig:zonalaveheat})
 показывают, что инсоляция достигает максимума в тропиках, что испарение с
 поверхности океана компенсирует приток энергии, вызванный инсоляцией, а также
 то, что поток явного тепла невелик. \emph{Зональное среднее}~--- это 
 среднее значение, рассчитанное вдоль параллелей. Отметим, что сумма слагаемых 
 %% lines of constant latitude -- вроде, параллели и есть?
-на рис.~5.7 не равна нулю. Аreal-weighted интеграл кривой суммарного потока
+на рис.~\ref{fig:zonalaveheat} не равна нулю. Аreal-weighted интеграл кривой суммарного потока
 тепла не равен нулю. Поскольку суммарный поток тепла, входящий в океан,
 не должен превышать нескольких$\wpsqm$, ненулевое значение объясняется
 погрешностью измерения различных слагаемых теплового баланса.
@@ -1791,6 +1872,18 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 % per square meter, the non-zero value must be due to errors in the
 % various terms in the heat budget.
 
+\begin{figure}[t!]
+\includegraphics{pics/globalsw} 
+\includegraphics{pics/globalLW}
+\caption{Среднегодовые величины инсоляции~$Q_{SW}$ (\textbf{вверху})
+и инфракрасного излучения~$Q_{LW}$ (\textbf{внизу}) с морской поверхности
+в 1989~г., вычисленные в Центре анализа спутниковых данных 
+(Исследовательский центр Лэнгли, НАСА) (Darnell et al., 1992)
+по данным Международного проекта по спутниковой климатологии облаков.
+Изолинии проведены с шагом~$10\wpsqm$.}
+\label{fig:globalSW}
+\end{figure}
+%
 %% \begin{figure}[t!]
 %% \includegraphics{globalsw} \includegraphics{globalLW} \footnotesize
 %% Figure 5.8 \rule{0mm}{3ex}Annual-mean
@@ -1808,9 +1901,9 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 дополнительной информации. Например, нам примерно известно количество тепла
 и других сущностей, транспортируемых океаном и атмосферой; эти известные
 значения могут использоваться для внесения ограничений в процесс вычисления
-суммарных потоков тепла (рис.~5.7). Потоки, вычисленные с учетом ограничений,
-показывают, что приток тепла в океан в тропиках компенсируется оттоком тепла
-в более высоких широтах.
+суммарных потоков тепла (рис.~\ref{fig:zonalaveheat}).
+Потоки, вычисленные с учетом ограничений, показывают, что приток тепла 
+в океан в тропиках компенсируется оттоком тепла в более высоких широтах.
 %
 % Errors in the heat budget terms can be reduced by using additional
 % information. For example, we know roughly how much heat and other
@@ -1821,18 +1914,41 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 % ocean in the tropics is balanced by heat lost by the ocean at high
 % latitudes.
 
-%% \begin{figure}[t!]
-%% \includegraphics{globallatent} \footnotesize Figure 5.9
-%% \rule{0mm}{3ex}Annual-mean latent heat flux\index{heat flux!mean
-%% annual} from the sea surface $Q_{L}$ in W/m$^2$ during 1989 calculated
-%% from data compiled by the Data Assimilation\index{data assimilation}
-%% Office of \textsc{nasa}'s Goddard Space Flight Center using reanalyzed
-%% data from the \textsc{ecmwf} numerical weather prediction
-%% model. Contour interval is 10 W/m$^2$.
-%% \label{fig:globallatent}
-%% \vspace{-3ex}
-%% \end{figure}
 
+\begin{figure}[t!]
+\includegraphics{pics/globallatent}
+\caption{Средний годовой поток скрытого тепла~$Q_{L}$ через морскую поверхность
+в 1989~г., вычисленный на основе данных, подготовленных Отделом усвоения данных
+Центра космических полетов Годдарда (НАСА) по результатам реанализа с
+использованием модели ЕЦСПП.
+%% кто делал реанализ-то: сам ЕЦСПП или кто-то на его моделях?
+Изолинии проведены с шагом~$10\wpsqm$.}
+\label{fig:globallatent}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \includegraphics{globallatent} \footnotesize Figure 5.9
+% \rule{0mm}{3ex}Annual-mean latent heat flux\index{heat flux!mean
+% annual} from the sea surface $Q_{L}$ in W/m$^2$ during 1989 calculated
+% from data compiled by the Data Assimilation\index{data assimilation}
+% Office of \textsc{nasa}'s Goddard Space Flight Center using reanalyzed
+% data from the \textsc{ecmwf} numerical weather prediction
+% model. Contour interval is 10 W/m$^2$.
+% \label{fig:globallatent}
+% \vspace{-3ex}
+% \end{figure}
+
+\begin{figure}[t!]
+\includegraphics{pics/globalsensible} 
+\includegraphics{pics/globalflux}
+\caption{Среднегодовой восходящий поток явного тепла~$Q_{S}$ (\textbf{вверху}) 
+и ограниченный суммарный нисходящий поток тепла (\textbf{внизу}) через морскую
+поверхность, вычисленный за период~1945--1989~гг. по комплекту
+данных ИКОАДС DaSilva, Young, and Levitus (1995). Изолинии проведены с 
+шагом~$2\wpsqm$ (вверху) и~$20\wpsqm$ (внизу).}
+\label{fig:globalsensible}
+\end{figure}
+%
 %% \begin{figure}[t!]
 %% \includegraphics{globalsensible} \includegraphics{globalflux}
 %% \footnotesize Figure 5.10 \rule{0mm}{3ex}Annual-mean upward sensible
@@ -1848,17 +1964,19 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 
 Карты распределения потоков по регионам дают ключ к установлению процессов,
 порождающих потоки. Облачность определяет количество солнечного излучения,
-достигающего морской поверхности (рис.~5.8, верх); нагрев за счет этого 
-излучения везде положителен. Суммарный поток инфракрасного излучения 
+достигающего морской поверхности (рис.~\ref{fig:globalSW}, вверху); 
+нагрев за счет этого излучения везде положителен. 
+Суммарный поток инфракрасного излучения (рис.~\ref{fig:globalSW}, внизу)
 максимален в регионах с наименьшей облачностью, например, в центральных 
 областях океана или в eastern central Pacific. Этот поток везде отрицателен.
-Потоки скрытого тепла (рис.~5.9) в области пассатов определяются испарением
+Потоки скрытого тепла (рис.~\ref{fig:globallatent}) в области пассатов определяются испарением
 с поверхности океана, а возле побережья Северной Америки и Японии в зимний
 период~--- прибрежными течениями холодных воздушных масс позади холодных
-фронтов. Потоки явного тепла (рис.~5.10, верх) находятся под преобладающим
-влиянием холодного воздуха, стекающего с континентов. Суммарный приток 
-тепла (рис.~5.10, низ) максимален в области экватора, а суммарная его 
-потеря~--- downwind on Asia and North America.
+фронтов. Потоки явного тепла (рис.~\ref{fig:globalsensible}, вверху) 
+находятся под преобладающим влиянием холодного воздуха, стекающего 
+с континентов. Суммарный приток тепла (рис.~\ref{fig:globalsensible}, внизу) 
+максимален в области экватора, а суммарная его потеря~--- downwind 
+on Asia and North America.
 %
 % Maps of the regional distribution of fluxes give clues to the
 % processes producing the fluxes. Clouds regulate the amount of sunlight
@@ -1999,9 +2117,9 @@ Ocean Precipitation Analysis (Goddard Space Flight Center, NASA).
 \emph{Метод поверхностного потока} вычисляет поток тепла через морскую
 поверхность по данным измерений ветра, инсоляции, температуры воды и воздуха,
 облачности. Эти потоки интегрируются для получения зонального среднего потока
-тепла (рис.~5.7). Наконец, мы вычисляем перенос при помощи интегрирования
-среднего потока по зоне в меридиональном направлении, подобно тому, как это
-делается для верхней границы атмосферы.
+тепла (рис.~\ref{fig:zonalaveheat}). Наконец, мы вычисляем перенос при 
+помощи интегрирования среднего потока по зоне в меридиональном направлении, 
+подобно тому, как это делается для верхней границы атмосферы.
 %
 % \vitem \textit{Surface Flux Method} \index{heat transport!calculation
 % of!surface flux method|textbf}calculates the heat flux\index{heat
@@ -2033,7 +2151,7 @@ spanning an ocean basin. Поток представляет собой прои
 применяется прямой метод вычисления переноса. Далее, эта величина
 вычитается из суммарного меридионального переноса, вычисленного по данным
 о потоке тепла на верхней границе атмосферы, чтобы в итоге получить вклад
-океана в общий перенос тепла как остаток (рис.~5.11).
+океана в общий перенос тепла как остаток (рис.~\ref{fig:heattransport}).
 %
 % \vitem \textit{Residual Method} \index{heat transport!calculation
 % of!residual method|textbf} \index{transport!heat}first calculates the
@@ -2045,34 +2163,57 @@ spanning an ocean basin. Поток представляет собой прои
 % oceanic contribution as a residual (figure 5.11).
 \end{enumerate}
 
-%% \begin{figure}[t!]
-%% \makebox [120mm][c]{\includegraphics{heattransport}} \footnotesize
-%% Figure 5.11 Northward \rule{0mm}{3ex}heat
-%% transport\index{transport!heat} for 1988 in each ocean and the total
-%% transport summed over all ocean calculated by the residual method
-%% using atmospheric heat transport from \textsc{ecmwf} and top of the
-%% atmosphere heat fluxes\index{heat flux!net through the top of
-%% atmosphere} from the Earth Radiation Budget Experiment
-%% satellite. After Houghton et al. (1996: 212), which used data from
-%% Trenberth and Solomon (1994). 1 PW $=$ 1 petawatt $= 10^{15}$ W.
-%% \label{fig:heattransport}
-%% \vspace{-4ex}
-%% \end{figure}
-%% \begin{figure}[b!]
-%% \vspace{-5ex} \includegraphics{solarinfluence} \footnotesize 
-%% Figure 5.12 Changes in \rule{0mm}{3ex}solar constant\index{solar
-%% constant!variability of} (total solar irradiance) and global mean
-%% temperature of earth's surface over the past 400 years. Except for a
-%% period of enhanced volcanic activity in the early 19th century,
-%% surface temperature is well correlated with solar variability. After
-%% Lean, personal communication.
-%% \label{fig:solarinfluence}
-%% %\vspace{-3ex}
-%% \end{figure}
+\begin{figure}[t!]
+\makebox [120mm][c]{\includegraphics{pics/heattransport}}
+\caption{Перенос тепла в 1988~г.\ в северном направлении по каждому океану 
+в отдельности и общий, вычисленные методом остатков на основе данных ЕЦСПП 
+об атмосферном переносе тепла и сведений о потоках тепла в верхних слоях 
+атмосферы, полученных со спутника проекта Earth Radiation Budget Experiment.
+(Согласно работе Houghton et al. (1996: 212), в которой использованы 
+данные Trenberth and Solomon (1994)). 
+$1\Pwt = 1 \text{петаватт} = 10^{15}\wt$.}
+\label{fig:heattransport}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \makebox [120mm][c]{\includegraphics{heattransport}} \footnotesize
+% Figure 5.11 Northward \rule{0mm}{3ex}heat
+% transport\index{transport!heat} for 1988 in each ocean and the total
+% transport summed over all ocean calculated by the residual method
+% using atmospheric heat transport from \textsc{ecmwf} and top of the
+% atmosphere heat fluxes\index{heat flux!net through the top of
+% atmosphere} from the Earth Radiation Budget Experiment
+% satellite. After Houghton et al. (1996: 212), which used data from
+% Trenberth and Solomon (1994). 1 PW $=$ 1 petawatt $= 10^{15}$ W.
+% \label{fig:heattransport}
+% \vspace{-4ex}
+% \end{figure}
+
+\begin{figure}[t!]
+\includegraphics{pics/solarinfluence}
+\caption{Вариация солнечной постоянной (общей солнечной энергетической 
+освещенности) и глобальной средней температуры земной поверхности в течение
+последних 400~лет. За исключением периода повышенной вулканической активности
+в начале XIX~столетия, поверхностная температура хорошо коррелирует с солнечной
+изменчивостью. (По сведениям Lean, полученным в личном общении.)}
+\label{fig:solarinfluence}
+\end{figure}
+%
+% \begin{figure}[b!]
+% \vspace{-5ex} \includegraphics{solarinfluence} \footnotesize 
+% Figure 5.12 Changes in \rule{0mm}{3ex}solar constant\index{solar
+% constant!variability of} (total solar irradiance) and global mean
+% temperature of earth's surface over the past 400 years. Except for a
+% period of enhanced volcanic activity in the early 19th century,
+% surface temperature is well correlated with solar variability. After
+% Lean, personal communication.
+% \label{fig:solarinfluence}
+% %\vspace{-3ex}
+% \end{figure}
 
 Различные способы определения величины переноса тепла океаном, некоторые из 
-которых показаны на рис.~5.11, в целом дают согласующиеся между собой 
-результаты; показанные на рисунке планки погрешностей реалистичны.
+которых показаны на рис.~\ref{fig:heattransport}, в целом дают согласующиеся 
+между собой результаты; показанные на рисунке планки погрешностей реалистичны.
 Общий меридиональный перенос тепла океаном невелик по сравнению с атмосферным,
 за исключением тропиков. На широте~$\degrees{35}$, где общий меридиональный
 перенос тепла максимален, на долю океана приходится лишь 22\%
@@ -2098,9 +2239,9 @@ spanning an ocean basin. Поток представляет собой прои
 изменчивости солнечных пятен и факелов, из которых следует, что солнечное
 излучение может варьировать в течение столетий на~$\pm 0.2\%$ (Lean, Beer, and Bradley, 1995), 
 и что эта изменчивость коррелирует со сменами глобальной средней температуры
-земной поверхности на~$\pm \degCent{0.4}$ (рис.~5.12). В дополнение, по 
-показаниям батитермографов и судовых термометров на протяжении последнего 
-столетия были обнаружены White and Cayan (1998) небольшие периодические 
+земной поверхности на~$\pm \degCent{0.4}$ (рис.~\ref{fig:solarinfluence}). 
+В дополнение, по показаниям батитермографов и судовых термометров на протяжении 
+последнего столетия были обнаружены White and Cayan (1998) небольшие периодические 
 (12~лет, 22~года и др.) изменения поверхностной температуры воды. Наблюдаемая
 реакция земных условий на изменчивость состояния Солнца примерно соответствует
 вычисленной при помощи объединенных моделей климатической системы 
