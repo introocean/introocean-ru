@@ -1,0 +1,2087 @@
+% -*- coding: utf-8 -*-
+
+\begin{chapter}{Уравнение движения с трением}\label{chap:8}
+
+Обычно большинство внутренних сил трения в океане и атмосфере
+относительно малы, и мы вполне можем предположить что поток свободен
+от трения. На границах трение, в форме вязкости, становится
+важным. Этот тонкий вязкий слой называется пограничным слоем. Внутри
+него, скорость потока уменьшается от значений характерных для середины
+потока до нуля на твёрдой границе. Если граница не твёрдая, тогда
+пограничный слой~--- это тонкий слой быстро изменяющейся скорости где
+скоростью на одной стороне границы изменяется скорость на другой её
+стороне. Например такой пограничный слой существует на нижней части
+атмосферы~--- планетарный пограничный слой описанный нами в Главе~3.
+Внутри планетарного пограничного слоя скорости снижаются с многих
+метров в секунду в свободной атмосфере, до десятков сантиметров в
+секунду над поверхностью моря. Под поверхностью моря, другой
+пограничный слой, Экмановский слой описываемый в Главе 9, передаёт
+течение с поверхности на глубину. В этой главе мы обсудим роль трения
+в потоках жидкости, и устойчивость потоков к небольшим изменениям
+скорости или плотности.
+%
+% Throughout most of the interior of the ocean and atmosphere friction
+% is relatively small, and we can safely assume that the flow is
+% frictionless. At the boundaries, friction, in the form of viscosity,
+% becomes important. This thin, viscous layer is called a
+% \textit{boundary layer}\index{boundary layer|textbf}. Within the
+% layer, the velocity slows from values typical of the interior to zero
+% at a solid boundary. If the boundary is not solid, then the boundary
+% layer is a thin layer of rapidly changing velocity whereby velocity on
+% one side of the boundary changes to match the velocity on the other
+% side of the boundary. For example, there is a boundary layer at the
+% bottom of the atmosphere, the planetary boundary layer I described in
+% Chapter 3. In the planetary boundary layer, velocity goes from many
+% meters per second in the free atmosphere to tens of centimeters per
+% second at the sea surface. Below the sea surface, another boundary
+% layer, the \index{Ekman layer}Ekman layer described in Chapter 9,
+% matches the flow at the sea surface to the deeper flow.
+
+% In this chapter I consider the role of friction in fluid flows, and
+% the stability of the flows to small changes in velocity or density.
+
+\begin{section}{Влияние вязкости}
+% \section{The Influence of Viscosity}
+В последней главе мы записали компоненту уравнения движения жидкости
+по оси~$x$ в форме:
+\begin{equation}
+\frac{\partial{u}}{\partial{t}}+u\,\frac{\partial{u}}{\partial{x}}+v\,
+\frac{\partial{u}}{\partial{y}}+w\,\frac{\partial{u}}{\partial{z}}=-\,
+\frac{1}{\rho}\frac{\partial{p}}{\partial{x}} + 2\,\Omega\,v\,\sin\vartheta + F_x
+\end{equation}
+Где $F_x$ означало массовую силу трения. Теперь мы можем рассмотреть как
+будет выглядеть этот член если принять во внимание вязкость.
+%
+% \index{viscosity}Viscosity is the tendency of a fluid to resist
+% shear. In the last chapter I wrote the $x$--component of the momentum
+% equation for a fluid in the form (7:12a):
+% \begin{equation}
+% \frac{\partial{u}}{\partial{t}}+u\,\frac{\partial{u}}{\partial{x}}+v\,
+% \frac{\partial{u}}{\partial{y}}+w\,\frac{\partial{u}}{\partial{z}}=-\,
+% \frac{1}{\rho}\frac{\partial{p}}{\partial{x}} + 2\,\Omega\,v\,\sin\vartheta + F_x
+% \end{equation}
+% where $F_x$ was a frictional force per unit mass. Now we can consider
+% the form of this term if it is due to viscosity.
+
+Молекулы жидкости находящиеся около твёрдой границы могут ударять о
+неё и передавать ей импульс (Рисунок 8.1). Молекулы находящиеся далеко
+от границы сталкиваясь с молекулами которые уже ударились о неё,
+продолжают передачу изменения импульса внутрь потока. Эта передача
+импульса~--- молекулярная вязкость. Молекулы, тем не менее, между
+столкновениями перемещаются только на микрометры и процесс этот
+неэффективен для передачи импульса даже на несколько
+сантиметров. Молекулярная вязкость важна только только внутри
+нескольких миллиметров границы.
+%
+% Molecules in a fluid close to a solid boundary sometime strike the
+% boundary and transfer momentum to it (figure 8.1). Molecules further
+% from the boundary collide with molecules that have struck the
+% boundary, further transferring the change in momentum into the
+% interior of the fluid. This transfer of momentum is 
+% \textit{molecular viscosity}\index{molecular
+% viscosity|textbf}\index{viscosity!molecular|textbf}. Molecules,
+% however, travel only micrometers between collisions, and the process
+% is very inefficient for transferring momentum even a few
+% centimeters. Molecular viscosity is important only within a few
+% millimeters of a boundary.
+
+Молекулярная вязкость~--- это отношение напряжения~$T_x$,
+направленного по касательной к границе потока и сдвига (скорости)
+потока на границе. Поэтому напряжение имеет форму:
+\begin{equation}
+T_{xz} =  \rho \nu \,\frac{\partial{u}}{\partial{z}}
+\end{equation}
+Где $\nu$~--- это кинематическая молекулярная вязкость. Типичные 
+значения~$\nu$ для воды при~$\degCent{20}$ составляют~$10^{-6}\sqmps$.
+%
+% Molecular viscosity $\rho \nu$ is the ratio of the stress $T$
+% tangential to the boundary of a fluid and the velocity shear at the
+% boundary. So the stress has the form:
+% \begin{equation}
+% T_{xz} =  \rho \nu \,\frac{\partial{u}}{\partial{z}}
+% \end{equation}
+% for flow in the $(x, z)$ plane within a few millimetres of the
+% surface, where $\nu$ is the kinematic molecular viscosity. Typically
+% $\nu = 10^{-6}$ m$^2$/s for water at 20\degrees{C}.
+
+Распространение (8.2) на три измерения приводит к тензору напряжения
+дающему девять компонентов напряжения в точке потока, включающие
+давление~--- нормальное напряжение и сдвиговые напряжения. Вывод
+тензора напряжения выходит за рамки задач стоящих перед этой книгой,
+но вы можете найти детали в Lamb (1945: \S 328) или Kundu (1990: p. 93). 
+Для несжимаемой жидкости, массовая сила трения в (8.1) примет
+вид:
+\begin{equation}
+F_x= \frac{\partial }{\partial x} \left[ \nu \frac{\partial u}{\partial x} \right]
+   + \frac{\partial }{\partial y} \left[ \nu \frac{\partial u}{\partial y} \right]
+   + \frac{\partial }{\partial z} \left[ \nu \frac{\partial u}{\partial z} \right]
+= \frac{1}{\rho} \left[ \frac{\partial T_{xx}}{\partial x} +
+                        \frac{\partial T_{xy}}{\partial y} +
+                        \frac{\partial T_{xz}}{\partial z} \right]
+\end{equation}
+%
+% Generalizing (8.2) to three dimensions leads to a stress tensor giving
+% the nine components of stress at a point in the fluid, including
+% pressure, which is a normal stress, and shear stresses. A derivation
+% of the stress tensor is beyond the scope of this book, but you can
+% find the details in Lamb (1945: \S 328) or Kundu (1990: p. 93). For an
+% incompressible fluid, the frictional force per unit mass in (8.1)
+% takes the form:
+% \begin{equation}
+% F_x= \frac{\partial }{\partial x} \left[ \nu \frac{\partial u}{\partial x} \right]
+%    + \frac{\partial }{\partial y} \left[ \nu \frac{\partial u}{\partial y} \right]
+%    + \frac{\partial }{\partial z} \left[ \nu \frac{\partial u}{\partial z} \right]
+% = \frac{1}{\rho} \left[ \frac{\partial T_{xx}}{\partial x} +
+%                         \frac{\partial T_{xy}}{\partial y} +
+%                         \frac{\partial T_{xz}}{\partial z} \right]
+% \end{equation}
+
+Эта форма члена трения в уравнении движения была впервые опубликована
+Навье (1785--1836) в 1827 году.
+
+\begin{figure}[t!]
+\makebox [120mm][c]{\includegraphics{pics/viscositysketch}}
+\caption{Молекулы сталкиваясь со стеной и друг с другом передают
+количество движения от потока стене, замедляя скорость движения
+жидкости.}
+\label{fig:viscositysketch}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \makebox[120mm] [c]{\includegraphics{viscositysketch}}
+% \centering
+% \footnotesize
+% Figure 8.1 Molecules \rule{0mm}{4ex}colliding with the wall and with
+% each other transfer\\momentum from the fluid to the wall, slowing the
+% fluid velocity.
+%
+% \label{fig:viscositysketch}
+% \vspace{-3ex}
+% \end{figure}
+
+\begin{figure}[t!]
+\makebox[120mm] [c]{\includegraphics{pics/reynoldsexp}}
+\caption{Аппарат Рейнольдса для исследования турбулентного движения
+потока в трубке и фотографии потока близкого к ламинарному (сверху) и
+турбулентного (снизу) в прозрачной трубке похожей на ту котороую
+использовал Рейнольдс (From Binder 1953).}
+\label{fig:reynoldsexp}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \makebox[120mm] [c]{\includegraphics{reynoldsexp}}
+% \footnotesize
+% Figure 8.2 Reynolds \rule{0mm}{4ex}apparatus for investigating the
+% transition to turbulence\index{turbulence!transition to} in pipe flow,
+% with photographs of near-laminar flow (left) and turbulent flow
+% (right) in a clear pipe much like the one used by Reynolds. After
+% Binder (1949: 88-89).
+% \label{fig:reynoldsexp}
+% \vspace{-4ex}
+% \end{figure}
+\end{section}
+
+\begin{section}{Турбулентность}
+% \section{Turbulence}
+Если молекулярная вязкость важна только на расстоянии в несколько
+миллиметров и не играет роли для большинства потоков в океане, если
+конечно вы не зоопланктон, то как влияние границы передаётся внутрь
+потока? Ответ: через турбулентность.
+%
+% \index{viscosity!turbulent}If molecular viscosity is important only
+% over distances of a few millimeters, and if it is not important for
+% most oceanic flows, unless of course you are a zooplankter trying to
+% swim in the ocean, how then is the influence of a boundary transferred
+% into the interior of the flow? The answer is: through turbulence.
+
+Турбулентность является результатом нелинейных членов уравнения
+движения ($(u\,\partial{u}/\partial{x}$, etc.). Важность (сила
+влияния) этих членов устанавливается через безразмерное число, Число
+Рейнольдса, которое является отношением нелинейных членов к вязким
+членам:
+\begin{equation}
+Re = \frac{\text{Non-linear Terms}}{\text{Viscous Terms}} 
+   = \cfrac{\left(u\,\cfrac{\partial{u}}{\partial{x}}\right) }%
+           {\left(\nu\,\cfrac{\partial^2{u}}{\partial{x^2}}\right)} 
+   \approx \cfrac{U\,\cfrac{U}{L\vphantom{y}}}{\nu\,\cfrac{U}{L^2}}
+   = \frac{UL}{\nu}
+\end{equation}
+Где $U$~--- типичная (средняя) скорость потока, а $L$~--- типичная
+длинна (масштаб) описывающая поток. Вы можете выбрать любое $U$, $L$
+должно быть типичным для потока. Например $L$ может быть или средним
+поперечным размером потока или его типичным продольным
+размером. Обычно в океане $U=0.1\mps$, а $L=1~\text{мегаметр}$, таким
+образом $\Reyn=10^11$. Так как нелинейные члены важны при 
+$\Reyn > 10$--$1000$, то они естественно важны в океане. 
+Океан турбулентен.
+%
+% Turbulence arises from the non-linear terms in the momentum equation
+% $(u\,\partial{u}/\partial{x}$, \textit{etc}.). The importance of these
+% terms is given by a non-dimensional number, the Reynolds Number $Re$,
+% which is the ratio of the non-linear terms to the viscous terms:
+% \begin{equation}
+% Re = \frac{\text{Non-linear Terms}}{\text{Viscous
+% Terms}} =
+% \cfrac{\left( \displaystyle u\,\cfrac{\partial{u}}{\partial{x}}\right) }{\left( \displaystyle \nu\,\cfrac{\partial^2{u}}{\partial{x^2}}\right)
+% } \approx \cfrac{\D U\,\cfrac{U}{L\vphantom{y}}}{\D \nu\,\cfrac{U}{L^2}}
+% = \frac{UL}{\nu}
+% \end{equation}
+% where, $U$ is a typical velocity of the flow and $L$ is a typical length
+% describing the flow. You are free to pick whatever $U,L$ might be typical of
+% the flow. For example $L$ can be either a typical cross-stream distance, or an
+% along-stream distance. Typical values in the open ocean are $U = 0.1$ m/s and
+% $L = 1$ megameter, so $Re = 10^{11}$. Because non-linear terms are important if
+% Re $>$ 10 -- 1000, they are certainly important in the ocean. The ocean is
+% turbulent.
+
+Число Рейнольдса названо в честь Осборна Рейнольдса (1842--1912)
+проводившего в конце 19го века эксперименты призванные помочь понять
+турбулентность. В одном из часто цитируемых экспериментов (Reynolds
+1883), он впрыскивал краску в воду текущую с разной скоростью через
+трубку (Рисунок 8.2). При малой скорости, течение было спокойным, его
+назвали ламинарным течением. При более высоких скоростях течение
+становилось нерегулярным и турбулентным. Переход от одного к другому
+происходил при $\Reyn = VD/\nu \approx 2000$, где $V$~--- средняя
+скорость в трубке, а $D$~--- диаметр трубки.
+%
+% The Reynolds number is named after Osborne Reynolds (1842--1912) who
+% conducted experiments in the late 19th century to understand
+% turbulence\index{turbulence!measurement of}.  In one famous experiment
+% (Reynolds 1883), he injected dye into water flowing at various speeds
+% through a tube (figure 8.2). If the speed was small, the flow was
+% smooth. This is called \textit{laminar flow}. At higher speeds, the
+% flow became irregular and turbulent. The transition occurred at Re $ =
+% VD/\nu \approx 2000$, where $V$ is the average speed in the pipe, and
+% $D$ is the diameter of the pipe.
+
+Когда число Рейнольдса становится больше некоторого критического
+значения, течение становится всё более и более турбулентным. Заметте
+что структура потока является функцией числа Рейнольдса. Все течения с
+одинаковой геометрией и одинаковым числом Рейнольдса обладают
+одинаковой структурой потока. Таким образом течение вокруг всех
+круговых цилиндров, будь они 1мм или 1 м в диаметре, при числе
+Рейнольдса равном 20 выглядит также как на рисунке 8.3. Кроме того,
+пограничный слой очень близко прилегает к цилиндру, и слишком тонок
+для того чтобы быть показанным на рисунке.
+%
+% As Reynolds number increases above some critical value, the flow
+% becomes more and more turbulent. Note that flow pattern is a function
+% of Reynold's number. All flows with the same geometry and the same
+% Reynolds number have the same flow pattern. Thus flow around all
+% circular cylinders, whether 1 mm or 1 m in diameter, look the same as
+% the flow at the top of figure 8.3 if the Reynolds number is
+% 20. Furthermore, the boundary layer is confined to a very thin layer
+% close to the cylinder, in a layer too thin to show in the figure.
+
+\begin{figure}[t!]
+\makebox[120mm][c]{\includegraphics{pics/turbsketch}}
+\caption{Поток огибающий круглый цилиндр как функция числа
+Рейнольдса между единицей и миллионом (From Richardson 1961). 
+A~--- зубочистка в потоке 1 мм/с; B~---палец в потоке 2 см/с; 
+F~---рука высунутая из окна на скорости 60 миль в час. 
+Линии тока течений с одинаковым числом Рейнольдса выглядят одинаково. 
+Поток обтекающий цилиндр диаметром 10 см со скоростью 1 см/с выглядит 
+так же как поток со скоростью 10 см/с обтекающий цилиндр 
+диаметром 1 см так как в обоих случаях $Reyn = 1000$.}
+\label{fig:turbsketch}
+\vspace{-2ex}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \makebox[120mm][c]{\includegraphics{turbsketch}}
+% \footnotesize
+% Figure 8.3 Flow past a circular \rule{0mm}{3ex}cylinder as a function
+% of Reynolds number between one and a million. From Richardson
+% (1961). The appropriate flows are: A---a toothpick moving at 1 mm/s;
+% B---finger moving at 2 cm/s; F---hand out a car window at 60 mph. All
+% flow at the same Reynolds number has the same streamlines. Flow past a
+% 10 cm diameter cylinder at 1 cm/s looks the same as 10 cm/s flow past
+% a cylinder 1 cm in diameter because in both cases Re $= 1000$.
+% \label{fig:turbsketch}
+% \vspace{-2ex}
+% \end{figure}
+
+\begin{paragraph}{Турбулентное напряжение: Напряжение Рейнольдса}
+% \paragraph{Turbulent Stresses: The Reynolds Stress}
+Те кто изучал гидромеханику в начале 20 столетия предполагали что
+небольшие объёмы воды в турбулентном движении играют такую же роль при
+передаче импульса внутрь течения, какую играют молекулы в ламинарном
+течении. Исследования в этом направлении привели к идее турбулентного
+напряжения.
+%
+% \index{turbulent!stress}\index{Reynolds Stress}Prandtl, Karman and
+% others who studied fluid mechanics in the early 20th century,
+% hypothesized that parcels of fluid in a turbulent flow played the same
+% role in transferring momentum within the flow that molecules played in
+% laminar flow. The work led to the idea of turbulent stresses.
+
+Чтобы увидеть каким образом это напряжение может возникать, рассмотрим
+уравнение движения со средними и турбулентными компонентами потока:
+\begin{equation}
+u=U+u' \,;\quad v = V+v' \,;\quad w=W+w' \, ;\quad p=P+p'
+\end{equation}
+Где значение U вычислено осреднением по пространству и времени:
+\begin{equation}
+U = \langle u \rangle =\frac{1}{T}\int^T_0\,u(t)\,dt \quad \text{or}\quad
+U = \langle u \rangle =\frac{1}{X}\int^X_0\,u(x)\,dx
+\end{equation}
+%
+% To see how these stresses might arise, consider the momentum equation
+% for a flow with mean $(U, V, W)$ and turbulent $(u', v', w')$
+% components:
+% \begin{equation}
+% u=U+u' \,;\quad v = V+v' \,;\quad w=W+w' \, ;\quad p=P+p'
+% \end{equation}
+% where the mean value $U$ is calculated from a time or space average:
+% \begin{equation}
+% U = \langle u \rangle =\frac{1}{T}\int^T_0\,u(t)\,dt \quad \text{or}\quad
+% U = \langle u \rangle =\frac{1}{X}\int^X_0\,u(x)\,dx
+% \end{equation}
+
+Нелинейные члены в уравнении движения могут быть записаны:
+\begin{align}
+\left< (U+u')\frac{\partial{(U+u')}}{\partial{x}} \right> &= \left<
+U\,\frac{\partial{U}}{\partial{x}}\right> +
+\left< U\,\frac {\partial{u'}}{\partial{x}}\right> +
+\left< u' \,\frac {\partial{U}}{\partial{x}}\right> + \left< u' \,\frac
+{\partial{u'}}{\partial{x}}\right> \notag \\
+\left< (U+u')\frac{\partial{(U+u')}}{\partial{x}} \right> &= \left<
+U\,\frac{\partial{U}}{\partial{x}}\right> +
+\left<u' \,\frac{\partial{u'}}{\partial{x}}\right>
+\end{align}
+Второе уравнение вытекает из первого так как и 
+$\langle U\,\partial{u'}/\partial{x}\rangle = 0$ 
+и $\langle u'\,\partial{U}/\partial{x}\rangle = 0$, 
+вытекающие из определения $U$:
+$\langle U \partial{u'}/\partial{x}\rangle 
+ = U \partial{\langle u' \rangle }/\partial{x} = 0$.
+%
+% The non-linear terms in the momentum equation can be written:
+% \begin{align}
+% \left< (U+u')\frac{\partial{(U+u')}}{\partial{x}} \right> &= \left<
+% U\,\frac{\D \partial{U}}{\partial{x}}\right> +
+% \left< U\,\frac {\partial{u'}}{\partial{x}}\right> +
+% \left< u' \,\frac {\partial{U}}{\partial{x}}\right> + \left< u' \,\frac
+% {\partial{u'}}{\partial{x}}\right> \notag \\
+% \left< (U+u')\frac{\partial{(U+u')}}{\partial{x}} \right> &= \left<
+% U\,\frac{\D \partial{U}}{\partial{x}}\right> +
+% \left<u' \,\frac{\partial{u'}}{\partial{x}}\right>
+% \end{align}
+% The second equation follows from the first since $\langle
+% U\,\partial{u'}/\partial{x}\rangle = 0$ and $\langle
+% u'\,\partial{U}/\partial{x}\rangle$ $= 0$, which follow from the
+% definition of $U$: $\langle U \partial{u'}/\partial{x}\rangle = U
+% \partial{\langle u' \rangle }/\partial{x}$ $ = 0$.
+
+Применяя (8.7), уравнение движения можно разделить на два уравнения:
+\begin{subequations}
+\begin{align}
+\frac{\partial{U }}{\partial{x}} 
+ + \frac{\partial{V }}{\partial{y}} 
+ + \frac{\partial{W }}{\partial{z}} &=0 \\
+\frac{\partial{u'}}{\partial{x}} 
+ + \frac{\partial{v'}}{\partial{y}} 
+ + \frac{\partial{w'}}{\partial{z}} &=0
+\end{align}
+\end{subequations}
+%
+% Using (8.5) in (7.19) gives:
+% \begin{equation}
+% \frac{\partial{U }}{\partial{x}} + \frac{\partial{V }}{\partial{y}}  +\frac{\partial{W }}{\partial{z}} + 
+% \frac{\partial{u'}}{\partial{x}} + \frac{\partial{v'}}{\partial{y}}
+% +\frac{\partial{w'}}{\partial{z}} =0
+% \end{equation}
+% Subtracting the mean of (8.8) from (8.8) splits the continuity
+% equation into two equations:
+% \begin{subequations}
+% \begin{align}
+% \frac{\partial{U }}{\partial{x}} + \frac{\partial{V }}{\partial{y}}  +\frac{\partial{W }}{\partial{z}} &= 0 \\
+% \frac{\partial{u'}}{\partial{x}} + \frac{\partial{v'}}{\partial{y}} +\frac{\partial{w'}}{\partial{z}} &=0
+% \end{align}
+% \end{subequations}
+
+И $x$ компонента уравнения движения становится:
+\begin{equation}
+\begin{split}
+\frac{DU}{Dt} & = -\frac{1}{\rho}\,\frac{\partial{P}}{\partial{x}}  + 2\Omega V\sin\varphi \\
+  & + \frac{\partial }{\partial x} \left[ \nu \frac{\partial U}{\partial x} - \langle u'u'\rangle \right]
+    + \frac{\partial }{\partial y} \left[ \nu \frac{\partial U}{\partial y} - \langle u'v'\rangle \right] +
+      \frac{\partial }{\partial z} \left[ \nu \frac{\partial U}{\partial z} - \langle u'w'\rangle \right]
+\end{split}
+\end{equation}
+где 2Wv'sinj отброшено из за малости. Таким образом дополнительная
+сила на единицу массы будет составлять:
+\begin{equation}
+F_x=-\frac{\partial}{\partial{x}}\langle u'u' \rangle
+-\frac{\partial}{\partial{y}}\langle u'v' \rangle
+-\frac{\partial}{\partial{z}}\langle u'w'\rangle
+\end{equation}
+%
+% Using (8.5) in (8.1) taking the mean value of the resulting equation,
+% then simplifying using (8.7), the x-component of the momentum equation
+% for the mean flow becomes:
+% \begin{equation}
+% \begin{split}
+% \frac{DU}{Dt} & = -\frac{1}{\rho}\,\frac{\partial{P}}{\partial{x}}  + 2\Omega V\sin\varphi \\
+%   & + \frac{\partial }{\partial x} \left[ \nu \frac{\partial U}{\partial x} - \langle u'u'\rangle \right]
+%     + \frac{\partial }{\partial y} \left[ \nu \frac{\partial U}{\partial y} - \langle u'v'\rangle \right] +
+%       \frac{\partial }{\partial z} \left[ \nu \frac{\partial U}{\partial z} - \langle u'w'\rangle \right]
+% \end{split}
+% \end{equation}
+% The derivation is not as simple as it seems. See Hinze (1975: 22) for
+% details. Thus the additional force per unit mass due to the
+% turbulence\index{turbulent!stress} is:
+% \begin{equation}
+% F_x=-\frac{\partial}{\partial{x}}\langle u'u' \rangle
+% -\frac{\partial}{\partial{y}}\langle u'v' \rangle
+% -\frac{\partial}{\partial{z}}\langle u'w'\rangle
+% \end{equation}
+
+Члены $\rho{\langle u' u' \rangle}$, $\rho{\langle u' v'\rangle}$, и
+$\rho{\langle u' w' \rangle}$ передают (количество движения) импульс
+по направлениям $x$, $y$, и $z$ . 
+Например, член $\rho{\langle u' w'\rangle}$ описывает направленный
+книзу транспорт восточнонаправленного импульса (количества движения)
+через горизонтальную плоскость. Так как они передают количество
+движения (импульс) и впервые были описаны Рейнольдсом, называют их
+\emph{Напряжениями Рейнольдса}.
+%
+% The terms $\rho{\langle u' u' \rangle}$, $\rho{\langle u' v'
+% \rangle}$, and $\rho{\langle u' w' \rangle}$ transfer eastward
+% momentum ($\rho u' $) in the $x$, $y$, and $z$ directions. For
+% example, the term $\rho{\langle u' w' \rangle}$ gives the downward
+% transport \index{transport!momentum}of eastward momentum across a
+% horizontal plane. Because they transfer momentum, and because they
+% were first derived by Osborne Reynolds, they are called
+% \textit{Reynolds Stresses}\index{Reynolds Stress|textbf}.
+\end{paragraph}
+\end{section}
+
+\begin{section}{Расчёт напряжений Рейнольдса}
+% \section{Calculation of Reynolds Stress:}
+Члены трения, такие как $\partial{\langle u'w'\rangle}/\partial{z}$
+являются виртуальным напряжением (сравни Goldstein, 1965: 69 \& 80). 
+Теперь мы предположим что они играют такую же роль как члены
+вязкости в уравнении движения. В связи с этим встаёт проблема
+получения значений или функциональной формы уравнения для напряжений
+Рейнольдса. Используется несколько приближений.
+%
+% \index{Reynolds Stress!calculation of}The Reynolds stresses such as
+% $\partial{\langle u'w'\rangle}/\partial{z}$ are called virtual
+% stresses (cf. Goldstein, 1965: \S 69 \& \S 81) because we assume that
+% they play the same role as the viscous terms in the equation of
+% motion. To proceed further, we need values or functional form for the
+% Reynolds stress. Several approaches are used.
+
+\begin{paragraph}{From Experiments}
+\paragraph{From Experiments}
+We can calculate Reynolds stresses from direct measurements of ($u',
+v', w'$) made in the laboratory or ocean. This is accurate, but hard
+to generalize to other flows. So we seek more general approaches.
+%
+% We can calculate Reynolds stresses from direct measurements of ($u',
+% v', w'$) made in the laboratory or ocean. This is accurate, but hard
+% to generalize to other flows. So we seek more general approaches.
+\end{paragraph}
+
+\begin{paragraph}{По аналогии с молекулярной вязкостью}
+% \paragraph{By Analogy with Molecular Viscosity}
+Давайте вернёмся к примеру изображённому на Рисунке 8.1, который
+показывает пограничный слой над плоской поверхностью в $x$, $y$
+проекции. Предположим что течение над поверхностью турбулентное. Это
+очень распространённый тип течения в пограничном слое и мы будем
+описывать его неоднократно в последующих главах. Это может быть поток
+ветра над поверхностью моря или течение в придонном пограничном слое
+океана или течение в перемешанном слое на поверхности.
+%
+% Let's return to the example in figure 8.1, which shows flow above a
+% surface in the $x$, $y$ plane. Prandtl, in a revolutionary paper
+% published in 1904, stated that turbulent viscous effects are only
+% important in a very thin layer close to the surface, the boundary
+% layer. Prandtl's invention of the boundary layer allows us to describe
+% very accurately turbulent flow of wind above the sea surface, or flow
+% at the bottom boundary layer in the ocean, or flow in the mixed
+% layer\index{mixed layer} at the sea surface. See the box
+% \textit{Turbulent Boundary Layer Over a Flat Plate}.
+
+Предположим что течение над границей постоянно в направлении $x$, $y$, что
+статистические свойства потока изменяются только по направлению $z$, и
+что течение установившееся. Следовательно члены 
+напряжения~$\partial /\partial t = \partial /\partial x = \partial /\partial y = 0$
+будут:
+\begin{equation}
+2 \Omega V \sin \varphi + \frac{\partial }{\partial z} 
+ \left[\nu \frac{\partial U}{\partial z} - \langle u'w'\rangle \right] = 0
+\end{equation}
+%
+% To calculate flow in a boundary layer, we assume that flow is constant
+% in the $x$, $y$ direction, that the statistical properties of the flow
+% vary only in the $z$ direction, and that the mean flow is
+% steady. Therefore $\partial /\partial t = \partial /\partial x =
+% \partial /\partial y = 0$, and (8.10) can be written:
+% \begin{equation}
+% 2 \Omega V \sin \varphi + \frac{\partial }{\partial z} \left[\nu \frac{\partial
+% U}{\partial z} - \langle u'w'\rangle \right] = 0
+% \end{equation}
+
+Также по анологии с (8.2)
+\begin{equation}
+- \rho \langle u'w'\rangle = T_{xz} = \rho A_z \frac{\partial U}{\partial z}
+\end{equation}
+где $A_z$ это вихревая (турбулентная) вязкость, которая заменяет
+молекулярную вязкость~$\nu$ в уравнении (8.2). Тогда
+\begin{equation} 
+\frac{\partial{T_{xz}}}{\partial{z}} =
+\frac{\partial}{\partial{z}}\left(A_z\frac{\partial{U}}{\partial{z}}\right)
+\approx A_z \frac{\partial^2 U}{\partial z^2}
+\end{equation}
+предполагая $A_z$ или постоянной или изменяющейся гораздо медленнее в
+направлении $z$ чем $\partial U / \partial z$. Таким образом мы
+предположим позже что $A_z \approx z$.  Уравнения движения для
+компонентов $x$ и $y$ для однородного, устойчивого турбудентного
+пограничного слоя над или под горизонтальной поверхностью будут:
+\begin{subequations}
+\begin{align}
+\rho fV + \frac{\partial {T_{xz}}}{\partial z} & = 0 \\
+\rho fU - \frac{\partial {T_{yz}}}{\partial z} & = 0
+\end{align}
+\end{subequations}
+где $f=2\omega \sin \varphi$~--- – параметр Кориолиса и мы
+отбросили член молекулярной вязкости так как он гораздо меньше чем
+турбулентная вязкость. Заметьте что (8.14b) получайется из такой же
+производной по y компоненте уравнения движения. Нам понадобится 8.14
+когда мы будем описывать движение у поверхности.
+%
+% We now assume, in analogy with (8.2)
+% \begin{equation}
+% - \rho \langle u'w'\rangle = T_{xz} = \rho A_z \frac{\partial U}{\partial z}
+% \end{equation}
+% where $A_z$ is an \textit{eddy viscosity}\index{eddy
+% viscosity|textbf}\index{viscosity!eddy|textbf} or \textit{eddy
+% diffusivity}\index{eddy diffusivity|textbf} which replaces the
+% molecular viscosity $\nu$ in (8.2). With this assumption,
+% \begin{equation} 
+% \frac{\partial{T_{xz}}}{\partial{z}} =
+% \frac{\partial}{\partial{z}}\left(A_z\frac{\partial{U}}{\partial{z}}\right)
+% \approx A_z \frac{\partial^2 U}{\partial z^2}
+% \end{equation}
+% where I have assumed that $A_z$ is either constant or that it varies
+% more slowly in the $z$ direction than $\partial U / \partial
+% z$. Later, I will assume that $A_z \approx z$.
+% 
+% Because eddies can mix heat, salt, or other properties as well as
+% momentum, I will use the term eddy diffusivity. It is more general
+% than eddy viscosity, which is the mixing\index{mixing!of momentum} of
+% momentum.
+%
+% The $x$ and $y$ momentum equations for a homogeneous, steady-state,
+% turbulent boundary layer above or below a horizontal surface are:
+% \begin{subequations}
+% \begin{align}
+% \rho fV + \frac{\partial {T_{xz}}}{\partial z} & = 0 \\
+% \rho fU - \frac{\partial {T_{yz}}}{\partial z} & = 0
+% \end{align}
+% \end{subequations}
+% where $f=2\omega \sin \varphi$ is the Coriolis
+% parameter\index{Coriolis parameter}, and I have dropped the molecular
+% viscosity term because it is much smaller than the turbulent eddy
+% viscosity. Note, (8.15b) follows from a similar derivation from the
+% $y$-component of the momentum equation. We will need (8.15) when we
+% describe flow near the surface.
+
+\begin{center}
+\textbf{Турбулентный пограничный слой над плоской поверхностью.}
+\end{center}
+%%\begin{table}[h!]
+%%\fbox{\parbox{119mm}{
+%%\centering \small
+%%\begin{minipage}{11.5cm}
+%%\begin{center}\textbf{The Turbulent Boundary Layer \rule{0mm}{3ex}Over a Flat
+%%Plate}\\
+%%\end{center}
+Теория распределения средней скорости в турбулентном пограничном слое
+над плоской поверхностью разрабатывалась независимо Тейлором
+G.I.Taylor (1886--1975), Прандтлем L. Prandtl (1875--1953), и Карманом
+T. von Karman (1818--1963) с 1915 по 1935. Эта империческая теория,
+иногда называемая теорией длинны перемешивания, хорошо предсказывает
+профиль средней скорости у границы. Нам будет интересно то что она
+может предсказывать средний поток воздуха над морем. Далее
+представлена упрощённая версия этой теории, применённая к ровной
+поверхности. Начнём с предположения что средний поток в пограничном
+слое установившийся и изменяется только по направлению z. Внутри
+нескольких миллиметров границы трение важно и (8.2) будет иметь
+решение.
+\begin{equation}
+U = \frac{T_x}{\rho \nu} \,z
+\end{equation}
+и средняя скорость линейно изменяется с изменением расстояния над
+границей. Обычно (8.15) записывают в безразмерной форме:
+\begin{equation}
+\frac{U}{u^*} = \frac{u^* z}{\nu}
+\end{equation}
+где $u^{*2} \equiv T_x/\rho$ это Скорость Трения. Дальше от границы
+течение турбулентно и молекулярное трение не важно. В этих условиях мы
+можем использовать (8.12), и
+\begin{equation}
+A_z \frac{\partial U}{\partial z} = u^{*2}
+\end{equation}
+%
+% \vspace{-1.5 ex} \hspace*{1 em}\index{turbulent!boundary layer}The
+% revolutionary concept of a boundary layer was invented by Prandtl in
+% 1904 (Anderson, 2005). Later, the concept was applied to flow over a
+% flat plate by G.I. Taylor (1886--1975), L. Prandtl (1875--1953), and
+% T. von Karman (1881--1963) who worked independently on the theory from
+% 1915 to 1935. Their empirical theory, sometimes called the
+% \textit{mixing-length theory}\index{mixing-length theory|textbf}
+% predicts well the mean velocity profile close to the boundary. Of
+% interest to us, it predicts the mean flow of air above the sea. Here's
+% a simplified version of the theory applied to a smooth surface.
+%
+% \hspace*{1 em} We begin by assuming that the mean flow in the boundary
+% layer is steady and that it varies only in the $z$ direction. Within a
+% few millimeters of the boundary, friction is important and (8.2) has
+% the solution
+% \begin{equation}
+% U = \frac{T_x}{\rho \nu} \,z
+% \end{equation}
+% and the mean velocity varies linearly with distance above the
+% boundary. Usually (8.16) is written in dimensionless form:
+% \begin{equation}
+% \frac{U}{u^*} = \frac{u^* z}{\nu}
+% \end{equation}
+% where $u^{*2} \equiv T_x/\rho$ is the \textit{friction
+% velocity}\index{friction velocity|textbf}.
+%
+% \hspace*{1 em}Further from the boundary, the flow is turbulent, and
+% molecular friction is not important. In this regime, we can use
+% (8.13), and
+% \begin{equation}
+% A_z \frac{\partial U}{\partial z} = u^{*2}
+% \end{equation}
+
+Прандтль и Тэйлор предположили что большие вихри более эффективны в
+передаче импульса чем маленькие, и поэтому $A_z$ должно изменяться с
+расстоянием от стенки. Карман предположил что оно имеет форму 
+$A_z = \kappa z u^*$, где $\kappa$~--- безразмерная константа. С этим
+приближением уравнение дла профиля средней скорости принимает вид
+\begin{equation}
+\kappa z u^* \frac{\partial U}{\partial z} = u^{*2}
+\end{equation}
+%
+% \hspace*{1 em}Prandtl and Taylor assumed that large eddies are more
+% effective in mixing\index{mixing!of momentum} momentum than small
+% eddies, and therefore $A_z$ ought to vary with distance from the
+% wall. Karman assumed that it had the particular functional form $A_z =
+% \kappa z u^*$, where $\kappa$ is a dimensionless constant. With this
+% assumption, the equation for the mean velocity profile becomes
+% \begin{equation}
+% \kappa z u^* \frac{\partial U}{\partial z} = u^{*2}
+% \end{equation}
+
+Так как $U$~--- функция только одной переменной~$z$, мы можем 
+записать $dU = u^*/(\kappa z) \, dz$, что имеет решение
+\begin{equation}
+U = \frac{u^*}{\kappa} \ln \left(\frac{z}{z_0}\right)
+\end{equation}
+где $z_0$ это расстояние от границы на которой скорость стремится к
+нулю. Для воздушного потока над морем, $\kappa = 0.4$ и выражение для~$z_0$ по
+Charnock's (1955) $z_0 = 0.0156 \, u^{*2}/g$. Профиль средней скорости в
+атмосферном пограничном слое описанном в \S4.3 хорошо соответствует
+логарифмическому (8.20), также как средяя скорость в первых метрах под
+поверхностью моря. К тому же использование (4.1) в определении
+скорости трения и использование (8.20), даёт Чарноковскую форму
+коэффициента сопротивления как функцию скорости ветра на Рисунке 4.6.
+%
+% \hspace*{1 em}Because $U$ is a function only of $z$, we can write 
+% $dU = u^*/(\kappa z) \, dz$, which has the solution
+% \begin{equation}
+% U = \frac{u^*}{\kappa} \ln \left(\frac{z}{z_0}\right)
+% \end{equation}
+% where $z_0$ is distance from the boundary at which velocity goes to
+% zero.
+%
+% \hspace*{1 em}For airflow over the sea, $\kappa = 0.4$ and $z_o$ is
+% given by Charnock's (1955) relation $z_0 = 0.0156 \, u^{*2}/g$. The
+% mean velocity in the boundary layer just above the sea surface
+% described in \S 4.3 fits well the logarithmic profile of (8.20), as
+% does the mean velocity in the upper few meters of the sea just below
+% the sea surface. Furthermore, using (4.2) in the definition of the
+% friction velocity\index{friction velocity!and wind stress}, then using
+% (8.20) gives Charnock's form of the drag
+% coefficient\index{drag!coefficient} as a function of wind
+% speed.\rule[-1ex]{0mm}{1ex}
+%%\vspace{0.5ex}
+%%\end{minipage}
+%%}}
+%%\vspace{-3ex}
+%%\end{table}
+
+Приближение по которому $A_z$ изменяется с расстоянием от границы хорошо
+работает при описании потока над плоской поверхностью, где $U$~---
+функция расстояния от поверхности~$z$, и W, средняя скорость
+перпендикулярная плоскости равняется нулю. (Смотри блок Турбулентный
+пограничный слой над плоской поверхностью). Это классическое
+приближение, впервые описанное в 1925 году Прандтлем, ввёдшим
+концепцию пограничного слоя, и другими. Здесь $A_z$ определяется с
+помощью эмпирического подбора на основе данных собранных в
+аэродинамических трубах или измерений в поверхностном пограничном слое
+в море. Смотри Hinze (1975, \S5--2 and \S7--5) и Goldstein (1965:\S80) 
+для более подробного теоретического описания турбулентного потока
+у плоской поверхности.
+%
+% The assumption that an eddy viscosity $A_z$ can be used to relate the
+% Reynolds stress to the mean flow works well in turbulent boundary
+% layers. However $A_z$ cannot be obtained from theory. It must be
+% calculated from data collected in wind tunnels or measured in the
+% surface boundary layer at sea. See Hinze (1975, \S5--2 and\S7--5) and
+% Goldstein (1965: \S80) for more on the theory of
+% turbulence\index{turbulence!theory of} flow near a flat plate.
+
+Приближение (8.13) и классическая теория хорошо работают только когда
+трение гораздо больше силы Кориолиса. Это верно для потоков воздуха в
+пределах нескольких десятков метров над поверхностью моря и для
+потоков воды в пределах нескольких метров под его поверхностью. Не
+ясна возможность применения этой техники к другим потокам в
+океане. Например поток в перемешанном слое на глубинах ниже десяти
+метров классической теорией турбулентности описывается хуже. Tennekes
+and Lumley (1970: 57) писали:
+%
+% Prandtl's theory based on assumption (8.13) works well only where
+% friction is much larger than the Coriolis force. This is true for air
+% flow within tens of meters of the sea surface and for water flow
+% within a few meters of the surface. The application of the technique
+% to other flows in the ocean is less clear. For example, the flow in
+% the mixed layer\index{mixed layer!theory} at depths below about ten
+% meters is less well described by the classical turbulent
+% theory. Tennekes and Lumley (1990: 57) write:
+\begin{quotation}
+Модели с длинной перемешивания и вихревой вязкостью должны
+использоваться только для получения аналитических выражений для
+напряжений Рейнольдаса и профилей средней скорости если они желетельны
+для целей подгонки кривой в турбулентных потоках характеризующихся
+единым масштабом длинны и единым масштабом скорости. Применения теории
+длинны перемешивания в турбулентных потоках масштабы которых
+неизвестны, необходимо избегать.
+%
+% Mixing-length and eddy viscosity models should be used only to
+% generate analytical expressions for the Reynolds stress and
+% mean-velocity profile if those are desired for curve fitting purposes
+% in turbulent flows characterized by a single length scale and a single
+% velocity scale. The use of mixing-length theory\index{mixing-length
+% theory} in turbulent flows whose scaling laws are not known beforehand
+% should be avoided.
+\end{quotation}
+
+Проблемы с приближением вихревой вязкости:
+%
+% Problems with the eddy-viscosity approach:
+\begin{enumerate}
+\item 
+Кроме как в пограничных слоях толщиной в несколько метров,
+геофизические потоки могут находится под влиянием нескольких
+характерных масштабов. Например в пограничном слое атмосферы над морем
+по крайней мере три масштаба могут быть важны:I) высота над уровнем
+моря~$z$, II) масштаб Монина~--- Обухова~$L$, обсуждавшийся в \S4.3, и
+III) средняя скорость~$U$ разделённая на параметр Кориолиса~$U/f$.
+%
+% \vitem Except in boundary layers a few meters thick, geophysical flows
+% may be influenced by several characteristic scales. For example, in
+% the atmospheric boundary layer above the sea, at least three scales
+% may be important: i) the height above the sea $z$, ii) the
+% Monin-Obukhov scale $L$ discussed in \S4.3, and iii) the typical
+% velocity $U$ divided by the Coriolis parameter\index{Coriolis
+% parameter} $U/f$.
+
+\item
+Скорости $u'$, $v’$, $w'$~--- являются свойствами жидкости, в то время
+как $A_z$~--- свойство потока.
+%
+% \vitem The velocities $u',\,w'$ are a property of the \textit{fluid},
+% while $A_z$ is a property of the \textit{flow};
+
+\item
+ Члены вихревой вязкости несимметричны:
+\begin{align*}
+\langle u'v' \rangle &= \langle v'u' \rangle\,;\quad \text{но} \\
+A_x \frac{\partial{V}}{\partial{x}} &\neq A_y \frac{\partial{U}}{\partial{y}}
+\end{align*}
+%
+% \vitem 
+% Eddy viscosity terms are not symmetric:
+% \begin{align}
+% \langle u'v' \rangle &= \langle v'u' \rangle\,;\quad \text{but} \notag \\
+% A_x \frac{\partial{V}}{\partial{x}} &\neq A_y \frac{\partial{U}}{\partial{y}}
+% \notag
+% \end{align}
+\end{enumerate}
+\end{paragraph}
+
+\begin{paragraph}{Из статистической теории турбулентности}
+% \paragraph{From a Statistical Theory of Turbulence}
+Напряжение Рейнольдса может быть расчитано с помощью различных теорий
+которые относят $\langle u'u' \rangle$ к корреляциям более высокого
+порядка в форме $\langle u'u'u' \rangle$. Тогда встаёт проблема: как
+посчитать члены более высокого порядка? Это \emph{closure problem} в
+турбулентности. Не существует общего решения, но приближения ведут к
+пониманию некоторых форм турбулентности, таких как изотропная
+турбулентность на решётке в аэродинамической трубе (Batchelor
+1967). \emph{Изотропная турбулентность}~--- это турбулентность чьи
+статистические характеристики не зависят от нарпавления.
+%
+% The Reynolds stresses can be calculated from various theories which
+% relate $\langle u'u' \rangle$ to higher order correlations of the form
+% $\langle u'u'u' \rangle$. The problem then becomes: How to calculate
+% the higher order terms? This is the \textit{closure
+% problem}\index{closure problem|textbf}\index{turbulence!closure
+% problem|textbf} in turbulence.  There is no general solution, but the
+% approach leads to useful understanding of some forms of turbulence
+% such as isotropic turbulence downstream of a grid in a wind tunnel
+% (Batchelor 1967). \textit{Isotropic turbulence}\index{isotropic
+% turbulence|textbf}\index{turbulence!isotropic|textbf} is turbulence
+% with statistical properties that are independent of direction.
+
+Приближение может быть изменено специальным образом для потока в
+океане. В идеализированном случае сильного Рейнольдсовского течения мы
+можем посчитать статистические характеристики потока в
+термодинамическом равновесии. Так как реальный поток в океане далёк от
+равновесия, мы предположим что он будет стремиться к
+равновесию. Holloway(1986) пересмотрел это приближение, показав каким
+образом его можно использовать для описания влияния турбулентности на
+перемешивание и транспорт тепла.
+%
+% The approach can be modified somewhat for flow in the ocean. In the
+% idealized case of high Reynolds flow, we can calculate the statistical
+% properties of a flow in thermodynamic equilibrium. Because the actual
+% flow in the ocean is far from equilibrium, we assume it will evolve
+% towards equilibrium. Holloway (1986) provides a good review of this
+% approach, showing how it can be used to derive the influence of
+% turbulence\index{turbulent!mixing} on mixing and heat
+% transports\index{transport!heat}. One interesting result of the work
+% is that zonal mixing\index{mixing!zonal} ought to be larger than
+% meridional mixing\index{mixing!meridional}.
+\end{paragraph}
+
+\begin{paragraph}{Резюме:}
+% \paragraph{Summary}
+Турбулентные вихревые вязкости $A_x$, $A_y$, и $A_z$ не могут быть точно
+вычислены для большинства потоков в океане.
+%
+% The turbulent eddy viscosities $A_x$, $A_y$, and $A_z$ cannot be
+% calculated accurately for most oceanic flows.
+
+\begin{enumerate}
+\item
+Они могут быть оценены исходя из измерений турбулентных потоков. Тем
+не менее измерения в океане сложны; а измерения в лабораториях
+несмотря на всю их точность, не могут достигнуть чисел Рейнольдса в
+$10^{11}$, типичных для океана.
+%
+% \vitem They can be estimated from measurements of turbulent
+% flows. Measurements in the ocean, however, are difficult. Measurements
+% in the lab, although accurate, cannot reach Reynolds numbers of
+% $10^{11}$ typical of the ocean.
+
+\item
+Статистическая теория турбулентности даёт хорошее понимание роли
+турбулентности в океане и в данный момент это область активных
+исследований.
+%
+% \vitem 
+% The statistical theory of turbulence\index{turbulence!theory of} gives
+% useful insight into the role of turbulence in the ocean, and this is
+% an area of active research.
+\end{enumerate}
+
+\begin{table}
+\caption{Некоторые значения вязкости}
+\begin{tabular}{rcl}
+\hline
+$\nu_{\text{water}}$               &$=$& $10^{-6}\sqmps$ \\
+$\nu_{\text{tar at }\degCent{15}}$ &$=$& $10^6\sqmps$    \\
+$\nu_{\text{glacier ice}}$         &$=$& $10^{10}\sqmps$ \\
+$A_{y\text{ ocean}}$               &$=$& $10^4\sqmps$    \\ 
+$A_{z\text{ ocean}}$               &$=$& $(10^{-5} - 10^{-3})\sqmps$  \\ 
+\hline
+\end{tabular}
+\end{table}
+%
+%
+% \begin{table}[h!]\centering \small
+% \begin{tabular*}{62mm}{@{}rcl@{}}
+% \multicolumn{3}{@{}l@{}}{\bfseries Table 8.1 Some \rule[-1ex]{0mm}{1ex}Values for Viscosity}
+% \\
+% \hline
+% 
+% $\nu_{water}$                       &$=$&\rule{0mm}{3ex}$10^{-6}$     m$^2$/s    \\
+% $\nu_{tar\,at\,15^\circ{C}}$ &$=$&\rule{0mm}{3ex}$10^6$         m$^2$/s    \\
+% $\nu_{glacier\,ice}$              &$=$&\rule{0mm}{3ex}$10^{10}$     m$^2$/s    \\
+% $A_{y ocean}$                                     &$=$&\rule{0mm}{3ex}$10^4$         m$^2$/s    \\ 
+% $A_{z ocean}$                      &$=$&\rule{0mm}{3ex}$(10^{-5} - 10^{-3})$    m$^2$/s    \\ 
+% [0.5ex]
+% \hline
+% \end{tabular*} \\[0.5ex]
+% \vspace{-3ex}
+% \end{table}
+\end{paragraph}
+\end{section}
+
+% \begin{section}{Mixing in the Ocean}
+% % \section{Mixing in the Ocean}
+% \index{mixing!oceanic} \index{mixing} Turbulence in the ocean leads to
+% mixing. Because the ocean has stable stratification, vertical
+% displacement must work against the buoyancy\index{buoyancy}
+% force. Vertical mixing requires more energy than horizontal mixing. As
+% a result, horizontal mixing along surfaces of constant density is much
+% larger than vertical mixing across surfaces of constant density. The
+% latter, however, usually called \textit{diapycnal
+% mixing}\index{mixing!diapycnal|textbf}\index{diapycnal mixing|textbf},
+% is very important because it changes the vertical structure of the
+% ocean, and it controls to a large extent the rate at which deep water
+% eventually reaches the surface in mid and low latitudes.
+%
+% The equations describing mixing depend on many processes. See Garrett
+% (2006) for a good overview of the subject. Here I consider some simple
+% flows. A simple equation for vertical mixing\index{mixing!vertical} by
+% eddies of a tracer $\Theta$ such as salt or temperature is:
+% \begin{equation}
+% \frac{\partial \Theta}{\partial t} + W\,\frac{\partial \Theta}{\partial z} =
+% \frac{\partial }{\partial z} \left( A_z \frac{\partial \Theta}{\partial z}
+% \right) + S
+% \end{equation}
+% where $A_z$ is the vertical eddy diffusivity, $W$ is a mean vertical
+% velocity, and $S$ is a source term.
+%
+% \begin{paragraph}{Average Vertical Mixing}
+% % \paragraph{Average Vertical Mixing}
+% \index{mixing!average vertical} Walter Munk (1966) used a very simple
+% observation to calculate vertical mixing in the ocean. He observed
+% that the ocean has a thermocline\index{thermocline} almost everywhere,
+% and the deeper part of the thermocline\index{thermocline} does not
+% change even over decades (figure 8.4). This was a remarkable
+% observation because we expect downward mixing would continuously
+% deepen the thermocline. But it doesn't. Therefore, a steady-state
+% thermocline requires that the downward mixing of heat by
+% turbulence\index{turbulent!mixing} must be balanced by an upward
+% transport of heat\index{transport!heat upward} by a mean vertical
+% current $W$. This follows from (8.21) for steady state with no sources
+% or sinks of heat:
+% \begin{equation}
+% W \frac{\partial T}{\partial z} = A_z \frac{\partial^2 T}{\partial z^2}
+% \end{equation}
+% where $T$ is temperature as a function of depth in the thermocline.
+%
+% The equation has the solution:
+% \begin{equation}
+% T \approx T_0 \exp (z/H)
+% \end{equation}
+% where $H=A_z/W$ is the scale depth of the
+% thermocline\index{thermocline}, and $T_0$ is the temperature near the
+% top of the thermocline. Observations of the shape of the deep
+% thermocline are indeed very close to a exponential function.  Munk
+% used an exponential function fit through the observations of $T(z)$ to
+% get $H$.
+%
+% \begin{figure}[t!]
+% \makebox[121mm] [c]{\includegraphics{mixing}}
+% \footnotesize
+% Figure 8.4 Potential \rule{0mm}{3ex}temperature measured as a function
+% of depth (pressure) near 24.7\degrees N, 161.4\degrees W in the
+% central North Pacific by the \textit{Yaquina} in 1966 ($\bullet$), and
+% by the \textit{Thompson} in 1985 $\left( _\square \;\right)$. Data
+% from \textit{Atlas of Ocean Sections} produced by Swift, Rhines, and
+% Schlitzer.
+% \label{fig:mixing}
+% \vspace{-3ex}
+% \end{figure}
+%
+% Munk calculated $W$ from the observed vertical distribution of
+% $^{14}$C, a radioactive isotope of carbon, to obtain a vertical time
+% scale. In this case, $S=-1.24 \times 10^{-4}$ years$^{-1}$. The length
+% and time scales gave $W=1.2$ cm/day and
+% \begin{equation}
+% \left< A_z \right> = 1.3 \times 10^{-4} \text{ m$^2$/s} \qquad \text{Average
+% Vertical Eddy Diffusivity}
+% \end{equation}
+% where the brackets denote average eddy diffusivity in the
+% thermocline\index{thermocline!eddy diffusivity in}.
+%
+% Munk also used $W$ to calculate the average vertical flux of water
+% through the thermocline in the Pacific, and the flux agreed well with
+% the rate of formation of bottom water assuming that bottom water
+% upwells almost everywhere at a constant rate in the Pacific. Globally,
+% his theory requires upward mixing of 25 to 30 Sverdrups of water,
+% where one Sverdrup is $10^6$ cubic meters per second.
+% \end{paragraph}
+%
+% \begin{paragraph}{Measured Vertical Mixing}
+% % \paragraph{Measured Vertical Mixing}
+% \index{mixing!measured vertical|(} 
+% \index{mixing!vertical!measured}Direct observations of vertical mixing
+% required the development of techniques for measuring: i) the fine
+% structure of turbulence\index{turbulent!fine structure}, including
+% probes able to measure temperature and salinity with a spatial
+% resolution of a few centimeters (Gregg 1991), and ii) the distribution
+% of tracers such as sulphur hexafluoride (SF$_6$) which can be easily
+% detected at concentrations as small as one gram in a cubic kilometer
+% of seawater.
+%
+% Direct measurements of open-ocean
+% turbulence\index{turbulence!measurement of} and the diffusion of
+% SF$_6$ yield an eddy diffusivity:
+% \begin{equation}
+% A_z \approx 1 \times 10^{-5} \text{ m$^2$/s} \qquad \text{Open-Ocean Vertical
+% Eddy Diffusivity}
+% \end{equation}
+% For example, Ledwell, Watson, and Law (1998) injected 139 kg of SF$_6$
+% in the Atlantic near 26\degrees N, 29\degrees W 1200 km west of the
+% Canary Islands at a depth of 310 m. They then measured the
+% concentration for five months as it mixed over hundreds of kilometers
+% to obtain a diapycnal eddy
+% diffusivity\index{mixing!diapycnal}\index{diapycnal mixing} of $A_z =
+% 1.2 \pm 0.2 \times 10^{-5}$ m$^2$/s.
+%
+% The large discrepancy between Munk's calculation of the average eddy
+% diffusivity for vertical mixing and the small values observed in the
+% open ocean has been resolved by recent studies that show:
+% \begin{equation}
+% A_z \approx 10^{-3} \to 10^{-1} \text{ m$^2$/s} \qquad \text{Local Vertical Eddy Diffusivity}
+% \end{equation}
+%
+% Polzin et al. (1997) measured the vertical structure of temperature in
+% the Brazil Basin in the south Atlantic. They found $A_z > 10^{-3}$
+% m$^2$/s close to the bottom when the water flowed over the western
+% flank of the mid-Atlantic ridge at the eastern edge of the
+% basin. Kunze and Toole (1997) calculated enhanced eddy diffusivity as
+% large as $A= 10^{-3}$ m$^2$/s above Fieberling Guyot in the Northwest
+% Pacific and smaller diffusivity along the flank of the seamount. And,
+% Garbato et al (2004) calculated even stronger mixing in the Scotia Sea
+% where the Antarctic Circumpolar Current flows between Antarctica and
+% South America.
+%
+% The results of these and other experiments show that mixing occurs
+% mostly by breaking internal waves and by shear at oceanic boundaries:
+% along continental slopes, above seamounts and mid-ocean ridges, at
+% fronts, and in the mixed layer\index{mixed layer!mixing in} at the sea
+% surface. To a large extent, the mixing is driven by deep-ocean tidal
+% currents\index{mixing!tidal}\index{mixing!of deep waters}, which
+% become turbulent when they flow past obstacles on the sea floor,
+% including seamounts and mid-ocean ridges (Jayne et al, 2004).
+%
+% Because water is mixed along boundaries or in other regions
+% (Gnadadesikan, 1999), we must take care in interpreting temperature
+% profiles such as that in figure 8.4. For example, water at 1200 m in
+% the central north Atlantic could move horizontally to the Gulf
+% Stream\index{Gulf Stream!and mixing}, where it mixes with water from
+% 1000 m. The mixed water may then move horizontally back into the
+% central north Atlantic at a depth of 1100 m. Thus parcels of water at
+% 1200 m and at 1100 m at some location may reach their position along
+% entirely different paths.
+% \end{paragraph}
+%
+% \begin{paragraph}{Measured Horizontal Mixing}
+% % \paragraph{Measured Horizontal Mixing}
+% \index{mixing!average horizontal|(} Eddies mix fluid in the
+% horizontal, and large eddies mix more fluid than small eddies. Eddies
+% range in size from a few meters due to
+% turbulence\index{turbulent!mixing} in the
+% thermocline\index{thermocline} up to several hundred kilometers for
+% geostrophic\index{geostrophic currents!eddies} eddies discussed in
+% Chapter 10.
+%
+% In general, mixing depends on Reynolds number $R$ (Tennekes 1990:
+% p. 11)
+% \begin{equation}
+% \frac{A}{\gamma} \approx \frac{A}{\nu} \sim \frac{UL}{\nu} = R
+% \end{equation}
+% where $\gamma$ is the molecular diffusivity of heat, $U$ is a typical
+% velocity in an eddy, and $L$ is the typical size of an
+% eddy. Furthermore, horizontal eddy diffusivity are ten thousand to ten
+% million times larger than the average vertical eddy diffusivity.
+%
+% Equation (8.27) implies $A_x\sim UL$. This functional form agrees well
+% with Joseph and Sender's (1958) analysis, as reported in (Bowden 1962)
+% of spreading of radioactive tracers, optical turbidity, and
+% Mediterranean Sea water in the north Atlantic. They report
+% \begin{gather}
+% A_x = P L \\
+% 10 \text{ km} < L < 1500 \text{ km} \notag \\
+% P = 0.01 \pm 0.005 \text{ m/s} \notag
+% \end{gather}
+% where $L$ is the distance from the source, and $P$ is a constant.
+%
+% The horizontal eddy diffusivity (8.28) also agrees well with more
+% recent reports of horizontal diffusivity. Work by Holloway (1986) who
+% used satellite altimeter observations of geostrophic
+% currents\index{geostrophic currents!altimeter observations of},
+% Freeland who tracked \textsc{sofar} underwater floats, and Ledwell
+% Watson, and Law (1998) who used observations of currents and tracers
+% to find
+% \begin{equation}
+% A_x \approx 8 \times 10^2 \text{ m$^2$/s} \qquad \text{Geostrophic Horizontal
+% Eddy Diffusivity}
+% \end{equation}
+% Using (8.28) and the measured $A_x$ implies eddies with typical scales
+% of 80 km, a value near the size of geostrophic
+% eddies\index{geostrophic currents!eddies} responsible for the mixing.
+%
+% Ledwell, Watson, and Law (1998) also measured a horizontal eddy
+% diffusivity. They found
+% \begin{equation}
+% A_x \approx 1 \text{ -- } 3 \text{ m$^2$/s} \qquad \text{Open-Ocean Horizontal
+% Eddy Diffusivity}
+% \end{equation}
+% over scales of meters due to turbulence\index{turbulent!mixing} in the
+% thermocline\index{thermocline!mixing in} probably driven by breaking
+% internal waves. This value, when used in (8.28) implies typical
+% lengths of 100 m for the small eddies responsible for mixing in this
+% experiment.\index{mixing!average horizontal|)}
+% \end{paragraph}
+%
+% \begin{paragraph}{Comments on horizontal mixing}
+% % \paragraph{Comments on horizontal mixing}
+%
+% \begin{enumerate}
+% \vitem Horizontal eddy diffusivity is $10^5 - 10^8$ times larger than
+% vertical eddy diffusivity.
+%
+% \vitem \index{mixing!horizontal}Water in the interior of the ocean
+% moves along sloping surfaces of constant density with little local
+% mixing until it reaches a boundary where it is mixed vertically. The
+% mixed water then moves back into the open ocean again along surfaces
+% of constant density (Gregg 1987).
+%
+% One particular case is particularly noteworthy. When water, mixing
+% downward through the base of the mixed layer,\index{mixed layer!mixing
+% through base of} flows out into the thermocline along surfaces of
+% constant density, the mixing leads to the \textit{ventilated
+% thermocline}\index{thermocline!ventilated|textbf} model of oceanic
+% density distributions.
+%
+% \vitem Observations of mixing in the ocean imply that numerical models
+% of the oceanic circulation should use mixing schemes that have
+% different eddy diffusivity parallel and perpendicular to surfaces of
+% constant density, not parallel and perpendicular to level
+% surfaces\index{level surface} of constant $z$ as I used
+% above. Horizontal mixing along surfaces of constant $z$ leads to
+% mixing across layers of constant density because layers of constant
+% density are inclined to the horizontal by about $10^{-3}$ radians (see
+% \S10.7 and figure 10.13).
+%
+% Studies by Danabasoglu, McWilliams, and Gent (1994) show that
+% numerical models using isopycnal and diapycnal
+% mixing\index{mixing!diapycnal}\index{diapycnal mixing} leads to much
+% more realistic simulations of the oceanic circulation.
+%
+% \vitem Mixing is horizontal and two dimensional for horizontal scales
+% greater than $NH/(2f)$ where $H$ is the water depth, $N$ is the
+% stability frequency\index{stability!frequency} (8.36), and $f$ is the
+% Coriolis parameter (Dritschel, Juarez, and Ambaum (1999).
+% \end{enumerate}
+% \end{paragraph}
+% \vspace{-2ex}
+% \end{section}
+
+\begin{section}{Устойчивость}
+% \section{Stability}
+В предидущем параграфе мы говорили о том что поток жидкости с большими
+числами Рейнольдса турбулентен. Это одна из форм неустойчивости. В
+океане существует много других форм неустойчивости. Здесь мы обсудим
+три самые важные I)статическую устойчивость – связанную с
+изменением плотности с глубиной,II)динамическую устойчивость связанную
+со сдвигом скорости, и III) двойную диффузию, связанную с градиентами
+солёности и температуры.
+%
+% We saw in section 8.2 that fluid flow with a sufficiently large
+% Reynolds number is turbulent. This is one form of instability. Many
+% other types of instability occur in the in the ocean. Here, let's
+% consider three of the more important ones: i) \textit{static
+% stability}\index{stability!static|textbf} associated with change of
+% density with depth, ii) \textit{dynamic
+% stability}\index{stability!dynamic|textbf} associated with velocity
+% shear, and iii) \textit{double-diffusion}\index{double diffusion}
+% associated with salinity and temperature gradients in the ocean.
+
+\begin{paragraph}{Статическая устойчивость и частота устойчивости}
+% \paragraph{Static Stability and the Stability Frequency} 
+Сначала рассмотрим статическую устойчивость. Если более плотная вода
+находится над менее плотной, то жидкость неустойчива. Более плотная
+вода будет опускаться под менее плотную. И наоборот, если менее
+плотная вода находится над более плотной, граница раздела между ними
+устойчива. Но насколько устойчива? Можно предположить что чем больше
+контраст плотности вдоль поверхности раздела, тем она устойчивей. Это
+пример статической устойчивости. Статическая устойчивость важна в
+любом стратифицированном потоке, где плотность увеличивается с
+глубиной, и нам необходим критерий для оценки важности (величины)
+устойчивости.
+%
+% Consider first static stability. If more dense water lies above less
+% dense water, the fluid is unstable. The more dense water will sink
+% beneath the less dense. Conversely, if less dense water lies above
+% more dense water, the interface between the two is stable.  But how
+% stable? We might guess that the larger the density contrast across the
+% interface, the more stable the interface. This is an example of static
+% stability.  Static stability is important in any \textit{stratified}
+% flow where density increases with depth, and we need some criterion
+% for determining the importance of the stability.
+
+\begin{figure}[b!]
+\makebox [120mm][c]{\includegraphics{pics/stabilitysketch}}
+\caption{Рисунок для расчёта статической устойчивости и частоты
+стратификации.}
+\label{fig:stabilitysketch}
+%\vspace{-2ex}
+\end{figure}
+%
+% \begin{figure}[b!]
+% \vspace{1ex}
+% \makebox[120mm] [c]{\includegraphics{stabilitysketch}}
+% \centering
+% \footnotesize
+% Figure 8.5 Sketch for \rule{0mm}{4ex}calculating static stability and
+% stability frequency\index{stability!frequency!sketch of}.
+%
+% \label{fig:stabilitysketch}
+% %\vspace{-2ex}
+% \end{figure}
+
+\textbf{Статическая Устойчивость и Частота Стратификации}
+Рассмотрим частицу воды вертикально перемещённую в стратифицированной
+жидкости (Рисунок 8.4). Сила плавучести F действующая на перемещённую
+частицу равна разности между её массой $V g \rho '$ и массой окружающей воды
+$V g \rho_2$, где $V$~--- объём частицы:
+\begin{displaymath}
+F=V\,g\,(\rho_2-\rho{'})
+\end{displaymath}
+Ускорение перемещённой частицы составит:
+\begin{equation}
+a=\frac{F}{m}=\frac{g\,(\rho_2-\rho{'})}{\rho{'}}
+\end{equation}
+но
+\begin{align}
+\rho_2  &= \rho + \left( \frac{d {\rho}}{d {z}}\right)_{water}
+\delta z \\
+\rho{'} &= \rho + \left( \frac{d {\rho}}{d {z}}\right)_{parcel}
+\delta z
+\end{align}
+Подставляя (8.21) и (8.22) в (8.20), и игнорируя члены
+пропорциональные $\delta{z^2}$, получим:
+\begin{equation}
+E = -\frac{1}{\rho}\,\Biggl[\left(\frac{d \rho}{d {z}}\right)_{water}
+- \,\left(\frac{d \rho}{d {z}}\right)_{parcel}\Biggr]
+\end{equation}
+где $E \equiv -a/(g \, \delta z)$ устойчивость столба воды. Это может
+быть записанов в терминах измеренной температуры и солёности t(z),
+S(z) (Mc Dougall?, 1987; Sverdrup, Johnson, and Fleming, 1942: 416; or
+Gill, 1982: 50):
+\begin{equation}
+E = \alpha\left(\frac{dt}{dz} - g\rho\Gamma\right) - \beta\frac{dS}{dz},
+\end{equation}
+где
+\begin{equation}
+\alpha = -\frac{1}{\rho}\left.\frac{\partial \rho}{\partial t}\right|_{S,p},\qquad
+\beta  = -\frac{1}{\rho}\left.\frac{\partial \rho}{\partial S}\right|_{t,p},\qquad
+\Gamma = \left. \frac{\partial t}{\partial p}\right|_{\text{adiabatic}}
+\end{equation}
+and where $\alpha$ is the thermal expansion coefficient, $\beta$ is
+the saline contraction coefficient, and $\Gamma$ is the adiabatic
+lapse rate, the change of temperature with pressure as the water
+parcel moves without exchanging heat with it's surroundings. $p$ is
+pressure, $t$ is temperature in celsius, $\rho$ is density, and $S$ is
+salinity.
+%
+% Consider a parcel of water that is displaced vertically and
+% adiabatically in a stratified fluid (figure 8.5). The
+% buoyancy\index{buoyancy} force $F$ acting on the displaced parcel is
+% the difference between its weight $V g \rho '$ and the weight of the
+% surrounding water $V g \rho_2$, where $V$ is the volume of the parcel:
+% \begin{displaymath}
+% F=V\,g\,(\rho_2-\rho{'})
+% \end{displaymath}
+% The acceleration of the displaced parcel is:
+% \begin{equation}
+% a=\frac{F}{m}=\frac{g\,(\rho_2-\rho{'})}{\rho{'}}
+% \end{equation}
+% but
+% \begin{align}
+% \rho_2  &= \rho + \left( \frac{d {\rho}}{d {z}}\right)_{water}
+% \delta z \\
+% \rho{'} &= \rho + \left( \frac{d {\rho}}{d {z}}\right)_{parcel}
+% \delta z
+% \end{align}
+% Using (8.32) and (8.33) in (8.31), ignoring terms proportional to
+% $\delta{z^2}$, we obtain:
+% \begin{equation}
+% E = -\frac{1}{\rho}\,\Biggl[\left(\frac{d \rho}{d {z}}\right)_{water}
+% - \,\left(\frac{d \rho}{d {z}}\right)_{parcel}\Biggr]
+% \end{equation}
+% where $E \equiv -a/(g \, \delta z)$ is the
+% \textit{stability}\index{stability|textbf} of the water column
+% (McDougall, 1987; Sverdrup, Johnson, and Fleming, 1942: 416; or Gill,
+% 1982: 50).
+
+В верхнем километре океана устойчивость большая, и первый член в
+(8.23) гораздо больше чем второй. Первый член пропорционален изменению
+плотности в столбе жидкости; второй пропорционален сжимаемости морской
+воды, которая очень мала. Пренебрегая вторым членом, мы можем записать
+уравнение устойчивости (равновесия).
+\begin{equation}
+\boxed{E \approx -\frac{1}{\rho}\,\frac{d{\rho}}{d{z}} }
+\end{equation}
+Приближение использованное нами для того чтобы вывести уравение (8.26)
+правомерно для $E> 50\times 10^{-8}$/м.
+%
+% In the upper kilometer of the ocean stability is large, and the first
+% term in (8.34) is much larger than the second. The first term is
+% proportional to the rate of change of density of the water column. The
+% second term is proportional to the compressibility of sea water, which
+% is very small. Neglecting the second term, we can write the
+% \textit{stability equation}\index{stability!equation|textbf}:
+% \begin{equation}
+% \boxed{E \approx -\frac{1}{\rho}\,\frac{d{\rho}}{d{z}} }
+% \end{equation}
+% The approximation used to derive (8.35) is valid for $E > 50 \times
+% 10^{-8}$/m.
+
+
+Глубже в океане изменение плотности настолько малы что мы должны
+рассматривать небольшие изменения плотности частицы воды вызванные
+изменеиями в давлении при её вертикальном перемещении и использовать
+для расчётов формулу (8.24).
+%
+% Below about a kilometer in the ocean, the change in density with depth
+% is so small that we must consider the small change in density of the
+% parcel due to changes in pressure as it is moved vertically.
+
+Устойчивость определяется исходя из условия:
+\begin{align*}
+E>0 & \quad \text{Stable} \\
+E=0 & \quad \text{Neutral Stability} \\
+E<0 & \quad \text{Unstable}
+\end{align*}
+В верхнем километре океана, $z<1\,000\m$, $E=(100\text{--}1000)*10^{-8}$/м, а в
+глубоководных желобах $z > 7\,000\m$, $E=1*10^{-8}$/м.
+%% !!! числа разные
+%
+% Stability is defined such that
+% \begin{align}
+% E>0 & \quad \text{Stable} \notag \\
+% E=0 & \quad \text{Neutral Stability} \notag \\
+% E<0 & \quad \text{Unstable} \notag
+% \end{align}
+% In the upper kilometer of the ocean, $z < 1,000$ m, $E = (50$---$1000)
+% \times 10^{-8}$/m, and in deep trenches where $z > 7,000$ m, $E = 1
+% \times 10^{-8}$/m.
+
+\begin{figure}[t!]
+\makebox [120mm][c]{\includegraphics{pics/stabilityfreq}} 
+\caption{Частота стратификации измеренная в Тихом океане Слева:
+Устойчивость глубокого термоклина на востоке Куросио. Справа:
+Устойчивость неглубокого термоклина характерного для тропиков. Имейте
+в виду разницу масштабов.}  
+\label{fig:stabilityfreq}
+\end{figure}
+%
+% \begin{figure}[t!]
+% %\vspace{-1ex}
+% \makebox[120mm] [c]{\includegraphics{stabilityfreq}} 
+% \footnotesize
+% Figure 8.6. Observed \rule{0pt}{3ex} stability
+% frequency\index{stability!frequency!in Pacific} in the Pacific.
+% \textbf{Left:} Stability of the deep
+% thermocline\index{thermocline!stability of} east of the
+% Kuroshio\index{Kuroshio!thermocline}.  \textbf{Right:} Stability of a
+% shallow thermocline typical of the tropics. Note the change of scales.
+% \label{fig:stabilityfreq}
+% \vspace{-3ex}
+% \end{figure}
+
+Влияние устойчивости обычно выражается через частоту устойчивости $N$:
+\begin{equation}
+N^2 \equiv -g E
+\end{equation}
+Частоту устойчивости часто называют Частота Вяйселя Брантля~--- или
+частотой стратификации. Частота выражает величину устойчивости, и
+является фундоментальной переменной в динамике стратифицированной
+жидкости. В простейшем виде, она может быть интерпретирована как
+вертикальная частота (колебаний) вызванная вертикальным перемещением
+частицы жидкости. Таким образом это максимальная частота внутренних
+волн в океане. Обычные значения N составляют несколько периодов в час
+(рис 8.5).
+%
+% The influence of stability is usually expressed by a
+% \textit{stability frequency}\index{stability!frequency|textbf}
+% $N$:
+% \begin{equation}
+% N^2 \equiv -g E
+% \end{equation}
+% The stability frequency\index{stability!frequency} is often called the
+% \textit{buoyancy frequency}\index{buoyancy!frequency|textbf} or the
+% \textit{Brunt-Vaisala frequency}\index{Brunt-Vaisala
+% frequency|textbf}. The frequency quantifies the importance of
+% stability, and it is a fundamental variable in the dynamics of
+% stratified flow. In simplest terms, the frequency can be interpreted
+% as the vertical frequency excited by a vertical displacement of a
+% fluid parcel. Thus, it is the maximum frequency of internal waves in
+% the ocean. Typical values of $N$ are a few cycles per hour (figure 8.6).
+\end{paragraph}
+
+\begin{paragraph}{Динамическая Устойчивость и Число Ричардсона}
+% \paragraph{Dynamic Stability and Richardson's Number}
+Если скорость изменяется с глубиной в устойчивом стратифицированном
+потоке, тогда поток может стать неустойчивым если изменеие скорости с
+глубиной, сдвиг скорости, достаточно большой. Самый простой пример это
+ветер дующий над океаном. В этом случае устойчивость вдоль поверхности
+моря очень большая. We might say it is infinite because there is a
+step discontinuity in r, and (8.27) is infinite. Кроме того, ветер
+дующий над океаном вызывает волны, и если он достаточно сильный,
+поверхность становится нестабильной и волны обрушаются.
+%
+% If velocity changes with depth in a stable, stratified flow, then the
+% flow may become unstable if the change in velocity with depth, the
+% \textit{current shear}\index{current shear|textbf}, is large
+% enough. The simplest example is wind blowing over the ocean. In this
+% case, stability is very large across the sea surface. We might say it
+% is infinite because there is a step discontinuity in $\rho$, and
+% (8.36) is infinite. Yet, wind blowing on the ocean creates waves, and
+% if the wind is strong enough, the surface becomes unstable and the
+% waves break.
+
+Это пример \emph{динамической неустойчивости} при которой устойчивая
+жидкость становится неустойчивой благодаря сдвигу скорости. Другой
+пример динамической неустойчивости это это неустойчивость
+Кельвина-Гельмгольца, наблюдающаяся когда контраст в жидкости со
+сдвигом скорости гораздо меньше чем на поверхности моря, как например
+в термоклине или на вершине стабильного атмосферного пограничного слоя
+(Рисунок 8.6)
+%
+% This is an example of \textit{dynamic
+% instability}\index{instability!dynamic|textbf}\index{dynamic
+% instability|textbf} in which a stable fluid is made unstable by
+% velocity shear.  Another example of dynamic instability, the
+% Kelvin-Helmholtz instability, occurs when the density contrast in a
+% sheared flow is much less than at the sea surface, such as in the
+% thermocline\index{thermocline} or at the top of a stable, atmospheric
+% boundary layer (figure 8.7).
+
+\begin{figure}[t!]
+\makebox [120mm][c]{\includegraphics{pics/helmholtz}} 
+\caption{Волнистые облака демонстрирующие неустойчивость
+Кельвина-Гельмгольца на вершине устойчивого пограничного атмосферного
+слоя.(взято из NOAA Forecast Systems Laboratory.). Note that the
+billows become large enough that more dense air overlies less dense
+air, and the billows collapse into turbulence.}
+\label{fig:helmholtz}
+\end{figure}
+%
+% \begin{figure}[t!]
+% \makebox[120mm] [c]{\includegraphics{helmholtz}} 
+% \footnotesize Figure 8.7 Billow clouds showing a Kelvin-Helmholtz
+% \rule{0mm}{4ex}instability at the top of a stable atmospheric
+% layer. Some billows can become large enough that more dense air
+% overlies less dense air, and then the billows collapse into
+% turbulence\index{turbulent!mixing}. Photography copyright Brooks
+% Martner, \textsc{noaa} Environmental Technology Laboratory.
+% \label{fig:helmholtz}
+% \vspace{-3ex}
+% \end{figure}
+
+Относительная важность статической устойчивости и динамической
+неустойчивости выражается Число Ричардсона.
+\begin{equation}
+\boxed{R_i\equiv\frac{g\,E}{(\partial{U}/\partial{z})^2} }
+\end{equation}
+где в числителе стоит величина статической устойчивости, а в
+знаменателе величина сдвига скорости.
+\begin{align*}
+R_i &>0.25 \quad \text{Stable} \\
+R_i &<0.25 \quad \text{Velocity Shear Enhances Turbulence} 
+\end{align*}
+%
+% The relative importance of static stability and dynamic instability is
+% expressed by the \textit{Richardson Number}\index{Richardson
+% Number|textbf}:
+% \begin{equation}
+% \boxed{R_i\equiv\frac{g\,E}{(\partial{U}/\partial{z})^2} }
+% \end{equation}
+% where the numerator is the strength of the static stability, and the
+% denominator is the strength of the velocity shear.
+% \begin{align}
+% R_i &>0.25 \quad \text{Stable} \notag \\
+% R_i &<0.25 \quad \text{Velocity Shear Enhances Turbulence} \notag
+% \end{align}
+
+Заметте что число Ричардсона не единственный критерий
+неустойчивости. Для появления турбулентности число Рейнольдса должно
+быть большим, а число Ричардсона меньше 0,25. эти признаки встречаются
+в некоторых океанских течениях. Турбулентность перемешивает жидкость
+по вертикали приводя к вихревой вязкости и вихревой диффузии. Так как
+океан в основном сильно стратифицирован а течения в нём слабые,
+турбулентное перемешивание прерывистое и нечастое событие. Измерения
+плотности как функции глубины редко демонстрирует наличие более
+плотной среды над над менее плотной как происходит в обрушающихся
+волнах (Рисунок 8,6) (Moum and Caldwell 1985).
+%
+% Note that a small Richardson number is not the only criterion for
+% instability.  The Reynolds number must be large and the Richardson
+% number must be less than 0.25 for turbulence. These criteria are met
+% in some oceanic flows. The turbulence mixes fluid in the vertical,
+% leading to a vertical eddy viscosity and eddy diffusivity. Because the
+% ocean tends to be strongly stratified and currents tend to be weak,
+% turbulent mixing is intermittent and rare. Measurements of density as
+% a function of depth rarely show more dense fluid over less dense fluid
+% as seen in the breaking waves in figure 8.7 (Moum and Caldwell 1985).
+\end{paragraph}
+
+\begin{paragraph}{Двойная Диффузия и Солёностные Пальцы}
+% \paragraph{Double Diffusion and Salt Fingers}
+В некоторых районах океана менее плотная вода находится над более
+плотной, однако столб воды неустойчив даже если течения
+отсутствуют. Неустойчивость вызывается из за того что молекулярная
+диффузия тепла происходит в 100 раз быстрее молекулярной диффузии
+соли. Эта неустойчивость была впервые открыта Мелвином Штерном (Meivin
+Stern) в 1960, который сразу понял её значение для океанографии.
+%
+% \index{double diffusion!salt fingers}In some regions of the ocean,
+% less dense water overlies more dense water, yet the water column is
+% unstable even if there are no currents. The instability occurs because
+% the molecular diffusion of heat is about 100 times faster than the
+% molecular diffusion of salt. The instability was first discovered by
+% Melvin Stern in 1960 who quickly realized its importance in
+% oceanography.
+
+\begin{figure}[h!]
+\makebox [120mm][c]{\includegraphics{pics/saltfingers}} 
+\caption{Слева: Начальное распределение плотности по
+вертикали. Справа: Через некоторое время, диффузия тепла приводит к
+образованию тонкого неустойчивого слоя между двумя
+изначальноустойчивыми слоями. Тонкий неустойчивый слой погружается в
+нижний слой в виде солёностных пальцев. Вертикальный масштаб пальцев
+составляет несколько сантиметров.}
+\label{fig:saltfingers}
+\vspace{-2ex}
+\end{figure}
+%
+% \begin{figure}[h!]
+% \makebox[120mm] [c]{\includegraphics{saltfingers}} \footnotesize
+% Figure 8.8 \textbf{Left:} Initial \rule{0mm}{4ex}distribution of
+% density in the vertical. \textbf{Right:} After some time, the
+% diffusion of heat leads to a thin unstable layer between the two
+% initially stable layers. The thin unstable layer sinks into the lower
+% layer as salty fingers. The vertical scale in the figures is a few
+% centimeters.
+% \label{fig:saltfingers}
+% \vspace{-2ex}
+% \end{figure}
+
+Рассмотрим два слоя толщиной в несколько метров каждый разделённых
+чёткой границей (Рисунок 8.7). Если верхний слой более тёплый и
+солёный, а нижний холоднее и менее солёный чем верхний, поверхность
+раздела между ними становится неустойчивой даже если верхний слой
+менее плотный чем нижний.
+%
+% Consider two thin layers a few meters thick separated by a sharp
+% interface (figure 8.8). If the upper layer is warm and salty, and if
+% the lower is colder and less salty than the upper layer, the interface
+% becomes unstable even if the upper layer is less dense than the lower.
+
+Что здесь происходит. Тепло диффундирует через границу быстрее чем
+соль, приводя к образованию тонкого холодного и солёного слоя между
+двумя первоначальными слоями. Холодный солёный слой более плотный чем
+холодный менее солёный слой под ним и более плотная вода начинает
+погружаться в менее плотную. Так как слой тонкий, жидкость погружается
+в виде пальцев диаметром в сантиметр или около того, не слишком
+отличающихся по размерам и форме от наших. Это Солёностные
+Пальцы. Так как через границу раздела диффундируют два компонента,
+процесс называется Двойная Диффузия.
+%
+% Here's what happens. Heat diffuses across the interface faster than
+% salt, leading to a thin, cold, salty layer between the two initial
+% layers. The cold salty layer is more dense than the cold, less-salty
+% layer below, and the water in the layer sinks. Because the layer is
+% thin, the fluid sinks in fingers 1--5 cm in diameter and 10s of
+% centimeters long, not much different in size and shape from our
+% fingers. This is \textit{salt fingering}\index{salt
+% fingering|textbf}. Because two constituents diffuse across the
+% interface, the process is called \textit{double
+% diffusion}\index{double diffusion|textbf}.
+
+Существует три другие вариации на эту тему. Две переменных каждая из
+которых взята по времени приводят к четырём возможным комбинациям.
+%
+% There are four variations on this theme. Two variables taken two at a
+% time leads to four possible combinations:
+\begin{enumerate}
+\item
+Тёплая солёная над холодной менее солёной: Ведёт к солёностным
+пальцам. Встречается в центральных областях субтропических кругов
+течений, на востоке тропической Северной Атлантики и Северо-Восточной
+Атлантики ниже течения выходящего из Средиземного моря.
+%
+% \vitem \textit{Warm salty over colder less salty}. This process is
+% called \textit{salt fingering}. It occurs in the thermocline below the
+% surface waters of sub-tropical gyres and the western tropical north
+% Atlantic, and in the North-east Atlantic beneath the outflow from the
+% Mediterranean Sea. Salt fingering eventually leads to density
+% increasing with depth in a series of steps. Layers of constant-density
+% are separated by thin layers with large changes in density, and the
+% profile of density as a function of depth looks like stair
+% steps. Schmitt et al (1987) observed 5--30 m thick steps in the
+% western, tropical north Atlantic that were coherent over 200--400 km
+% and that lasted for at least eight months. Kerr (2002) reports a
+% recent experiment by Raymond Schmitt, James Leswell, John Toole, and
+% Kurt Polzin showed salt fingering off Barbados mixed water 10 times
+% faster than turbulence\index{turbulent!mixing}.
+
+\item
+Холодная менее солёная над тёплой более солёной: Двойная диффузия
+делает более чёткой границу раздела между двумя слоями приводя к
+ступенчатому увеличению плотности с глубиной. Вот что происходит в
+этом случае. Двойная диффузия приводит к образованию тонкого тёплого
+менее солёного слоя под верхним холодным менее солёным слоем. Тонкий
+слой воды увеличивается и перемешивается с водой из верхнего
+слоя. Такой же процесс происходит и в нижнем слое где на границе
+раздела формируется более холодный и солёный слой. В результате
+конвекции в верхнем и нижнем слоях, граница раздела становится очень
+чёткой и любые небольшие градиенты плотности в слоях
+уменьшаются. Eventually step discontinuities of density are created
+that are separated by layers of constant density. Этот процесс
+называется Дифузивная Конвекция.
+%
+% \vitem \textit{Colder less salty over warm salty}.  This process is
+% called \textit{diffusive convection}\index{diffusive
+% convection|textbf}. It is much less common than salt fingering, and it
+% us mostly found at high latitudes. Diffusive convection also leads to
+% a stair step of density as a function of depth. Here's what happens in
+% this case. Double diffusion leads to a thin, warm, less-salty layer at
+% the base of the upper, colder, less-salty layer. The thin layer of
+% water rises and mixes with water in the upper layer. A similar
+% processes occurs in the lower layer where a colder, salty layer forms
+% at the interface. As a result of the convection in the upper and lower
+% layers, the interface is sharpened. Any small gradients of density in
+% either layer are reduced. Neal et al (1969) observed 2--10 m thick
+% layers in the sea beneath the Arctic ice.
+
+\item
+Холодная солёная над более тёплой менее солёной. Всегда статически
+неустойчива.
+%
+% \vitem \textit{Cold salty over warmer less salty}. Always statically
+% unstable.
+
+\item
+Более тёплая менее солёная, над холодной солёной. Всегда устойчиво и
+двойная диффузия размывает границу раздела между двумя слоями.
+%
+% \vitem \textit{Warmer less salty over cold salty}. Always stable and
+% double diffusion diffuses the interface between the two layers.
+\end{enumerate}
+
+Примеры двойной диффузии часто встречаются в океане. В главе 7 мы
+посмотрели что тёплая солёная вода втекает в в Атлантику через
+Гибралтар. Это вода более плотная чем боолее холодная но распреснённая
+вода на поверхности Северной Атлантики. Воды средиземного моря
+погружаются на глубину примерно километра, где они имеют такую же
+плотность что и окружающие воды. Затем они распространяются в Северную
+Атлантику как тёплая солёная интрузия между холодными менее солёными
+водами. Двойная диффузия приводит к скачкам плотности вверху интрузии
+и солёностным пальцам под интрузией.
+
+Может показаться что образование солёностных пальцев не важно из за
+того что они сами по себе слишком малы. Но это не так. в отличие от
+турбулентного перемешивания, это процесс происходящий постоянно, и
+суммарный эффекты за много лет велики. Образование солёностных пальцев
+и Двойная Диффузия? возможно наиболее важные процессы вызывающие
+вертикальное перемешивания на больших пространствах океана.
+
+% Double diffusion mixes ocean water, and it cannot be
+% ignored. Merryfield et al (1999), using a numerical model of the ocean
+% circulation that included double diffusion, found that
+% double-diffusive mixing changed the regional distributions of
+% temperature and salinity although it had little influence on
+% large-scale circulation of the ocean.
+\end{paragraph}
+\end{section}
+
+\begin{section}{Перемешивание в океане}
+Неустойчивость океана ведёт к перемешиванию. Так как океан обладает
+устойчивой стратификацией и любое вертикальное перемещение должно
+работать против сил плавучести, вертикальное перемешивание требует
+гораздо больше энергии чем горизонтальное перемешивание. В результате
+горизонтальное перемешивание вдоль поверхностей с постоянной
+плотностью, гораздо больше чем вертикальное перемешивание вдоль
+поверхностей с постоянной плотностью. Последнее, тем не менее, обычно
+называемое диапикнальным перемешиванием, очень важно, так как оно
+изменяет вертикальную структуру океана и в большой мере контролирует
+уровень при котором глубинные воды в конце концов достигнут
+поверхности в средних и низких широтах.
+
+В океане турбулентное вихревое перемешивание гораздо важнее чем
+молекулярная диффузия (Munk 1966). Уравнение для вертикального
+вихревого перемешивания для параметра~$\Theta$ такого как солёность или
+температура имеет вид:
+\begin{equation}
+\frac{\partial \Theta}{\partial t} + W \frac{\partial \Theta}{\partial z}
+ = \frac{\partial}{\partial z} \left(K_z\frac{\partial \Theta}{\partial z}\right) + S
+\end{equation}
+Где $K_z$~--- это коэффициент вертикальной вихревой диффузии, $W$~---
+средняя вертикальная скорость и $S$~--- source term.
+
+\begin{figure}[t!]
+\makebox [121mm][c]{\includegraphics{pics/mixing}}
+\caption{Potential temperature measured as a function of depth
+(pressure) near \latlon{24.7}{N}, \latlon{161.4}{W} in the central
+North Pacific by the \textit{Yaquina} in 1966 ($\bullet$), and by the
+\textit{Thompson} in 1985 $\left( _\square \;\right)$. Data from
+\textit{Atlas of Ocean Sections} produced by Swift, Rhines, and
+Schlitzer.}
+\label{fig:mixing}
+\end{figure}
+
+\begin{paragraph}{Average Vertical Mixing}
+Walter Munk (1966) used a very simple observation to calculate
+vertical mixing in the ocean. He observed that the ocean has a
+thermocline almost everywhere, and the deeper part of the thermocline
+does not change even over decades (Figure 8.8). This was a remarkable
+observation because we expect downward mixing would continuously
+deepen the thermocline. But it doesn't. Therefore, a steady-state
+thermocline requires that the downward mixing of heat by turbulence
+must be balanced by an upward transport of heat by a mean vertical
+current W. This follows from, (8.29) for steady state with no sources
+or sinks:
+\begin{equation}
+W \frac{\partial T}{\partial z} = A_z \frac{\partial^2 T}{\partial z^2}
+\end{equation}
+where $T$ is temperature as a function of depth in the thermocline.
+
+The equation has the solution:
+\begin{equation}
+T \approx T_0 \exp (z/H)
+\end{equation}
+where $H=A_z/W$ is the scale depth of the
+thermocline\index{thermocline}, and $T_0$ is the temperature near the
+top of the thermocline. Observations of the shape of the deep
+thermocline are indeed very close to a exponential function.  Munk
+used an exponential function fit through the observations of $T(z)$ to
+get $H$.
+
+Munk calculated $W$ from the observed vertical distribution of
+$^{14}$C, a radioactive isotope of carbon, to obtain a vertical time
+scale. In this case, $S=-1.24 \times 10^{-4}$ years$^{-1}$. The length
+and time scales gave $W=1.2$ cm/day and
+\begin{equation}
+\left< A_z \right> = 1.3 \times 10^{-4} \text{ m$^2$/s} \qquad \text{Average
+Vertical Eddy Diffusivity}
+\end{equation}
+where the brackets denote average eddy diffusivity in the
+thermocline\index{thermocline!eddy diffusivity in}.
+
+Munk also used $W$ to calculate the average vertical flux of water
+through the thermocline in the Pacific, and the flux agreed well with
+the rate of formation of bottom water assuming that bottom water
+upwells almost everywhere at a constant rate in the Pacific. Globally,
+his theory requires upward mixing of 25 to 30 Sverdrups of water,
+where one Sverdrup is $10^6$ cubic meters per second.
+\end{paragraph}
+
+\begin{paragraph}{Измеренное вертикальное перемешивание.}
+Прямые наблюдения за перемешиванием требуют разработки специальной
+техники для измерения: i) тонкой структуры турбулентности, включая
+зонды способные измерять температуру и солёность с пространственным
+разрешением в несколько сантиметров (Greegg 1991) и i) распределение
+трассеров таких как серный ??гексафторид (SF 6 ) в концентрациях
+10--15 моль (Ledwell, Watson, and Law 1993).
+
+Прямые измерения турбулентности в открытом океане и диффузии SF6
+приведут к коэффициенту вихревой диффузии:
+\begin{equation}
+K_z \approx 1 \times 10^{-5} \text{ m$^2$/s} \qquad \text{Open-Ocean Vertical
+Eddy Diffusivity}
+\end{equation}
+
+Например Ledwell, Watson, and Law (1991) выпустили 139 кг SF$_6$ в
+Атлантику около \latlon{26}{N}, \latlon{29}, это 1200 км западнее
+канарских островов, на глубине 310 метров. Затем в течении пяти
+месяцев, пока трассер распространялся на сотни километров, они
+проводили измерения его концентрации и получили диапикнальный
+коэффициент вихревого перемешивания 
+равный $K_z = 1.1 \pm 0.2 \times 10^{-5}\sqmps$.
+
+These and other open-ocean experiments indicate that turbulent mixing
+is driven by breaking internal waves and shear instability at
+boundaries. Furthermore, mixing by turbulence seems to be more
+important than double diffusion (Gregg 1987).
+
+The large discrepancy between Munk's calculation of the the mean eddy
+diffusivity for vertical mixing and the observed values in the open
+ocean led to further experiments to resolve the difference. Two recent
+experiments are especially interesting
+\begin{equation}
+K_z \approx 10^{-3}\sqmps \text{Rough Bottom Vertical Eddy Diffusivity}
+\end{equation}
+because they indicate that over seamounts and ridges
+
+Polzin et al., (1997) measured the vertical structure of temperature
+in the Brazil Basin in the South Atlantic. They found $K_z > 10^{-3}\sqmps$
+close to the bottom when the water flowed over the western flank of
+the mid-Atlantic ridge at the eastern edge of the basin. Kunze and
+Toole (1997) calculated enhanced eddy diffusivity as large as 
+$K = 10^{-3}\sqmps$ above Fieberling Guyot in the Northwest Pacific and
+smaller diffusivity along the flank of the seamount.
+
+The results of these and other experiments show that mixing occurs
+mostly at oceanic boundaries: along continental slopes, above
+seamounts and mid-ocean ridges, at fronts, and in the mixed layer at
+the sea surface.
+
+Still, the observed mixing in the open ocean away from boundaries is
+too small to account for the mixing calculated by Munk. Recent work
+reported at the World Ocean Circulation Experiment Conference on
+Circulation and Climate 1998 and work by Munk and Wunsch (1998) and
+Webb and Suginohara (2001) indicate that the dilemma may be resolved
+several ways:
+\begin{enumerate}
+\item
+First, separate studies by Gargett, Salmon, and Marotzke show that we
+must separate the concept of deep convection from that of the
+meridional overturning circulation (see chapter 13). Deep convection
+may mix properties not mass. The mass of upwelled water required by
+Munk may be overestimated, and the vertical mixing needed to balance
+the upwelling may be smaller than he calculated. Webb and Suginohara
+(2001) note that the upwelled water may be as small as 8Sv.
+
+\item 
+Second, mixing probably takes place along boundaries or in the source
+regions for thermocline waters (Gnadadesikan, 1999). For example,
+water at 1200m in the central North Atlantic could move horizontally
+to the Gulf Stream, where it mixes with water from 1000m. The mixed
+water may then move horizontally back into the central North Atlantic
+at a depth of 1100m. Thus water at 1200m and at 1100m may reach their
+position along entirely different paths.
+\end{enumerate}
+\end{paragraph}
+
+
+\begin{paragraph}{Измерение горизонтального перемешивания.}
+Вихри перемешивают жидкость по горизонтали и большие вихри
+перемешивают больше воды чем маленькие. Вихри варьируются по размеру
+от нескольких метров (вызванные турбулентностью в термоклине) до
+нескольких сотен километров (геострофические вихри описываемые в главе
+10).
+
+В основном перемешивание зависит от числа рейнольдса R (Tennekes 1990:
+p. 11)
+\begin{equation}
+\frac{K}{\gamma} \approx \frac{K}{\nu} \sim \frac{UL}{\nu} = R
+\end{equation}
+Где $\gamma$~--- это коэффициент молекулярной диффузии тепла. Кроме
+того, горизонтальный коэффициент вихревой диффузии больше среднего
+вертикального коэффициента вихревой диффузии в тысячи а иногда и в
+миллионы раз.
+
+Уравнение (8.35) предпологает $K_x \sim UL$. Эта функциональная форма
+хорошо соотносится с анализом спрединга радиоактивных трассеров,
+оптической плотности и вод Средиземного моря в Северной Атлантике
+проведённым Джозефом и Сендером (Joseph and Sender's (1958)). Они
+сообщают
+\begin{gather}
+K_x = P L \\
+10 \text{ km} < L < 1500 \text{ km} \notag \\
+P = 0.01 \pm 0.005 \text{ m/s} \notag
+\end{gather}
+Где $L$~--- расстояние от источника, а $U$~--- константа.
+
+Горизонтальный коэффициент вихревой диффузии (8.35) также хорошо
+согласуется с более современными данными по горизонтальной
+диффузии. Работы Холловэя (Holloway (1986)), который использовал
+наблюдения спутниковых альтиметров за геострофическими течениями,
+Фриланда и др. (Freeland et al. (1975)) котрый проследил подводные
+течения SOFAR, и Маквильямса (Mc Williams? (1976)) и Ledwell et al.,
+(1998) которые использовали наблюдения за течениями и трассерами,
+показывают что
+\begin{equation}
+K_x \approx 8 \times 10^2 \sqmps \text{ Geostrophic Horizontal Eddy Diffusivity}
+\end{equation}
+
+Используя (8.36) и измеренный $K_x$ получаем вихри с характерным
+масштабом 80 км, приблизительным размером геострофических вихрей
+ответственных за перемешивание.
+
+Ledwell, Watson, and Law (1991) также измеряли горизонтальный
+коэффициент турбулентной вихревой диффузии. Они получили:
+\begin{equation}
+K_x \approx 1 \text{--}  3\sqmps \text{Open-Ocean Horizontal Eddy Diffusivity}
+\end{equation}
+over scales of meters due to turbulence in the thermocline probably
+driven by breaking internal waves. Это значение, при использовании
+(8.36) подразумевает типичный размер в 100 метров для маленьких вихрей
+ответственных за перемешивание в этом эксперименте.
+\end{paragraph}
+
+\begin{paragraph}{Комментарии к горизонтальном перемешиванию.}
+\begin{enumerate}
+\item
+Эксперименты в открытом океане упомянутые выше показывают что
+турбулентное перемешивание вызывается обрушающимися внутренними
+волнами и сдвиговой неустойчивостью на границах. К тому же
+турбулентное перемешивание представляется более важным чем двойная
+диффузия (Gregg 1987). Над выступающими батиметрическими
+элементами.Результаты позволяют предположить что перемешивание
+происходит в основном на океанских пограничных поверхностях:вдоль
+континентальных склонов, над подводными горами и срединно
+океаническими хребтами, на фронтах и в перемешанном слое на
+поверхности моря. Вода в глубинах океана похоже движется вдоль
+наклонных поверхностей постоянной плотности с небольшим локальным
+перемешиванием пока не достигает какой ни будь границы где
+перемешивается в вертикальном направлении. Затем перемешанная вода
+возвращается назад в открытый океан снова вдоль поверхностей
+постоянной плотности (Gregg 1985). Один частный случай заслуживает
+особого упоминания. Когда вода перемешиваемая вниз через границу
+перемешанного слоя втекает в термоклин вдоль поверхностей постоянной
+плотности, перемешивание приводит к распределению плотности по модели
+вентилируемого термоклина.
+
+\item
+Наблюдения за перемешиванием в океане показывают что численные модели
+океанической циркуляции должны использовать такие схемы перемешивания
+в которых используются различные коэффициенты вихревой диффузии
+параллельные и перпендикулярные поверхностям постоянной плотности, а
+не уровенным поверхностям постоянного значения~$z$, как мы это делали
+выше. Горизонтальное перемешивание вдоль поверхностей постоянного
+значения z приводит к перемешиванию поперёк поверхностей с постоянной
+плотностью, так как поверхности постоянной плотности наклонены по
+отношению к горизонтали приблизительно на 10-3 радиан (смотри главу
+10.7, рис. 10.13). Работы Danabasoglu, Mc Williams, and Gent (1994)
+показали что численные модели использующие изопикнальное и
+диапикнальное перемешивание дают гораздо более реалистичные картины
+океанической циркуляции.
+
+\item
+Наблюдаемое перемешивание в открытом океане, вдалеке от границ,
+слишком мало для того чтобы объяснить значения перемешивания
+полученные Мунком. Современные работы доложенные на конференции
+посвящённой Эксперименту по Циркуляции Мирового Океана на отделении
+Циркуляция и Климат в 1998 году Мунком и Вуншем (Munk and Wunsch
+(1998)) показывают что эта диллема может быть решена несколькими
+способами.
+\begin{enumerate}
+\item
+Первое. Независимые исследования Гаргетта, Салмона и Мароцке (Gargett,
+Salmon, and Marotzke) показывают что мы должны разделять концепцию
+глубинной конвекции от концепции циркуляции меридионального
+опрокидывания (смотри главу 13). Глубинная циркуляция может
+перемешивать характеристики, но не массы и масса глубинных вод
+поднятых на поверхность указанная Мунком может быть завышена, а
+вертикальное перемешивание необходимое для компенсации этого
+апвеллинга может быть меньше чем им было посчитано.
+
+\item
+Второе. Перемешивание вероятно имеет место вдоль границ или в областях
+являющихся источниками вод термоклина (Gnadadesikan, 1999). Например,
+вода на глубине 1200 метров в центре Северной Атлантики может
+перемещаться горизонтально по направлению к Гольфстриму где
+перемешивается с водой с глубины 1000 метров. Перемешанные воды могут
+затем горизонтально переместиться назад в центр Северной Атлантики на
+глубину 1100 метров. Таким образом воды на глубине 1200 м и 1100 м
+могут занять положение вдоль совершенно разных траекторий
+\end{enumerate}
+\end{enumerate}
+\end{paragraph}
+\end{section}
+
+\begin{section}{Основные концепции}
+% \section{Important Concepts}
+\begin{enumerate}
+\item
+Трение в океане важно только на расстояниях в несколько
+миллиметров. Для большинства течений трением можно пренебречь.
+%
+% \item Friction in the ocean is important only over distances of a few
+% millimeters. For most flows, friction can be ignored.
+
+\item
+Океан турбулентен для всех потоков чьи характерные размеры превышают
+несколько сантиметров, но теория турбулентного потока в океане плохо
+разработана (сложна для понимания)
+%
+% \vitem The ocean is turbulent for all flows whose typical dimension
+% exceeds a few centimeters, yet the theory for turbulent flow in the
+% ocean is poorly understood.
+
+\item
+Влияние турбулентности это функция числа Рейнольдса потока. Потоки с
+одинаковой геометрией и одинаковым числом Рейнольдса обладают
+одинаковыми линиями тока. 
+%
+% \vitem The influence of turbulence\index{turbulence!Reynolds number}
+% is a function of the Reynolds number of the flow. Flows with the same
+% geometry and Reynolds number have the same streamlines.
+
+\item
+Океанографы предполагают что турбулентность на расстояниях больших чем
+несколько сантиметров влияет на поток также как молекулярная вязкость
+влияет на поток на гораздо меньших расстояниях.
+% \vitem Oceanographers assume that turbulence influences flows over
+% distances greater than a few centimeters in the same way that
+% molecular viscosity influences flow over much smaller distances.
+
+\item
+Учитывание влияния турбулентности приводит к появлению членов
+Рейнольдовского стресса в уравнении движения.
+% \vitem The influence of turbulence leads to Reynolds stress terms in
+% the momentum equation.
+
+\item
+Влияние статической устойчивости в океане выражается через частоту,
+частоту устойчивости. Чем больше частота, тем боле устойчив столб
+жидкости.
+% \vitem The influence of static stability in the ocean is expressed as
+% a frequency, the stability frequency\index{stability!frequency}. The
+% larger the frequency, the more stable the water column.
+
+\item
+Влияние устойчивости связанной со сдвигом скорости (сдвиговой
+устойчивости) выражается через число Ричардсона. Чем больше сдвиг
+скорости и меньше статическая устойчивость, тем больше вероятность
+того что течение станет турбулентным.
+% \vitem The influence of shear stability is expressed through the
+% Richardson number. The greater the velocity shear, and the weaker the
+% static stability, the more likely the flow will become turbulent.
+
+\item
+Молекулярная диффузия тепла гораздо больше чем диффузия соли. Это
+приводит к неустойчивости вызываемой двойной диффузией, которая
+изменяет распределение плотности в столбе воды во многих регионах
+океана.
+% \vitem Molecular diffusion of heat is much faster than the diffusion
+% of salt.  This leads to a double-diffusion instability which modifies
+% the density distribution in the water column in many regions of the
+% ocean.
+
+\item
+Неустойчивость в океане приводит к перемешиванию. Перемешивание
+поперёк поверхностей с постоянной плотностью гораздо меньше чем
+перемешивание вдоль этих поверхностей.
+% \vitem Instability in the ocean leads to mixing. Mixing across
+% surfaces of constant density is much smaller than mixing along such
+% surfaces.
+
+\item
+Расчитанные средние коэффициенты вихревой диффузии в глубинах океана
+гораздо меньше чем измеренные.
+
+% \vitem Horizontal eddy diffusivity in the ocean is much greater than
+% vertical eddy diffusivity.
+
+\item
+Измерения коэффициента вихревой диффузии показывают что вода
+перемешивается по вертикали около океанических границ (например над
+подводными горами и срединно океаничесими хребтами). Это может
+объяснять малые измеренные значения коэффициента диффузии в открытом
+океане.
+%
+% \vitem Measurements of eddy diffusivity indicate water is mixed 
+% vertically near oceanic boundaries such as above seamounts and
+% mid-ocean ridges.  
+\end{enumerate} 
+\end{section}
+\end{chapter}
