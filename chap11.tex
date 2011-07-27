@@ -686,14 +686,15 @@ v\,dx+(-u)\,dy=-\frac{\partial{\psi}}{\partial{x}}\,dx-\frac{\partial{\psi}}{\pa
 пограничным течениям. Для изучения циркуляции в северной части Атлантического
 океана он воспользовался фактически теми же самыми 
 уравнениями, что и Свердруп Stommel (1948): (\ref{eq:11.1}), (\ref{eq:11.2}) 
-и~(\ref{eq:11.3}), расширив их понятием bottom stress, 
-proportional to velocity to (\ref{eq:11.3}):
+и~(\ref{eq:11.3}), введя дополнительно в уравнение~(\ref{eq:11.3}) понятие
+придонного трения, пропорционального скорости:
 \begin{subequations}
 \begin{alignat}{2}
-\left(A_z \frac{\partial{u}}{\partial{z}}\right)_0 &= -T_x =-F\cos(\pi \,y/b)& \qquad \left(A_z \frac{\partial{u}}{\partial{z}}\right)_D &= -R\,u, \\
-\left(A_z \frac{\partial{v}}{\partial{z}}\right)_0 &= -T_y =0 & \qquad \left(A_z \frac{\partial{v}}{\partial{z}}\right)_D &= -R\,v,
+\left(A_z \frac{\partial{u}}{\partial{z}}\right)_0 &= -T_x =-F\cos(\pi \,y/b)& \qquad \left(A_z \frac{\partial{u}}{\partial{z}}\right)_{-D} &= -R\,u, \\
+\left(A_z \frac{\partial{v}}{\partial{z}}\right)_0 &= -T_y =0 & \qquad \left(A_z \frac{\partial{v}}{\partial{z}}\right)_{-D} &= -R\,v,
 \end{alignat}
 \end{subequations}
+%%% в оригинале индекс D, заменен на -D для единообразия (см. bug #213)
 где~$F$ и~$R$~--- константы.
 %
 % \index{western boundary currents!Stommels Theory}\index{Stommel's
