@@ -18,6 +18,17 @@
 \def\latlon@S{ю.~ш.}
 \newcommand{\latlon}[2]{$#1^\circ\mbox{~\csname latlon@#2\endcsname}$}
 \newcommand{\latlonmin}[3]{$#1^\circ#2'\mbox{~\csname latlon@#3\endcsname}$}
+% Adapted from LaTeX sources:
+\renewcommand{\@makecaption}[2]{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{#1. #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    #1. #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
 \makeatother
 
 \newcommand{\km}{\mbox{~км}}
